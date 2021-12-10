@@ -1,0 +1,204 @@
+*{
+    font-family: 'Work Sans', sans-serif;
+    /*font-family: 'Red Hat Mono', monospace;*/
+    /*font-family: 'Roboto', sans-serif;*/
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    /*background-image: linear-gradient(rgb(255, 255, 255), rgba(9, 7, 34, 0.795), rgb(255, 255, 255));*/
+    background-image: linear-gradient(#11181E , #1b2024);
+}
+
+
+.header{
+    background-color: #11181E;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header>a{
+    color: #fff;
+}
+.menu{
+    color: #fff;
+    display: flex;
+    padding-right: 20px;
+}
+
+.menu>li{
+    margin-left: 12px;
+    list-style: none;
+    font: solid;
+}
+
+.menu>li>a{
+    display: block;
+    padding: 10px;
+    background-color: #00FF22;
+    border-radius: 10px;
+    color: #11181E;
+    text-decoration: none;
+}
+
+.apresentaçao{
+    background-color: rgba(255, 255, 255, 0.267);
+    color: #fff;
+    padding: 10px 20px 10px 30px;
+    margin: 0px 30px;
+    border: groove 5px #00FF22;
+    text-shadow: 3px 3px 3px grey;
+    border-radius: 20px;
+}
+
+#info-do-ebook{
+    font-size: 1.2rem;
+    background-color: #00FF22;
+    box-shadow: 2px 2px 2px rgb(73, 73, 73);
+    text-align: center;
+    border-radius: 15px;
+    color: rgb(6, 6, 27);
+    text-shadow: 1px 1px 1px  grey;
+    margin: 30px 100px;
+
+}
+
+
+.grid1{
+    display: grid;
+   grid-template-columns: repeat(4 , 1fr);
+   max-width: 1300px;
+   margin: 20px;
+   color: #fff;
+   align-items:flex-end ;
+   font-size: 1.2rem; 
+   gap: 20px;
+}
+
+.grid1>div:nth-child(n+4){
+   
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+.grid1>#img-ebook{
+    grid-column: 1;
+    grid-row: 1/5;
+
+    margin: 0px;
+    align-items: center;
+    padding: 0px;
+}
+
+
+#info1{
+    background-color: #fff;
+    color: #11181E;
+    max-width: 200px;
+    box-shadow: 3px 3px 3px grey;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#info2{
+    background-color: #fff;
+    color: #11181E;
+    max-width: 200px;
+    box-shadow: 3px 3px 3px grey;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#info3{
+    background-color: #fff;
+    color: #11181E;
+    max-width: 200px;
+    box-shadow: 3px 3px 3px grey;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#info4{
+    background-color: #fff;
+    color: #11181E;
+    max-width: 200px;
+    box-shadow: 3px 3px 3px grey;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#info5{
+    background-color: #fff;
+    color: #11181E;
+    max-width: 200px;
+    box-shadow: 3px 3px 3px grey;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+ #info6{
+    background-color: #fff;
+    color: #11181E;
+    max-width: 200px;
+    box-shadow: 3px 3px 3px grey;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#ebook{
+    text-align: center;
+    background-color: #00FF22;
+    max-width: 400px;
+    min-width: 200px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: groove black;
+    box-shadow: 2px 2px 2px rgb(73, 73, 73);
+    border-radius: 40px;
+}
+
+#ebook:hover{
+    background-color: chartreuse;
+    box-shadow: 1px 1px 1px grey;
+    border: groove 1px rgb(37, 37, 37);
+    
+}
+
+#ebook>a{
+    font-size: large;
+    font-weight: 200;
+    text-decoration: none;
+    color: #11181E;
+    text-shadow: 3px 3px 3px grey;
+}
+
+@media ( max-width:600px) {
+    .grid1{
+        grid-template-columns: repeat(1 , 1fr);
+        margin-left: 50px;
+    }
+    .grid1>div#img-ebook{
+        grid-column: auto;
+        grid-row: auto;
+        order: -1;
+    }
+}

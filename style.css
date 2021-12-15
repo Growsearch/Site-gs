@@ -107,8 +107,6 @@ h2#bemvindo{
     background-image: linear-gradient(#11181E , #292b2e , #626364);
     border-bottom: 10px groove #00FF22;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-column: 1 1fr 1fr;
     max-width: 1300px;
     margin: auto;
     padding: 20px;

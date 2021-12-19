@@ -41,8 +41,9 @@ body{
     padding: 10px;
     background-color: #00FF22;
     border-radius: 10px;
-    color: #11181E;
+    color: rgb(128, 128, 128);
     text-decoration: none;
+    font-weight: bold;
 }
 
 .apresentaçao{

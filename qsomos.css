@@ -1,0 +1,60 @@
+body{
+    font: normal arial 15pt;
+}
+
+main{
+    display: flex;
+    max-width: 1350px;
+    
+}
+
+#conteudo-quemsomos{
+    margin: 10px;
+    background-color: #fff;
+    padding: 20px;
+    max-width: 850px;
+    border-radius: 20px;
+}
+
+#conteudo-quemsomos>h1{
+    font-size: 3rem;
+    color: rgba(6, 6, 24, 0.712);
+    margin-bottom: 20px;
+}
+
+#conteudo-quemsomos>h2{
+    font-size: 2rem;
+}
+
+#com-imagens{
+    margin: 20px;
+}
+
+.pcomlinks{
+    margin-top: 10px;
+}
+
+aside{
+    max-width: 400px;
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+div{
+    margin: 20px;
+}
+
+#not-1{
+    background-color: rgba(54, 54, 54, 0.178);
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    border: 2px groove rgba(0, 0, 0, 0.644);
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.651);
+}
+
+
+

@@ -356,6 +356,11 @@ h2#bemvindo{
     text-decoration: none;
 }
 
+.botao-1>a>img{
+    width: 50px;
+    height: 50px;
+}
+
 .botao-1:hover{
     box-shadow: 0px 0px 0px;
     border: groove 1px rgba(255, 6, 89, 0.473);
@@ -373,6 +378,11 @@ h2#bemvindo{
 .botao-2>a{
     text-decoration: none;
     color: #070e25;
+}
+
+.botao-2>a>img{
+    width: 50px;
+    height: 50px;
 }
 
 .botao-2:hover{
@@ -457,8 +467,9 @@ h2#bemvindo{
 
 #imagens{
     margin: auto;
+    margin-top: 20px;
     color: #050918;
-    text-shadow: 2px 2px 2px rgb(54, 54, 54);
+    line-height: 25px;
     display: flex;
     flex-wrap: wrap;
     max-width: 1350px;
@@ -468,8 +479,9 @@ h2#bemvindo{
 
 #imagens>div{
     margin: 10px;
-    background-color: grey;
+    background-color: rgba(212, 211, 211, 0.712);
     padding: 20px;
+    font-size:  17px;
     max-width: 300px;
     border: groove 2px rgba(0, 0, 0, 0.527);
     border-radius: 15px;
@@ -478,9 +490,8 @@ h2#bemvindo{
 
 #imagens>div:hover{
     background-color: #de09f179;
+    color: #fff;
 }
-
-
 
 footer{
     text-align: center;
@@ -513,7 +524,6 @@ div.grid-1{
         height: 520px;
         width: 370px;
     }
-
 }
 
 @media ( max-width:600px) {

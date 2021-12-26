@@ -41,6 +41,7 @@ main{
     background-color: #00FF22;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.507);
     border-radius: 25px 8px;
+    border: groove 2px rgba(3, 3, 14, 0.616);
 }
 
 #com-imagens>h2{

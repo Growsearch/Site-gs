@@ -1,5 +1,5 @@
 *{
-    font-family: 'Work Sans', sans-serif;
+    /*font-family: 'Work Sans', sans-serif;*/
     /*font-family: 'Red Hat Mono', monospace;*/
     /*font-family: 'Roboto', sans-serif;*/
     margin: 0px;
@@ -18,6 +18,7 @@ body{
     padding: 10px;
     align-items: center;
     flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .header>a{
@@ -38,12 +39,16 @@ body{
 .menu>li>a{
     display: block;
     padding: 10px;
-    background-color: #00FF22;
+    background-color: #44f187;
     border-radius: 10px;
-    color: rgb(128, 128, 128);
+    color: rgb(65, 65, 65);
     text-decoration: none;
-    font-weight: bold;
-    
+    font-weight: bold; 
+}
+
+.menu>li>a:hover{
+    background-color: #070e25;
+    color: #44f187;
 }
 
 main#container{
@@ -54,29 +59,37 @@ main#container{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    height: 450px;
-    border-top: 12px groove #00FF22;
+    height: 100%;
+    border-top: 12px groove #44f187;
 }
 
 .info{
     font-size: 2.5rem;
-    color: #fff;
+    font-family: monospace , sans-serif;
+    font-weight: bold;
+    color: #44f187;
     max-width: 400px;
     padding: 50px 20px 100px 20px ;
     text-shadow: 2px 2px 2px #000;
     line-height: 40px;
 }
 .frase{
-    max-width: 400px;
+    font-size: 1.5rem;
+    width: 250px;
     color: #fff;
-    padding-left: 20px;
+    margin: 10px 10px 20px 10px;
+    background-color: #44f1869c;
+    padding: 20px;
+    border: double 2px white;
+    border-radius: 5px 20px;
 }
 
 #conteudo{
     background-image: linear-gradient(#11181E , #292b2e , #62636486);
     /*essa class servirá caso queira colocar algum background-image no fundo. */
-     border-bottom: 10px groove #00FF22;
+     border-bottom: 10px groove #44f187;
      padding-bottom: 10px;
+     font-family: Arial, Helvetica, sans-serif;
     }
 
 .primeirobox{  /*a parte do quem somos nós,(esquerda da tela e primeira no mobile)*/
@@ -86,17 +99,16 @@ main#container{
 }
 
 .primeirobox>h3{
-    /*line-height: 30px;*/
     font-size: 1.5rem;
     padding-bottom: 5px;
     color: #fff;
 }
 
 h2#bemvindo{
-    text-shadow: 2px 2px 5px  grey;
+    text-shadow: 2px 2px 5px grey;
     font-size: 2rem;
     margin-bottom: 20px; 
-    color: #00FF22;
+    color: #32f16b;
     background-color: rgb(4, 4, 24);
     border:  groove #60ee73;
     border-radius: 10px;
@@ -104,8 +116,9 @@ h2#bemvindo{
 
 /*uma das partes mais importantes, a parte do grid onde contem todas informações*/
 .grid-1{
+    font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient(#11181E , #292b2e , #626364);
-    border-bottom: 10px groove #00FF22;
+    border-bottom: 10px groove #44f187;
     display: grid;
     max-width: 1300px;
     margin: auto;
@@ -123,7 +136,7 @@ h2#bemvindo{
     text-align: justify;
     border-radius: 10px;
     box-shadow: 3px 5px 5px rgb(44, 44, 44);
-    border: groove 3px /*#050918*/ #00FF22;
+    border: groove 3px /*#050918*/ #44f187;
     max-width: 350px;
     grid-area: a;
     height: 220px;
@@ -134,10 +147,10 @@ h2#bemvindo{
     text-shadow: 2px 2px 5px rgb(36, 36, 36);
     font-size: 25px;
     padding: 10px;
-    color: #00FF22;
+    color: #44f187;
     /*color:  #01DB29*/;
     text-shadow: 1px 1px 1px grey;
-    border: groove #00FF22;
+    border: groove #44f187;
     border-radius: 10px;
     background-color: rgb(4, 4, 24);
     }
@@ -155,17 +168,18 @@ h2#bemvindo{
 #quemsomos>a>h3{
    text-align: center;
    padding: 20px;
-   background-color: #00FF22;
-   border: groove #01DB29;
+   background-color: #44f187;
+   border: groove #31af62;
    border-radius: 30px;
    box-shadow: 2px 2px 3px grey;
-   color: #006413;
-   text-shadow: 2px 2px 6px #006413;
+   color: #00410c;
+   text-shadow: 2px 2px 6px #003d0b;
 }
 
 #quemsomos>a>h3:hover{
     box-shadow: 0px 0px 0px rgb(24, 24, 24);
-    border: groove 1px #01DB29;
+    border: groove 1px #2ca75b;
+    text-shadow: 0pc 0px 0px grey;
 }
 
 #confira-blog{
@@ -177,7 +191,7 @@ h2#bemvindo{
     text-align: justify;
     border-radius: 10px;
     box-shadow: 3px 5px 5px rgb(44, 44, 44);
-    border: groove 3px /*#11181E;*/ #b522c2;
+    border: groove 3px /*#11181E;*/ #ba68c2;
     grid-area: d;
 }
 
@@ -204,7 +218,7 @@ h2#bemvindo{
     text-align: center;
     margin-top: 20px;
     padding: 20px;
-    background-color: #c924d8;
+    background-color: #bb5cc4;
     border: groove 3px #b522c2;
     border-radius: 30px;
     color: #fff;
@@ -216,9 +230,10 @@ h2#bemvindo{
 }
 
 #confira-blog>a>h3:hover{
-    background-color: #b522c2;
+    background-color: #ba68c2;
     box-shadow: 0px 0px 0px rgb(24, 24, 24);
     border: groove 2px #b522c2;
+    text-shadow: 0px 0px 0px grey;
 }
 
 
@@ -264,11 +279,11 @@ h2#bemvindo{
 }
 
 .listas>ul>li>p:hover{
-    background-color: #00ff22ad;
+    background-color: #44f187;
 }
 
 #oque-esta-porvir{
-    border: groove 2px #00FF22;
+    border: groove 2px #00ffaa;
     border-radius: 10px;
     background-color: #e9e9e959;
     padding: 20px;
@@ -278,7 +293,7 @@ h2#bemvindo{
 
 #oque-esta-porvir>h2{
     color: #11181E;
-    background-image:linear-gradient(#8b8b8b , #00FF22) ;
+    background-image:linear-gradient(#8b8b8b , #44f187) ;
     padding: 10px;
     border: groove #525252;
     border-radius: 10px 40px;
@@ -299,12 +314,21 @@ h2#bemvindo{
     margin-top: 50px;
     background-color: #11181E;
     padding: 20px;
-    border: groove 3px #00FF22;
+    border: groove 3px #44f187;
     border-radius: 30px;
-    box-shadow: 2px 2px 2px rgb(24, 24, 24);
+    box-shadow: 2px 2px 4px rgb(24, 24, 24);
     color: #fff;
     text-decoration: none;
+}
+#oque-esta-porvir>a{
+    text-decoration: none;
+}
 
+#oque-esta-porvir>a>h3:hover{
+    background-color: #44f187;
+    box-shadow: 0px 0px 0px;
+    color: #050918;
+    border: groove 2px #050918a1;
 }
 
 #tele-h3{
@@ -319,7 +343,17 @@ h2#bemvindo{
 #bonus-h3{
     color: #fff;
 }
+
+.centralizar{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+    padding: 30px; 
+    text-shadow: 2px 2px 2px rgba(82, 82, 82, 0.342); 
+}
 #receitas-relatorios{
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -331,14 +365,6 @@ h2#bemvindo{
     margin: auto;
     margin-bottom: 20px;
     max-width: 1000px;
-}
-
-.centralizar{
-    font-size: 1.5rem;
-    text-align: center;
-    color: #fff;
-    padding: 30px; 
-    text-shadow: 2px 2px 2px rgba(82, 82, 82, 0.342); 
 }
 
 .botao-1{
@@ -371,7 +397,7 @@ h2#bemvindo{
     max-width: 300px;
     text-align: center;
     border: groove 2px #204652;
-    background-color: rgb(0, 195, 255);
+    background-color: rgba(0, 195, 255, 0.678);
     border-radius: 50px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.438);
 }
@@ -391,6 +417,7 @@ h2#bemvindo{
 }
 
 .cta-ebook{
+    font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient(#07071bf3, #11181E);
     max-width: 1200px;
     display: grid;
@@ -399,7 +426,7 @@ h2#bemvindo{
     align-items: center;
     margin: auto;
     margin-bottom: 30px;
-    border: groove 4px #fff;
+    border: groove 4px #44f187;
     border-radius: 30px;
 }
 
@@ -427,7 +454,7 @@ h2#bemvindo{
 .botao-ebook{
     margin: 5px 0px 30px 20px;
     padding: 20px;
-    background-color: #00FF22;
+    background-color: #44f187;
     border: double 5px #008311;
     border-radius: 30px;
     width: 250px;
@@ -441,7 +468,7 @@ h2#bemvindo{
 .botao-previa-ebook{
     margin: 5px 10px 30px 20px;
     padding: 20px;
-    background-color: rgb(0, 162, 255);
+    background-color: rgba(0, 162, 255, 0.445);
     border: double 5px #008311;
     border-radius: 30px;
     color: #fff;
@@ -459,6 +486,7 @@ h2#bemvindo{
 }
 
 .apres-blog{
+    font-family: Arial, Helvetica, sans-serif;
     color: #fff;
     text-align: center;
     font-size: 1.2rem;
@@ -478,6 +506,7 @@ h2#bemvindo{
 }
 
 #imagens>div{
+    font-family: Arial, Helvetica, sans-serif;
     margin: 10px;
     background-color: rgba(212, 211, 211, 0.712);
     padding: 20px;
@@ -555,4 +584,3 @@ div.grid-1{
         padding: 20px;
     }
 }
-

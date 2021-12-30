@@ -19,6 +19,7 @@ body{
     padding: 10px;
     align-items: center;
     flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .header>a{
@@ -39,11 +40,16 @@ body{
 .menu>li>a{
     display: block;
     padding: 10px;
-    background-color: #00FF22;
+    background-color: #44f187;
     border-radius: 10px;
-    color: rgb(128, 128, 128);
+    color: rgb(65, 65, 65);
     text-decoration: none;
     font-weight: bold;
+}
+
+.menu>li>a:hover{
+    background-color: #070e25;
+    color: #44f187;
 }
 
 .apresentaçao{
@@ -51,23 +57,21 @@ body{
     color: #fff;
     padding: 10px 20px 10px 30px;
     margin: 0px 30px;
-    border: groove 5px #00FF22;
+    border: groove 5px #44f187;
     text-shadow: 3px 3px 3px grey;
     border-radius: 20px;
 }
 
 #info-do-ebook{
     font-size: 1.2rem;
-    background-color: #00FF22;
+    background-color: #44f187;
     box-shadow: 2px 2px 2px rgb(73, 73, 73);
     text-align: center;
     border-radius: 15px;
     color: rgb(6, 6, 27);
     text-shadow: 1px 1px 1px  grey;
     margin: 30px 100px;
-
 }
-
 
 .grid1{
     display: grid;
@@ -75,33 +79,22 @@ body{
    max-width: 1300px;
    margin: 20px;
    color: #fff;
-   align-items:flex-end ;
-   font-size: 1.2rem; 
+   /*align-items:flex-end ;
+   font-size: 1.2rem; */
    gap: 20px;
-}
-
-.grid1>div:nth-child(n+4){
-   
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    align-items: center;
-    
 }
 
 .grid1>#img-ebook{
     grid-column: 1;
     grid-row: 1/5;
-
     margin: 0px;
     align-items: center;
     padding: 0px;
 }
 
-
 #info1{
     background-color: #fff;
     color: #11181E;
-    max-width: 200px;
     box-shadow: 3px 3px 3px grey;
     padding: 10px;
     border-radius: 20px;
@@ -112,7 +105,6 @@ body{
 #info2{
     background-color: #fff;
     color: #11181E;
-    max-width: 200px;
     box-shadow: 3px 3px 3px grey;
     padding: 10px;
     border-radius: 20px;
@@ -123,7 +115,7 @@ body{
 #info3{
     background-color: #fff;
     color: #11181E;
-    max-width: 200px;
+    /*height: 100px;*/
     box-shadow: 3px 3px 3px grey;
     padding: 10px;
     border-radius: 20px;
@@ -134,7 +126,6 @@ body{
 #info4{
     background-color: #fff;
     color: #11181E;
-    max-width: 200px;
     box-shadow: 3px 3px 3px grey;
     padding: 10px;
     border-radius: 20px;
@@ -145,7 +136,6 @@ body{
 #info5{
     background-color: #fff;
     color: #11181E;
-    max-width: 200px;
     box-shadow: 3px 3px 3px grey;
     padding: 10px;
     border-radius: 20px;
@@ -156,7 +146,6 @@ body{
  #info6{
     background-color: #fff;
     color: #11181E;
-    max-width: 200px;
     box-shadow: 3px 3px 3px grey;
     padding: 10px;
     border-radius: 20px;
@@ -166,7 +155,7 @@ body{
 
 #ebook{
     text-align: center;
-    background-color: #00FF22;
+    background-color: #44f187;
     max-width: 400px;
     min-width: 200px;
     margin: auto;
@@ -177,11 +166,15 @@ body{
     border-radius: 40px;
 }
 
+#info1:hover , #info2:hover , #info3:hover , #info4:hover , #info5:hover , #info6:hover{
+    background-image: linear-gradient(#11181E , #1b2024);
+    color: #44f187;
+}
+
 #ebook:hover{
-    background-color: chartreuse;
+    background-color: #2df179;
     box-shadow: 1px 1px 1px grey;
     border: groove 1px rgb(37, 37, 37);
-    
 }
 
 #ebook>a{
@@ -192,14 +185,49 @@ body{
     text-shadow: 3px 3px 3px grey;
 }
 
+#oque-recebe{
+    margin: 15px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+#img-com-lista{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+#img-com-lista>ul>li{
+    width: 600px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(#11181E , #1b2024);
+    color: #44f187;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+footer{
+    padding: 20px;
+    background-color: #44f187;
+    text-align: center;
+    color: rgb(7, 11, 19);
+    border-top: groove 2px #fff;
+}
+
 @media ( max-width:600px) {
-    .grid1{
-        grid-template-columns: repeat(1 , 1fr);
-        margin-left: 50px;
+    #info-do-ebook{
+        width: 350px;
+        margin: 10px 10px 10px 6px;
     }
-    .grid1>div#img-ebook{
-        grid-column: auto;
-        grid-row: auto;
-        order: -1;
+
+    .grid1{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 420px;
+    }
+    .grid1>div{
+        margin: auto;
+        width: 400px;
     }
 }

@@ -280,6 +280,7 @@ h2#bemvindo{
 
 .listas>ul>li>p:hover{
     background-color: #44f187;
+    font-weight: bold;
 }
 
 #oque-esta-porvir{
@@ -512,7 +513,7 @@ h2#bemvindo{
     padding: 20px;
     font-size:  17px;
     max-width: 300px;
-    border: groove 2px rgba(0, 0, 0, 0.527);
+    border: groove 2px rgba(0, 0, 0, 0.658);
     border-radius: 15px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.548);
 }
@@ -523,13 +524,17 @@ h2#bemvindo{
 }
 
 footer{
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     color: #fff;
-    background-color: #000;
+    background-color: #050918;
     padding: 20px;
+    border-top: groove 2px #44f187;
 }
-footer:hover{
-   background-color: #01DB29;
+
+footer>p>a{
+    color: #44f187;
+    text-decoration: none;
 }
 
 @media (max-width: 850px){

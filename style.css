@@ -44,6 +44,7 @@ body{
     color: rgb(65, 65, 65);
     text-decoration: none;
     font-weight: bold; 
+    border: groove 2px white;
 }
 
 .menu>li>a:hover{
@@ -286,7 +287,7 @@ h2#bemvindo{
 #oque-esta-porvir{
     border: groove 2px #00ffaa;
     border-radius: 10px;
-    background-color: #e9e9e959;
+    background-color: #e9e9e921;
     padding: 20px;
     box-shadow: 5px 8px 5px rgb(26, 26, 26);
     grid-area: c;
@@ -308,6 +309,7 @@ h2#bemvindo{
     line-height: 30px;
     font-size:  20px;
     color: rgb(255, 255, 255);
+    margin-top: 10px;
 }
 
 #oque-esta-porvir>a>h3{
@@ -419,7 +421,7 @@ h2#bemvindo{
 
 .cta-ebook{
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(#07071bf3, #11181E);
+    background-image: linear-gradient(#07071b7a, #11181e71);
     max-width: 1200px;
     display: grid;
     grid-template-areas: "a b d"
@@ -427,7 +429,7 @@ h2#bemvindo{
     align-items: center;
     margin: auto;
     margin-bottom: 30px;
-    border: groove 4px #44f187;
+    border: groove 2px #44f187;
     border-radius: 30px;
 }
 

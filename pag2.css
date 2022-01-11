@@ -82,6 +82,7 @@ body{
    /*align-items:flex-end ;
    font-size: 1.2rem; */
    gap: 20px;
+   
 }
 
 .grid1>#img-ebook{
@@ -189,6 +190,14 @@ body{
     margin: 15px;
     padding: 20px;
     background-color: #fff;
+    border-top: groove 10px #44f187;
+    border-radius: 15px;
+}
+
+#oque-recebe> h1 , h3{
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(128, 128, 128, 0.493);
 }
 
 #img-com-lista{
@@ -199,8 +208,10 @@ body{
 }
 
 #img-com-lista>ul>li{
+    font-family: 'Courier New', Courier, monospace;
     width: 600px;
     margin-bottom: 20px;
+    margin-left: 2px;
     background-image: linear-gradient(#11181E , #1b2024);
     color: #44f187;
     padding: 20px;
@@ -229,5 +240,10 @@ footer{
     .grid1>div{
         margin: auto;
         width: 400px;
+    }
+
+    #img-com-lista>ul>li{
+    max-width: 260px;
+    
     }
 }

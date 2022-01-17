@@ -42,6 +42,7 @@ body{
     padding: 10px;
     background-color: #44f187;
     border-radius: 10px;
+    border: groove 2px #fff;
     color: rgb(65, 65, 65);
     text-decoration: none;
     font-weight: bold;
@@ -90,6 +91,7 @@ body{
     margin: 0px;
     align-items: center;
     padding: 0px;
+    height: 385px;
 }
 
 #info1{
@@ -211,10 +213,19 @@ body{
     width: 600px;
     margin-bottom: 20px;
     margin-left: 2px;
-    background-image: linear-gradient(#11181E , #1b2024);
-    color: #44f187;
+    /*background-image: linear-gradient(#11181E , #1b2024);*/
+    background-image: linear-gradient(#44f187 , #1b20248e);
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(128, 128, 128, 0.438);
+    box-shadow: 2px 2px 3px gray;
     padding: 20px;
     border-radius: 20px;
+}
+
+#img-com-lista>ul>li:hover{
+    color: #000;
+    background-image: linear-gradient(#44f18680 , #1b202425);
+    box-shadow: none;
 }
 
 footer{
@@ -236,6 +247,12 @@ footer{
         flex-wrap: wrap;
         max-width: 420px;
     }
+
+    .grid1>#img-ebook{
+        height: 470px;
+        padding: 20px;
+    }
+
     .grid1>div{
         margin: auto;
         width: 400px;

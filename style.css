@@ -361,7 +361,7 @@ h2#bemvindo{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    background-color: #e9e9e963;
+    background-color: #f7f7f715;
     padding: 20px;
     border: groove 2px grey ;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.473);
@@ -422,7 +422,8 @@ h2#bemvindo{
 
 .cta-ebook{
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(#07071b7a, #11181e71);
+    /*background-image: linear-gradient(#07071b7a, #11181e71);*/
+    background-image: linear-gradient(#05070e36  , #cccccc15);
     max-width: 1200px;
     display: grid;
     grid-template-areas: "a b d"

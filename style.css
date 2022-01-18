@@ -420,6 +420,21 @@ h2#bemvindo{
     border: groove 1px black;
 }
 
+#anuncio-p{
+    font-size: 8px;
+    font-family: monospace;
+    height: 20px;
+    box-shadow: 3px 3px 5px grey;
+    background-color: #44f187;
+    border: solid 3px #b522c2;
+    border-radius: 25px;
+    width: 150px;
+    padding: 20px;
+    color: #050918;
+    transform: rotate3d( 2.0 , 3.0 , 3.0 , 20deg );  
+    position: sticky;
+}
+
 .cta-ebook{
     font-family: Arial, Helvetica, sans-serif;
     /*background-image: linear-gradient(#07071b7a, #11181e71);*/

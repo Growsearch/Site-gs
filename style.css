@@ -348,6 +348,16 @@ h2#bemvindo{
     color: #fff;
 }
 
+.imagem-g{
+    text-align: center;
+}
+
+img.anuncio-relatorios{
+    margin-top: 20px;
+    width: 1340px;
+    text-align: center;
+}
+
 .centralizar{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
@@ -432,7 +442,6 @@ h2#bemvindo{
     padding: 20px;
     color: #050918;
     transform: rotate3d( 2.0 , 3.0 , 3.0 , 20deg );  
-    position: sticky;
 }
 
 .cta-ebook{
@@ -539,7 +548,7 @@ h2#bemvindo{
 }
 
 #imagens>div:hover{
-    background-color: #de09f179;
+    background-color: rgb(186, 25, 207);
     color: #fff;
 }
 

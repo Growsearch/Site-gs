@@ -60,7 +60,7 @@ main#container{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    height: 100%;
+    height: 350px;
     border-top: 12px groove #44f187;
 }
 
@@ -71,15 +71,33 @@ main#container{
     /*color: #44f187;*/
     color: rgb(233, 233, 233);
     max-width: 400px;
+    margin-left: 45px;
     padding: 50px 20px 100px 20px ;
     text-shadow: 2px 2px 2px #000;
     line-height: 40px;
 }
+
+.info > p::after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca  .7s infinite;
+}
+
+@keyframes pisca {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
 .frase{
     font-size: 1.5rem;
     width: 250px;
     color: #fff;
-    margin: 10px 10px 20px 10px;
+    margin: 10px 100px 20px 10px;
     background-color: #44f1869c;
     padding: 20px;
     border: double 2px white;
@@ -566,31 +584,30 @@ footer>p>a{
     text-decoration: none;
 }
 
-@media (max-width: 850px){
-
-div.grid-1{
-    margin: 0px;
-    padding: 0px;
-    display: grid;
-    grid-template-areas: "a d"
-                         "b c";
-    }
-    #quemsomos{
-        height: 260px;
-        width: 300px;
-    }
-    .listas{
-        height: 600px;
-        width: 300px;
-    }
-    #oque-esta-porvir{
-        height: 520px;
-        width: 370px;
-    }
-}
 
 @media ( max-width:600px) {
-   
+
+    #container{
+        height: 1000px;
+    }
+
+    .info{
+        margin: auto;
+        padding: 0px;
+        text-align: center;
+    }
+    
+    .frase{
+        font-size: 15px;
+        background: none;
+        color: white;
+        margin: auto;
+        display: block;
+        border: none;
+        text-align: center;
+    }
+
+
     div.grid-1{
         margin: auto;
         padding: 20px;

@@ -24,3 +24,25 @@ function typeWriter(elemento) {
 
 const titulo = document.querySelector('div.info > p')
 typeWriter(titulo);
+
+
+// Adicionando interatividade na class="frase";
+
+let frase = document.querySelector('div.frase')
+let ativar = document.querySelector('button#ativar')
+
+ativar.addEventListener('click' , () => {
+    frase.classList.toggle('animar');
+})
+
+// interacoes do slide completa. (css e js)
+
+// Agora darei inicio ao button, ( mudar quando clicar )
+
+ativar.addEventListener('click' , clicou)
+
+function clicou(){
+    ativar.innerText = 'Clique para sair e voltar o slide!'
+    ativar.style.background = 'rgb(44, 44, 44)'
+    ativar.style.color = 'white'
+}

@@ -46,3 +46,14 @@ function clicou(){
     ativar.style.background = 'rgb(44, 44, 44)'
     ativar.style.color = 'white'
 }
+
+//MENU MOBILE 
+
+let btnmobile = document.getElementById('btn-mobile');
+
+function toggleMenu (){
+    let nav = document.getElementById('nav');
+    nav.classList.toggle('active');
+}
+
+btnmobile.addEventListener('click' , toggleMenu)

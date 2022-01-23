@@ -34,13 +34,19 @@ body{
     margin-left: 12px;
     list-style: none;
     font: solid;
+    box-shadow: 2px 2px 2px grey;
+    border-radius: 15px;
+}
+
+.menu>li:hover{
+    box-shadow: none;
 }
 
 .menu>li>a{
     display: block;
     padding: 10px;
     background-color: #44f187;
-    border-radius: 10px;
+    border-radius: 15px;
     color: rgb(65, 65, 65);
     text-decoration: none;
     font-weight: bold; 
@@ -50,6 +56,12 @@ body{
 .menu>li>a:hover{
     background-color: #070e25;
     color: #44f187;
+    border: groove 1px rgba(255, 255, 255, 0.418);
+}
+
+/*      BOTAO PARA P MENU MOBILE  (configuração dele é no @media, la em baixo!)  */
+#btn-mobile{
+    display: none;
 }
 
 main#container{
@@ -70,7 +82,7 @@ main#container{
 .info{
     font-size: 2.5rem;
     font-family: monospace , sans-serif;
-    font-weight: bold;
+    font-weight: normal;
     /*color: #44f187;*/
     color: rgb(233, 233, 233);
     max-width: 400px;
@@ -125,7 +137,7 @@ button#ativar:hover{
     font-size: 1.5rem;
     width: 250px;
     color: #fff;
-    margin: 10px 100px 20px 10px;
+    margin: 10px 10px 20px 10px;
     background-color: #44f1869c;
     padding: 20px;
     border: double 2px white;
@@ -133,7 +145,7 @@ button#ativar:hover{
     grid-column: 2;
     grid-row: 1;
     display: block;
-    transform: translateX(100px);
+    transform: translateX(10px);
     opacity: 0;
 }
 
@@ -148,7 +160,8 @@ button#ativar:hover{
     }
 }
 
-#conteudo{
+#conteudo{ /* MAIN QUE CONTEM A GRANDE PARTE DO CONTEUDO DO SITE */
+
     background-image: linear-gradient(#11181E , #292b2e , #62636486);
     /*essa class servirá caso queira colocar algum background-image no fundo. */
      border-bottom: 10px groove #44f187;
@@ -156,7 +169,7 @@ button#ativar:hover{
      font-family: Arial, Helvetica, sans-serif;
     }
 
-.primeirobox{  /*a parte do quem somos nós,(esquerda da tela e primeira no mobile)*/
+.primeirobox{  /*SECTION QUE CONTEM A PARTE DO SEJAM BEM-VINDOS A GS E AS FRASES EMBAIXO,(esquerda da tela e primeira no mobile)*/
     text-align: center;
     padding: 20px;
     color: #fff;
@@ -178,7 +191,9 @@ h2#bemvindo{
     border-radius: 10px;
 }
 
-/*uma das partes mais importantes, a parte do grid onde contem todas informações*/
+/* UMA DAS PARTES MAIS IMPORTANTES, PARTE QUE CONTEM A MAIOR PARTE DE INFORMACOES DO SITE. */
+
+
 .grid-1{
     font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient(#11181E , #292b2e , #626364);
@@ -419,6 +434,8 @@ img.anuncio-relatorios{
     text-align: center;
 }
 
+/* AQUI É ONDE FICA A DESCRICAO E OS BOTOES P INSTAGRAM E PARA O TELEGRAM*/
+
 .centralizar{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
@@ -615,6 +632,8 @@ img.anuncio-relatorios{
     color: #fff;
 }
 
+/* RODAPÉ DO SITE */
+
 footer{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -629,9 +648,73 @@ footer>p>a{
     text-decoration: none;
 }
 
+/* COMEÇA AQUI A CONFIGURAÇÃO MOBILE COM @MEDIA , DEIXANDO A INTERATIVIDADE MOBILE MELHOR.*/
 
 @media ( max-width:600px) {
 
+/* CONIGURAÇÃO DE HEADER */
+    #btn-mobile{
+        display: block;
+        padding: 5px 15px;
+        font: bold 1rem sans-serif;
+        color: #00ffaa;
+        background: transparent;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px grey;
+    }
+
+    .menu{
+        /*display: none;*/
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        height: 0px;
+        background: #1b2024;
+        transition: 0.6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active .menu{
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    .menu a {
+        padding: 1rem 0px;
+        margin: 10px;
+        border-bottom: 2px solid #00ffaa;
+        text-align: center;
+        border-radius: none;
+    }
+
+    .menu>li{
+        border: none;
+        border-radius: none;
+        box-shadow: none;
+        width: 100%;
+    }
+
+    .menu>li>a{
+        border: none;
+        border-bottom: 2px solid rgba(0 , 0 , 0 , 0.5);
+        border-radius: none;
+        background: none;
+        color: #00ffaa;
+        font-size: 1.2rem;
+    }
+
+    .menu>li>a:hover{
+        color: #fff;
+        background: #1b2024;
+    }
+
+
+/*CONFIGURAÇÃO DA PARTE DE BAIXO*/
     #container{
         height: 1050px;
         display: grid;

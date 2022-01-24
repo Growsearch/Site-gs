@@ -1,0 +1,201 @@
+/* COMEÇA AQUI A CONFIGURAÇÃO MOBILE COM @MEDIA , DEIXANDO A INTERATIVIDADE MOBILE MELHOR.*/
+
+@media ( max-width:600px) {
+
+    /* CONIGURAÇÃO DE HEADER */
+
+ #btn-mobile{
+    display: flex;
+    padding: .5rem 1rem;
+    font: bold 1rem sans-serif;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    gap: 5px;
+}
+    
+#hamburguer{
+    display: block;
+    border-top: 2px solid;
+    width: 20px;
+}
+    
+#hamburguer::after , #hamburguer::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+}
+    
+#nav.active #hamburguer{
+    border-top-color: transparent ;
+    color: #00ffaa;
+}
+    
+#nav.active #hamburguer::before{
+    transform: rotate(135deg);
+    
+ }
+        
+#nav.active #hamburguer::after{
+    transform: rotate(-135deg);
+    top: -7px;
+}
+    
+.menu{
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    right: 0px;
+    height: 0px;
+    background: #3d474e;
+    transition: 0.6s;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
+}
+    
+#nav.active .menu{
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+}
+    
+.menu a {
+    padding: 1rem 0px;
+    margin: 10px 45px;
+    border-bottom: 2px solid #00ffaa;
+    text-align: center;
+    border-radius: none;
+}
+    
+.menu>li{
+    border: none;
+    border-radius: none;
+    box-shadow: none;
+    width: 100%;
+}
+    
+.menu>li>a{
+    border: none;
+    border-bottom: 2px solid rgba(0 , 0 , 0 , 0.5);
+    border-radius: none;
+    background: none;
+    color: #00ffaa;
+    font-size: 1.2rem;
+    font-family: monospace;
+    background: #1b2024;
+    margin-top: 20px;
+}
+    
+.menu>li>a:hover{
+    color: #fff;
+    background: #1b2024;
+}
+    
+    /*CONFIGURAÇÃO DA PARTE DE BAIXO -- fora do cabeçalho*/
+
+
+#container{
+    height: 1050px;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+    align-content: center;
+}
+    
+.info{
+    font-size: 1.5rem;
+    margin: auto;
+    padding: 50px 10px 10px 10px;
+    text-align: center;
+    grid-row: 1;
+ }
+    
+button#ativar{
+    grid-row: 2;
+    grid-column: 1;
+    margin-top: 15px;
+}
+        
+.frase{
+    font-size: 15px;
+    background: none;
+    color: white;
+    margin: auto;
+    border: none;
+    text-align: center;
+    grid-row: 3;
+    grid-column: 1;
+    padding-bottom: 40px;
+}
+
+/* ESSA É A PARTE DO SEJA BEM VINDOS A GROW SEARCH*/
+
+h2#bemvindo{
+    font-size: 25px;
+}
+
+.primeirobox>h3{
+    font-size: 18px;
+}
+    
+div.grid-1{
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-areas: "a"
+                         "d"
+                         "b"
+                         "c";
+}
+
+#quemsomos{
+    margin-bottom: 33px;
+    
+}
+
+#confira-blog{
+    width: 300px;
+    height: 230px;
+    margin-bottom: 25px;
+}
+
+.listas{
+    width: 280px;
+    height: 700px;
+}
+
+#oque-esta-porvir{
+    width: 280px;
+    height: 640px;
+    margin-bottom: 25px;
+}
+    
+.centralizar > p{
+    font-size: 15px;
+}
+
+    
+#receitas-relatorios{
+    width: 250px;
+}
+    
+#receitas-relatorios>.botao-1,.botao-2{
+    width: 50px;
+    height: 50px;
+}
+    
+.cta-ebook{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+}

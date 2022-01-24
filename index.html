@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
     <link rel="shortcut icon" href="imagens-do-site/favicon.ico" type="image/x-icon">
     <title>GS Home</title>
 </head>
@@ -12,8 +13,12 @@
     <header class="header">
             <a  id="logo" href="index.html"><img src="imagens-do-site/GS_atual-removebg-preview.png" alt="GS-png"></a>
         <nav  id="nav">
-            <button id="btn-mobile">Menu</button>
-            <ul class="menu">
+            <button id="btn-mobile" aria-expanded="false" aria-haspopup="true" aria-controls="menu" aria-label="Abrir Menu">Menu
+
+                <span id="hamburguer"></span>
+            </button>
+
+            <ul class="menu" role="menu">
                 <li><a href="https://growsearch.github.io/Site-gs/qsomos.html">Sobre</a></li>
                 <li><a href="pag2.html">Produtos</a></li>
                 <li><a href="https://growsearch.github.io/projeto-blog/index.html" >Blog</a></li>
@@ -40,7 +45,9 @@
             <section class="primeirobox">
                 <h2 id="bemvindo">
                 Sejam bem-vindos à Grow Search</h2>
+
                 <h3>Nascemos com o propósito de levar a educação financeira para o maior numero de pessoas que pudermos.</h3>
+
                 <p>A GS é um espaço para todos! Seja qual for o seu objetivo, seja qual for a sua forma de pensar, estamos prontos!</p>
             </section>
     </main>   

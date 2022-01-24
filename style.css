@@ -126,6 +126,7 @@ button#ativar{
     border: solid 3px #0e351d;
     border-radius: 20px;
     box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.747);
+    cursor: pointer;
 }
 
 button#ativar:hover{
@@ -184,11 +185,13 @@ button#ativar:hover{
 h2#bemvindo{
     text-shadow: 2px 2px 5px grey;
     font-size: 2rem;
+    margin: auto;
     margin-bottom: 20px; 
     color: #32f16b;
     background-color: rgb(4, 4, 24);
     border:  groove #60ee73;
     border-radius: 10px;
+    max-width: 700px;
 }
 
 /* UMA DAS PARTES MAIS IMPORTANTES, PARTE QUE CONTEM A MAIOR PARTE DE INFORMACOES DO SITE. */
@@ -207,6 +210,8 @@ h2#bemvindo{
     "a b c"
     "d b c";
 }
+
+/*  QUEM SOMOS -- BOX VERDE */
 
 #quemsomos{
     background-color: #e9e9e9c4;
@@ -259,6 +264,8 @@ h2#bemvindo{
     border: groove 1px #20703f;
     text-shadow: 0pc 0px 0px grey;
 }
+
+/* CONFIRA O BLOG --  BOX ROXO*/
 
 #confira-blog{
     height: 220px;
@@ -314,6 +321,7 @@ h2#bemvindo{
     text-shadow: 0px;
 }
 
+/* TODA A PARTE DE LISTAS NO MEIO DO SITE*/
 
 .listas{
     grid-column: 2;
@@ -360,6 +368,8 @@ h2#bemvindo{
     background-color: #44f187;
     font-weight: bold;
 }
+
+/* O QUE ESTA POR VIR*/
 
 #oque-esta-porvir{
     border: groove 2px #00ffaa;
@@ -444,6 +454,8 @@ img.anuncio-relatorios{
     padding: 30px; 
     text-shadow: 2px 2px 2px rgba(82, 82, 82, 0.342); 
 }
+
+/* AONDE TEM UM BOX E ONDE OS CIRCULOS DE INSTAGRAM E TELEGRAM ESTÃO.*/
 #receitas-relatorios{
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
@@ -508,19 +520,7 @@ img.anuncio-relatorios{
     border: groove 1px black;
 }
 
-#anuncio-p{
-    font-size: 8px;
-    font-family: monospace;
-    height: 20px;
-    box-shadow: 3px 3px 5px grey;
-    background-color: #44f187;
-    border: solid 3px #b522c2;
-    border-radius: 25px;
-    width: 150px;
-    padding: 20px;
-    color: #050918;
-    transform: rotate3d( 2.0 , 3.0 , 3.0 , 20deg );  
-}
+/* BOX DO EBOOK GUIA INICIANTE */
 
 .cta-ebook{
     font-family: Arial, Helvetica, sans-serif;
@@ -594,6 +594,8 @@ img.anuncio-relatorios{
     margin-top: 20px;
 }
 
+/* APRESENTANDO O BLOG */
+
 .apres-blog{
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
@@ -646,161 +648,4 @@ footer{
 footer>p>a{
     color: #44f187;
     text-decoration: none;
-}
-
-/* COMEÇA AQUI A CONFIGURAÇÃO MOBILE COM @MEDIA , DEIXANDO A INTERATIVIDADE MOBILE MELHOR.*/
-
-@media ( max-width:600px) {
-
-/* CONIGURAÇÃO DE HEADER */
-    #btn-mobile{
-        display: block;
-        padding: 5px 15px;
-        font: bold 1rem sans-serif;
-        color: #00ffaa;
-        background: transparent;
-        border-radius: 5px;
-        box-shadow: 2px 2px 2px grey;
-    }
-
-    .menu{
-        /*display: none;*/
-        display: block;
-        position: absolute;
-        width: 100%;
-        top: 70px;
-        right: 0px;
-        height: 0px;
-        background: #1b2024;
-        transition: 0.6s;
-        z-index: 1000;
-        visibility: hidden;
-        overflow-y: hidden;
-    }
-
-    #nav.active .menu{
-        height: calc(100vh - 70px);
-        visibility: visible;
-        overflow-y: auto;
-    }
-
-    .menu a {
-        padding: 1rem 0px;
-        margin: 10px;
-        border-bottom: 2px solid #00ffaa;
-        text-align: center;
-        border-radius: none;
-    }
-
-    .menu>li{
-        border: none;
-        border-radius: none;
-        box-shadow: none;
-        width: 100%;
-    }
-
-    .menu>li>a{
-        border: none;
-        border-bottom: 2px solid rgba(0 , 0 , 0 , 0.5);
-        border-radius: none;
-        background: none;
-        color: #00ffaa;
-        font-size: 1.2rem;
-    }
-
-    .menu>li>a:hover{
-        color: #fff;
-        background: #1b2024;
-    }
-
-
-/*CONFIGURAÇÃO DA PARTE DE BAIXO*/
-    #container{
-        height: 1050px;
-        display: grid;
-        grid-template-columns: 1;
-        grid-template-rows: 3;
-        align-content: center;
-    }
-
-    .info{
-        font-size: 2.0rem;
-        margin: auto;
-        padding: 50px 10px 10px 10px;
-        text-align: center;
-        grid-row: 1;
-    }
-
-    button#ativar{
-        grid-row: 2;
-        grid-column: 1;
-        margin-top: 15px;
-    }
-    
-    .frase{
-        font-size: 15px;
-        background: none;
-        color: white;
-        margin: auto;
-        border: none;
-        text-align: center;
-        grid-row: 3;
-        grid-column: 1;
-        padding-bottom: 40px;
-    }
-
-    #quemsomos{
-        margin-bottom: 15px;
-    }
-
-
-    div.grid-1{
-        margin: auto;
-        padding: 20px;
-       display: grid;
-       grid-template-areas: "a"
-                            "d"
-                            "b"
-                            "c";
-    }
-    #confira-blog{
-        width: 300px;
-        height: 230px;
-    }
-    .listas{
-        width: 280px;
-        height: 700px;
-    }
-    #oque-esta-porvir{
-        width: 280px;
-        height: 640px;
-    }
-
-    .centralizar > p{
-        font-size: 15px;
-    }
-
-    #receitas-relatorios{
-        width: 250px;
-    }
-
-    #receitas-relatorios>.botao-1,.botao-2{
-        width: 50px;
-        height: 50px;
-    }
-
-    .botao-1 > h2{
-        font-size: 10px;
-        padding: 15px;
-    }
-    .botao-2 > h2{
-        font-size: 10px;
-        padding: 15px;
-    }
-
-    .cta-ebook{
-        display: flex;
-        flex-wrap: wrap;
-        padding: 20px;
-    }
 }

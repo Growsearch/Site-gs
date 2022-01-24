@@ -12,7 +12,7 @@ function carregar(){
     window.alert("No momento ainda nao temos a prévia do e-book. Já estamos trabalhando nisto!")
 }
 
-//treinando efeito de máquina de escrever 
+//treinando efeito de máquina de escrever  ( FUNCIONANDO )
 
 function typeWriter(elemento) {
     const textoArray = elemento.innerHTML.split('');
@@ -47,13 +47,22 @@ function clicou(){
     ativar.style.color = 'white'
 }
 
-//MENU MOBILE 
+// MENU MOBILE 
 
 let btnmobile = document.getElementById('btn-mobile');
 
-function toggleMenu (){
-    let nav = document.getElementById('nav');
-    nav.classList.toggle('active');
+function toggleMenu(event){
+    if (event.type == 'touchstart') event.preventDefault()
+        let nav = document.getElementById('nav');
+        nav.classList.toggle('active'); 
+        let active = nav.classList.contains('active');      
+    event.currentTarget.setAttribute('aria-expanded' , 'true');
+
+    if (active){ event.currentTarget.setAttribute('aria-label' , 'Fechar Menu')
+    } else{
+        event.currentTarget.setAttribute('aria-label' , 'Abrir Menu')
+    }
 }
 
 btnmobile.addEventListener('click' , toggleMenu)
+btnmobile.addEventListener('touchstart' , toggleMenu)

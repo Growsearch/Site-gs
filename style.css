@@ -45,7 +45,7 @@ body{
 .menu>li>a{
     display: block;
     padding: 10px;
-    background-color: #44f187;
+    background-color: #00ffaa;
     border-radius: 15px;
     color: rgb(65, 65, 65);
     text-decoration: none;
@@ -55,7 +55,7 @@ body{
 
 .menu>li>a:hover{
     background-color: #070e25;
-    color: #44f187;
+    color: #00ffaa;
     border: groove 1px rgba(255, 255, 255, 0.418);
 }
 
@@ -76,7 +76,7 @@ main#container{
     align-items: center;
     justify-content: space-between;
     height: 350px;
-    border-top: 12px groove #44f187;
+    border-top: 12px groove /*#44f187*/ #00ffaa;
 }
 
 .info{
@@ -114,7 +114,7 @@ button#ativar{
     font-family:  Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: bold;
-    background: #44f187;
+    background: #00ffaa;
     color: #0e351d;
     display: block;
     margin: auto;
@@ -123,7 +123,7 @@ button#ativar{
     grid-column: 2;
     grid-row: 1;
 
-    border: solid 3px #0e351d;
+    border: solid 2px #00ffaa;
     border-radius: 20px;
     box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.747);
     cursor: pointer;
@@ -131,15 +131,15 @@ button#ativar{
 
 button#ativar:hover{
     box-shadow: 0px;
-    border: none;
+    border: solid 1px #00ffaa8f;
 }
 
 .frase{
     font-size: 1.5rem;
     width: 250px;
-    color: #fff;
+    color: #050918;
     margin: 10px 10px 20px 10px;
-    background-color: #44f1869c;
+    background-color: #00ffaa;
     padding: 20px;
     border: double 2px white;
     border-radius: 5px 20px;
@@ -165,7 +165,7 @@ button#ativar:hover{
 
     background-image: linear-gradient(#11181E , #292b2e , #62636486);
     /*essa class servirá caso queira colocar algum background-image no fundo. */
-     border-bottom: 10px groove #44f187;
+     border-bottom: 10px groove /*#44f187*/ #00ffaa;
      padding-bottom: 10px;
      font-family: Arial, Helvetica, sans-serif;
     }
@@ -183,15 +183,16 @@ button#ativar:hover{
 }
 
 h2#bemvindo{
-    text-shadow: 2px 2px 5px grey;
+    text-shadow: 2px 2px 5px rgba(128, 128, 128, 0.589);
     font-size: 2rem;
     margin: auto;
     margin-bottom: 20px; 
-    color: #32f16b;
-    background-color: rgb(4, 4, 24);
-    border:  groove #60ee73;
+    color: #00ffaa;
+    background-color: #11181E;
+    border:  groove #00ffaa6b;
     border-radius: 10px;
     max-width: 700px;
+    box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.377);
 }
 
 /* UMA DAS PARTES MAIS IMPORTANTES, PARTE QUE CONTEM A MAIOR PARTE DE INFORMACOES DO SITE. */
@@ -199,11 +200,12 @@ h2#bemvindo{
 
 .grid-1{
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(#11181E , #292b2e , #626364);
-    border-bottom: 10px groove #44f187;
+    background-image: linear-gradient(#11181E , #292b2e , #62636496);
+    border-bottom: 10px groove #00ffaa;
     display: grid;
     max-width: 1300px;
     margin: auto;
+    margin-bottom: 30px;
     padding: 20px;
     gap: 20px;
     grid-template-areas: 
@@ -214,13 +216,13 @@ h2#bemvindo{
 /*  QUEM SOMOS -- BOX VERDE */
 
 #quemsomos{
-    background-color: #e9e9e9c4;
+    background-color: #e9e9e980;
     color: #fff;
     padding: 10px;
     text-align: justify;
     border-radius: 10px;
     box-shadow: 3px 5px 5px rgb(44, 44, 44);
-    border: groove 3px /*#050918*/ #44f187;
+    border: groove 3px /*#050918*/ #00ffaaa4;
     max-width: 350px;
     grid-area: a;
     height: 220px;
@@ -231,7 +233,7 @@ h2#bemvindo{
     text-shadow: 2px 2px 5px rgb(36, 36, 36);
     font-size: 25px;
     padding: 10px;
-    color: #44f187;
+    color: /*#00ffaa*/ #fff;
     /*color:  #01DB29*/;
     text-shadow: 1px 1px 1px grey;
     border: groove #44f187;
@@ -252,7 +254,7 @@ h2#bemvindo{
 #quemsomos>a>h3{
    text-align: center;
    padding: 20px;
-   background-color: #44f187;
+   background-color: #00da91;
    border: groove 3px #31af62;
    border-radius: 30px;
    box-shadow: 2px 2px 2px grey;
@@ -262,7 +264,7 @@ h2#bemvindo{
 #quemsomos>a>h3:hover{
     box-shadow: 0px;
     border: groove 1px #20703f;
-    text-shadow: 0pc 0px 0px grey;
+    text-shadow: 0px 0px 0px grey;
 }
 
 /* CONFIRA O BLOG --  BOX ROXO*/
@@ -270,13 +272,13 @@ h2#bemvindo{
 #confira-blog{
     height: 220px;
     width: 350px;
-    background-color: #e9e9e9c4;
+    background-color: #e9e9e980;
     color: #fff;
     padding: 10px;
     text-align: justify;
     border-radius: 10px;
     box-shadow: 3px 5px 5px rgb(44, 44, 44);
-    border: groove 3px /*#11181E;*/ #ba68c2;
+    border: groove 3px /*#11181E;*/ #ad68c2;
     grid-area: d;
 }
 
@@ -287,7 +289,7 @@ h2#bemvindo{
     text-align: center;
     padding: 5px;
     margin: 5px;
-    border: groove 4px #777777;
+    border: groove 4px #b35cc4;
     border-radius: 20px;
 }
 
@@ -303,7 +305,7 @@ h2#bemvindo{
     text-align: center;
     margin-top: 20px;
     padding: 20px;
-    background-color: #bb5cc4;
+    background-color: #b35cc4;
     border: groove 3px #b522c2;
     border-radius: 30px;
     color: #fff;
@@ -315,9 +317,9 @@ h2#bemvindo{
 }
 
 #confira-blog>a>h3:hover{
-    background-color: #bb5cc4;
+    background-color: #b35cc4;
     box-shadow: 0px;
-    border: groove 1px #7c3c81;
+    border: groove 1px #612f64;
     text-shadow: 0px;
 }
 
@@ -329,7 +331,7 @@ h2#bemvindo{
     padding: 20px;
     height: 94%;
     /*background-color: #050918;*/
-    background-color: #e9e9e9c4;
+    background-color: #e9e9e967;
     border-radius: 10px;
     color: #fff;
     box-shadow: 3px 3px 5px #000;
@@ -339,10 +341,10 @@ h2#bemvindo{
 }
 
 .listas>h2{
-    background-color: rgb(4, 4, 24);
+    background-color: rgba(4, 4, 24, 0.938);
     padding: 10px;
     margin-bottom: 10px;
-    border: groove 2px #00FF22;
+    border: groove 2px #00ffaa;
     border-radius:  5px 10px;
 }
 .listas>ul>li>h3{
@@ -357,15 +359,17 @@ h2#bemvindo{
     padding: 10px 20px;
     /*font-weight: bold;*/
     font-size:  17px;
-    color: rgb(44, 44, 44);
-    background-color: rgba(0, 0, 0, 0.158);
+    color: rgb(29, 29, 29);
+    /*background-color: rgba(0, 0, 0, 0.158);*/
+    background-image: linear-gradient(#00ffaa , #00ffaa3a);
     border-radius: 10px;
     border: groove 1px black;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.603);
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.603);
+    margin-bottom: 3px;
 }
 
 .listas>ul>li>p:hover{
-    background-color: #44f187;
+    background-image: linear-gradient(#00ffaa3a , #00ffaa) ;
     font-weight: bold;
 }
 
@@ -404,7 +408,7 @@ h2#bemvindo{
     margin-top: 50px;
     background-color: #11181E;
     padding: 20px;
-    border: groove 3px #44f187;
+    border: groove 3px #00ffaa;
     border-radius: 30px;
     box-shadow: 2px 2px 4px rgb(24, 24, 24);
     color: #fff;
@@ -415,34 +419,60 @@ h2#bemvindo{
 }
 
 #oque-esta-porvir>a>h3:hover{
-    background-color: #44f187;
+    background-color: #00ffaa;
     box-shadow: 0px 0px 0px;
     color: #050918;
     border: groove 2px #050918a1;
 }
 
 #tele-h3{
-    color: rgb(0, 195, 255);
+   /* color: rgb(0, 195, 255); */
+   color: rgb(187, 187, 187);
 }
 #desv-etf{
-    color: crimson;
+   /* color: tomato;*/
+   color: rgb(187, 187, 187);
 }
 #guia-h3{
-    color: #00FF22;
+    /*color: #00ffaa;*/
+    color: rgb(187, 187, 187);
 }
 #bonus-h3{
-    color: #fff;
+    color: rgb(187, 187, 187);
 }
 
-.imagem-g{
-    text-align: center;
+#frase-buffet{
+    color: #050918;
+    background-image: url('imagens-do-site/foto-buffet-fundo.png');
+    border: groove 2px #e4e4e4;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px rgba(165, 165, 165, 0.671);
+    padding: 20px;
+    margin-top: 35px;
+    width: 670px;
+    margin: auto;
 }
 
-img.anuncio-relatorios{
-    margin-top: 20px;
-    width: 1340px;
-    text-align: center;
+#frase-buffet p {
+    width: 350px;
 }
+#frase-buffet>h2{
+    padding: 10px;
+}
+
+/*       ANIMAÇÃO DATA-ANIME     */
+
+[data-anime] {
+    opacity: 0;
+    transition: .3s;
+    transform: translate3d(-50px , 0 , 0);
+}
+
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0px , 0px , 0px);
+}
+
 
 /* AQUI É ONDE FICA A DESCRICAO E OS BOTOES P INSTAGRAM E PARA O TELEGRAM*/
 

@@ -104,6 +104,5 @@ animeScroll();
 if (target.length) {
     window.addEventListener('scroll' , debounce(function() {
         animeScroll();
-        console.log(dgdgshd)
     } , 200));
 }

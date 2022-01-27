@@ -178,11 +178,18 @@ div.grid-1{
     margin-bottom: 25px;
 }
 
+div#img-relatorios{
+    margin-top: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 210px;
+    background-image: url(imagens-do-site/receitaempresas-mobile.png);
+}
 
-#frase-buffet{
+#img-relatorios>h2{
     display: none;
 }
-    
+
 .centralizar > p{
     font-size: 15px;
 }
@@ -202,5 +209,10 @@ div.grid-1{
     flex-wrap: wrap;
     padding: 20px;
 }
+
+#frase-buffet{
+    display: none;
+}
+    
 
 }

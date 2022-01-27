@@ -441,26 +441,28 @@ h2#bemvindo{
     color: rgb(187, 187, 187);
 }
 
-#frase-buffet{
-    color: #050918;
-    background-image: url('imagens-do-site/foto-buffet-fundo.png');
+div#img-relatorios{
+    color: #fff;
+    background-image: url(imagens-do-site/fundo-relatorioempresas.png);
     border: groove 2px #e4e4e4;
     border-radius: 15px;
     box-shadow: 2px 2px 2px rgba(165, 165, 165, 0.671);
     padding: 20px;
     margin-top: 35px;
-    width: 670px;
+    max-width: 670px;
+    height: 185px;
     margin: auto;
 }
 
-#frase-buffet p {
-    width: 350px;
-}
-#frase-buffet>h2{
-    padding: 10px;
+#img-relatorios>h2{
+    margin-top: 15px;
+    width: 255px;
+    font-size: 2.0rem;
+    font-family:  sans-serif;
+    text-shadow: 2px 2px 4px rgba(128, 128, 128, 0.644);
 }
 
-/*       ANIMAÇÃO DATA-ANIME     */
+/*       ANIMAÇÃO DATA-ANIME     */ /*    IMPORTANTE !!!*/
 
 [data-anime] {
     opacity: 0;
@@ -472,7 +474,6 @@ h2#bemvindo{
     opacity: 1;
     transform: translate3d(0px , 0px , 0px);
 }
-
 
 /* AQUI É ONDE FICA A DESCRICAO E OS BOTOES P INSTAGRAM E PARA O TELEGRAM*/
 
@@ -556,7 +557,7 @@ h2#bemvindo{
     font-family: Arial, Helvetica, sans-serif;
     /*background-image: linear-gradient(#07071b7a, #11181e71);*/
     background-image: linear-gradient(#05070e36  , #cccccc15);
-    max-width: 100vw;
+    max-width: 1260px;
     display: grid;
     grid-template-areas: "a b d"
                          "a c e";
@@ -564,14 +565,16 @@ h2#bemvindo{
     margin: auto;
     margin-bottom: 30px;
     /*border: groove 2px rgba(32, 30, 41, 0.493);*/
-    border-top: groove 5px #44f187;
+    border-top: groove 5px #00ffaa;
+    border-bottom: groove 5px #b35cc4;
     border-radius: 30px;
     box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.404);
 }
 
 #foto-ebook{
     max-width: 300px;
-    height: 500px;
+    /*height: 500px;*/
+    height: 100%;
     grid-area: a;
 }
 
@@ -593,8 +596,8 @@ h2#bemvindo{
 .botao-ebook{
     margin: 5px 0px 30px 20px;
     padding: 20px;
-    background-color: #44f187;
-    border: double 5px #008311;
+    background-color: #00ffaa;
+    border: groove 3px #00da91;
     border-radius: 30px;
     width: 250px;
     
@@ -603,11 +606,15 @@ h2#bemvindo{
     text-decoration: none;
     color: #11181E;
 }
+.botao-ebook:hover{
+    background: #00da91;
+    border: groove 2px #00da91;
+}
 
 .botao-previa-ebook{
     margin: 5px 10px 30px 20px;
     padding: 20px;
-    background-color: rgba(0, 162, 255, 0.445);
+    background-color: #ad68c2;
     border: double 5px #008311;
     border-radius: 30px;
     color: #fff;
@@ -624,6 +631,38 @@ h2#bemvindo{
     margin-top: 20px;
 }
 
+              /* popup com o scroll --  frase com img do buffet*/
+
+#frase-buffet{
+    color: #fff;
+    background-image: url('imagens-do-site/foto-buffet-fundo.png');
+    border: groove 2px #e4e4e4;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px rgba(165, 165, 165, 0.671);
+    padding: 20px;
+    margin-top: 35px;
+    width: 670px;
+    margin: auto;
+}
+
+#frase-buffet p {
+    width: 350px;
+}
+#frase-buffet>h2{
+    padding: 10px;
+}
+
+[data-anime]#frase-buffet{
+    opacity: 0;
+    transition: .3s;
+    transform: translate3d(50px , 0px , 0px);
+}
+
+[data-anime]#frase-buffet.animate{
+    opacity: 1;
+    transform: translate3d(0px , 0px , 0px);
+}
+
 /* APRESENTANDO O BLOG */
 
 .apres-blog{
@@ -632,6 +671,7 @@ h2#bemvindo{
     text-align: center;
     font-size: 1.2rem;
     text-shadow: 2px 2px 2px grey;
+    margin-top: 25px;
 }
 
 #imagens{
@@ -660,7 +700,7 @@ h2#bemvindo{
 }
 
 #imagens>div:hover{
-    background-color: rgb(186, 25, 207);
+    background-color: #b35cc4;
     color: #fff;
 }
 

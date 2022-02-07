@@ -5,7 +5,6 @@ body{
 main{
     display: flex;
     max-width: 1350px;
-    
 }
 
 #conteudo-quemsomos{
@@ -136,10 +135,12 @@ div{
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.438);
 }
 
+/*   MEDIA QUERIES PARA SITE MOBILE */
 
 @media (max-width:600px){
 
         /* CONIGURAÇÃO DE HEADER */
+
     
      .btn-mobile{
         display: flex;
@@ -235,7 +236,7 @@ div{
         color: #fff;
         background: #1b2024;
     }
-
+/*   ACABADO A CONFIGURAÇÃO DO MENU MOBILE */
 
     #conteudo-completo{
         display: flex;
@@ -268,7 +269,7 @@ div{
         width: 250px;
     }
 
-    img{
+    .img-not{
         width: 270px;
     }
     

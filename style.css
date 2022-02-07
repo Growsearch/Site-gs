@@ -60,7 +60,7 @@ body{
 }
 
 /*      BOTAO PARA P MENU MOBILE  (configuração dele é no @media, la em baixo!)  */
-#btn-mobile{
+.btn-mobile{
     display: none;
 }
 

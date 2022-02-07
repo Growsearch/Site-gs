@@ -4,7 +4,7 @@
 
     /* CONIGURAÇÃO DE HEADER */
 
- #btn-mobile{
+ .btn-mobile{
     display: flex;
     padding: .5rem 1rem;
     font: bold 1rem sans-serif;
@@ -15,13 +15,13 @@
     gap: 5px;
 }
     
-#hamburguer{
+.hamburguer{
     display: block;
     border-top: 2px solid;
     width: 20px;
 }
     
-#hamburguer::after , #hamburguer::before{
+.hamburguer::after , .hamburguer::before{
     content: '';
     display: block;
     width: 20px;
@@ -32,17 +32,17 @@
     position: relative;
 }
     
-#nav.active #hamburguer{
+.nav.active .hamburguer{
     border-top-color: transparent ;
     color: #00ffaa;
 }
     
-#nav.active #hamburguer::before{
+.nav.active .hamburguer::before{
     transform: rotate(135deg);
     
  }
         
-#nav.active #hamburguer::after{
+.nav.active .hamburguer::after{
     transform: rotate(-135deg);
     top: -7px;
 }
@@ -61,7 +61,7 @@
     overflow-y: hidden;
 }
     
-#nav.active .menu{
+.nav.active .menu{
     height: calc(100vh - 70px);
     visibility: visible;
     overflow-y: auto;
@@ -213,6 +213,5 @@ div#img-relatorios{
 #frase-buffet{
     display: none;
 }
-    
-
+   
 }

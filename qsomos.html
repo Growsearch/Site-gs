@@ -6,20 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="qsomos.css">
+    <link rel="shortcut icon" href="imagens-do-site/favicon.ico" type="image/x-icon">
     <title>Quem Somos</title>
 </head>
 <body>
     <header class="header">
         <a href="index.html"><img src="imagens-do-site/GS_atual-removebg-preview.png" alt="GS-png"></a>
 
-        <nav>
-            <ul class="menu">
+        <nav class="nav">
+            <button class="btn-mobile" aria-expanded="false" aria-haspopup="true" aria-controls="menu" aria-label="Abrir Menu">Menu
+
+                <span class="hamburguer"></span>
+            </button>
+
+            <ul class="menu" role="menu">
                 <li><a href="">Sobre</a></li>
                 <li><a href="https://growsearch.github.io/projeto-blog/index.html" >Blog</a></li>
                 <li><a href="">redes sociais</a></li>
             </ul>
         </nav>
     </header>
+
     <main id="conteudo-completo">
         <section id="conteudo-quemsomos">
             <h1>Por trás da marca</h1>
@@ -43,7 +50,7 @@
                 Confira <mark style="background-color: greenyellow;">relatórios gratuitos</mark> e fique por dentro das noticias pelo nosso canal do<a href="https://t.me/Growsearch">Telegram</a>
             </p>
 
-            <img id="telegram-qsomos" src="imagens-do-site/Confira-Telegram-pequeno.png" >
+            <a href="https://t.me/Growsearch"><img id="telegram-qsomos" src="imagens-do-site/Confira-Telegram-pequeno.png" ></a>
         </section>
 
         <aside id="noticias-blog">
@@ -66,3 +73,24 @@
     </main>
 </body>
 </html>
+
+<script>
+    const btnmobile = document.querySelector('button.btn-mobile');
+
+function toggleMenu(event){
+    if (event.type == 'touchstart') event.preventDefault()
+        const nav = document.querySelector('nav.nav');
+        nav.classList.toggle('active'); 
+        const active = nav.classList.contains('active');      
+    event.currentTarget.setAttribute('aria-expanded' , 'true');
+
+    if (active){ event.currentTarget.setAttribute('aria-label' , 'Fechar Menu')
+    } else{
+        event.currentTarget.setAttribute('aria-label' , 'Abrir Menu')
+    }
+}
+
+btnmobile.addEventListener('click' , toggleMenu)
+btnmobile.addEventListener('touchstart' , toggleMenu)
+
+</script>

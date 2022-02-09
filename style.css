@@ -278,7 +278,7 @@ h2#bemvindo{
     text-align: justify;
     border-radius: 10px;
     box-shadow: 3px 5px 5px rgb(44, 44, 44);
-    border: groove 3px /*#11181E;*/ #ad68c2;
+    border: groove 3px /*#11181E;*/ rgb(120, 15, 134);
     grid-area: d;
 }
 
@@ -305,7 +305,7 @@ h2#bemvindo{
     text-align: center;
     margin-top: 20px;
     padding: 20px;
-    background-color: #b35cc4;
+    background-color: rgb(120, 15, 134);
     border: groove 3px #b522c2;
     border-radius: 30px;
     color: #fff;
@@ -317,7 +317,7 @@ h2#bemvindo{
 }
 
 #confira-blog>a>h3:hover{
-    background-color: #b35cc4;
+    background-color: rgb(146, 20, 163);
     box-shadow: 0px;
     border: groove 1px #612f64;
     text-shadow: 0px;

@@ -11,6 +11,10 @@ body{
     background-image: linear-gradient(#11181E , #1b2024);
 }
 
+.btn-mobile{
+    display: none;
+}
+
 
 .header{
     background-color: #11181E;
@@ -65,7 +69,7 @@ body{
 
 #info-do-ebook{
     font-size: 1.2rem;
-    background-color: #44f187;
+    background-image: linear-gradient(#00ffaa , #00ffaa3a);
     box-shadow: 2px 2px 2px rgb(73, 73, 73);
     text-align: center;
     border-radius: 15px;
@@ -76,13 +80,13 @@ body{
 
 .grid1{
     display: grid;
-   grid-template-columns: repeat(4 , 1fr);
-   max-width: 1300px;
-   margin: 20px;
-   color: #fff;
-   /*align-items:flex-end ;
+    grid-template-columns: repeat(3 , 1fr);
+    max-width: 1300px;
+    margin: 20px;
+    color: #fff;
+    /*align-items:flex-end ;
    font-size: 1.2rem; */
-   gap: 20px;
+    gap: 20px;
 }
 
 .grid1>#img-ebook{
@@ -91,106 +95,50 @@ body{
     margin: 0px;
     align-items: center;
     padding: 0px;
-    height: 385px;
+    height: 300px;
+    position: static;
 }
 
-#info1{
-    background-color: #fff;
-    color: #11181E;
-    box-shadow: 3px 3px 3px grey;
-    padding: 10px;
-    border-radius: 20px;
-    font-weight: bolder;
-    text-align: center;
+.lista-de-lis{
+    max-width: 550px;
+    height: 60px;
+    margin-bottom: 60px;
 }
 
-#info2{
-    background-color: #fff;
-    color: #11181E;
-    box-shadow: 3px 3px 3px grey;
-    padding: 10px;
-    border-radius: 20px;
-    font-weight: bolder;
-    text-align: center;
-}
-
-#info3{
-    background-color: #fff;
-    color: #11181E;
-    /*height: 100px;*/
-    box-shadow: 3px 3px 3px grey;
-    padding: 10px;
-    border-radius: 20px;
-    font-weight: bolder;
-    text-align: center;
-}
-
-#info4{
-    background-color: #fff;
-    color: #11181E;
-    box-shadow: 3px 3px 3px grey;
-    padding: 10px;
-    border-radius: 20px;
-    font-weight: bolder;
-    text-align: center;
-}
-
-#info5{
-    background-color: #fff;
-    color: #11181E;
-    box-shadow: 3px 3px 3px grey;
-    padding: 10px;
-    border-radius: 20px;
-    font-weight: bolder;
-    text-align: center;
-}
-
- #info6{
-    background-color: #fff;
-    color: #11181E;
-    box-shadow: 3px 3px 3px grey;
-    padding: 10px;
-    border-radius: 20px;
-    font-weight: bolder;
-    text-align: center;
-}
-
-#ebook{
-    text-align: center;
-    background-color: #44f187;
-    max-width: 400px;
-    min-width: 200px;
-    margin: auto;
+.lista-de-lis > li{
     margin-bottom: 20px;
-    padding: 20px;
-    border: groove black;
-    box-shadow: 2px 2px 2px rgb(73, 73, 73);
-    border-radius: 40px;
 }
+
+ #botao-ebook{
+    padding: 20px;
+    background-image: linear-gradient(#00ffaa , #00ffaa3a);
+    border: groove 2px #2ca35a;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px #16191b;
+    height: 60px;
+    align-items: center;
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#botao-ebook > a{
+    text-decoration: none;
+    color: #11181E;
+    font-family: monospace;
+    font-size: 1.2rem ;
+    font-weight: bold;
+}
+
 
 #info1:hover , #info2:hover , #info3:hover , #info4:hover , #info5:hover , #info6:hover{
     background-image: linear-gradient(#11181E , #1b2024);
     color: #44f187;
 }
 
-#ebook:hover{
-    background-color: #2df179;
-    box-shadow: 1px 1px 1px grey;
-    border: groove 1px rgb(37, 37, 37);
-}
-
-#ebook>a{
-    font-size: large;
-    font-weight: 200;
-    text-decoration: none;
-    color: #11181E;
-    text-shadow: 3px 3px 3px grey;
-}
-
 #oque-recebe{
     margin: 15px;
     padding: 20px;
-    background-color: #fff;
+    background-color: #e9e9e9c5;
     border-top: groove 10px #44f187;
     border-radius: 15px;
 }
@@ -206,60 +154,113 @@ body{
     flex-wrap: wrap;
     gap: 20px;
     align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
 }
 
 #img-com-lista>ul>li{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
     width: 600px;
     margin-bottom: 20px;
     margin-left: 2px;
     /*background-image: linear-gradient(#11181E , #1b2024);*/
-    background-image: linear-gradient(#44f187 , #1b20248e);
-    color: #fff;
+    background-image: linear-gradient(#00ffaa , #00ffaa3a);
+    color: #11181E;
     text-shadow: 2px 2px 2px rgba(128, 128, 128, 0.438);
     box-shadow: 2px 2px 3px gray;
     padding: 20px;
     border-radius: 20px;
 }
 
-#img-com-lista>ul>li:hover{
-    color: #000;
-    background-image: linear-gradient(#44f18680 , #1b202425);
-    box-shadow: none;
+#botao-ebook-debaixo{
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 10px;
+    height: 30px;
+    width: 200px;
+    background-image: linear-gradient(#00ffaa , #00ffaa3a);
+    border: groove 2px #2ca35a;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px #16191b;
+}
+
+#botao-ebook-debaixo > a{
+    font-size: .8rem;
+    padding: 30px;
+    text-decoration: none;
+    text-align: center;
+    color: #16191b;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 footer{
     padding: 20px;
-    background-color: #44f187;
+    background-image: linear-gradient(#00ffaa , #00ffaa3a);
     text-align: center;
     color: rgb(7, 11, 19);
     border-top: groove 2px #fff;
 }
 
+
+/*    parte de media queries -- para site responsivo.   */
+
+
 @media ( max-width:600px) {
+
+    .apresentaçao{
+        margin-bottom: 15px;
+    }
+
+    .apresentaçao > h1{
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .apresentaçao > p{
+        font-size: .8rem;
+        text-align: center;
+    }
+
     #info-do-ebook{
-        width: 350px;
-        margin: 10px 10px 10px 6px;
+        width: 300px;
+        /*margin: 10px 10px 10px 6px;*/
+        margin: auto;
+    }
+
+    #info-do-ebook > h2{
+        font-size: 1.3rem;
     }
 
     .grid1{
         display: flex;
         flex-wrap: wrap;
         max-width: 420px;
+        margin: 0px;
     }
 
     .grid1>#img-ebook{
-        height: 470px;
-        padding: 20px;
+        height: 410px;
+        padding: 10px;
     }
 
-    .grid1>div{
-        margin: auto;
-        width: 400px;
+    .grid1 > .lista-de-lis{
+        width: 350px;
+        font-weight: bold;
+        text-align: center;
+        height: 300px;
+    }
+
+    .grid1 > #botao-ebook{
+        margin-left: 50px;
+    }
+
+    #img-com-lista > img{
+        max-width: 100%;
     }
 
     #img-com-lista>ul>li{
-    max-width: 260px;
-    
+    max-width: 230px;
     }
 }

@@ -5,16 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--<link rel="stylesheet" href="style.css"> -->
-    <link rel="stylesheet" href="pag2.css">
+    <link rel="stylesheet" href="CSS/pag2.css">
+    <link rel="stylesheet" href="CSS/menumobile.css">
     <title>Guia Investidor iniciante</title>
 </head>
 <body>
     <header class="header">
-        <a href="index.html"><img src="imagens-do-site/GS_atual-removebg-preview.png" alt="GS-png"></a>
+        <a  class="logo" href="index.html"><img src="imagens-do-site/GS_atual-removebg-preview.png" alt="GS-png"></a>
 
-    <nav>
-        <ul class="menu">
-            <li><a href="qsomos.html">Sobre</a></li>
+    <nav class="nav">
+        <button class="btn-mobile" aria-expanded="false" aria-haspopup="true" aria-controls="menu" aria-label="Abrir Menu">Menu
+
+            <span class="hamburguer"></span>
+        </button>
+
+        <ul class="menu" role="menu">
+            <li><a href="https://growsearch.github.io/Site-gs/qsomos.html">Sobre</a></li>
             <li><a href="https://growsearch.github.io/projeto-blog/index.html" >Blog</a></li>
             <li><a href="">redes sociais</a></li>
         </ul>
@@ -27,41 +33,46 @@
         </h1>
         <p>A nova era da economia transformando o aprendizado em diversão!</p>
     </main>
+
 <!-- dividir os div's em classe e dentro por mais div para fazer o grid -->
+
     <div id="info-do-ebook">
         <h2>6 informações importantes do E-Book</h2>     
     </div>
 
-    <main class="grid1">
-
-        <div id="img-ebook"><img src="imagens-do-site/guia iniciante-png.png" ></div>
-        
-        <div id="info1">
-            <p>O que todo iniciante gostaria de saber sobre o mercado de compra e venda de ações.</p>
+    <main class="grid1" id="main-importante">
+        <div id="img-ebook"><img src="imagens-do-site/capa-ebook-nova.png">
         </div>
 
-        <div id="info2">
-            <p>Milhares de pessoas possuem um presente precioso, mas nunca descobriram! </p>
-        </div>
+        <ul class="lista-de-lis">
+            <li id="info1">
+                <p>O que todo iniciante gostaria de saber sobre o mercado de compra e venda de ações;</p>
+            </li>
 
-        <div id="info3">
-            <p>Saiba se defender da inflação.</p>
-        </div>
+            <li id="info2">
+                <p>Milhares de pessoas possuem um presente precioso, mas nunca descobriram;</p>
+            </li>
 
-        <div id="info4">
-            <p>Mergulhe na sua vida financeira e descubra os erros que devem ser evitados.</p>
-        </div>
+            <li id="info3">
+                <p>Saiba se defender da inflação;</p>
+            </li>
 
-        <div id="info5">
-            <p>Mentalidade segura em relação a flutuação do mercado.</p>
-        </div>
+            <li id="info4">
+                <p>Mergulhe na sua vida financeira e descubra os erros que podem e devem ser evitados;</p>
+            </li>
 
-        <div id="info6">
-            <p>Crie seu planejamento financeiro e confira ferramentas que poderão facilitar a sua vida!</p>
-        </div>
-        <section id="ebook">
-            <a href="https://pay.hotmart.com/V47597365B?checkoutMode=10&bid=1635267807275"><h2>Quero o meu E-Book!</h2></a>
-        </section>
+            <li id="info5">
+                <p>Mentalidade segura em relação a flutuação do mercado;</p>
+            </li>
+
+            <li id="info6">
+                <p>Crie seu planejamento financeiro e confira ferramentas que poderão facilitar a sua vida!</p>
+            </li>
+        </ul>
+
+        <button class="botoes" id="botao-ebook">
+            <a href="https:pay.hotmart.com/V47597365B?checkoutMode=10&bid=1635267807275"> Quero o meu E-book </a>
+        </button>
     </main>
 
     <section id="oque-recebe">
@@ -69,7 +80,7 @@
         <h3>Receba imediatamente e baixe agora mesmo no seu computador ou celular</h3>
 
         <div id="img-com-lista">
-            <img src="imagens-do-site/diversos_infogrficos.png">
+            <img src="imagens-do-site/Diversos-infográficos.png">
             
             <ul>
                 <li>Fazer um Raio-x de suas finanças de forma eficiente, para que você possa sair das dividas e descobrir inimigos invisíveis . </li>
@@ -86,15 +97,34 @@
         </div>
     </section>
 
-    <section id="ebook">
-        <a href="https://pay.hotmart.com/V47597365B?checkoutMode=10&bid=1635267807275"><h2>Quero o meu E-Book!</h2></a>
-    </section>
-
-
+    <div id="botao-ebook-debaixo">
+      <a href="https:pay.hotmart.com/V47597365B?checkoutMode=10&bid=1635267807275"> Quero o meu E-book </a>
+    </div>
 
 <footer>
-    <h3>Desenvolvido por <a href="">Grow Search</a></h3>
+    <h3>Desenvolvido por <a href="http://growsearch.github.io/Site-gs/index.html">Grow Search</a></h3>
 </footer>
     
+<script>
+    const btnmobile = document.querySelector('button.btn-mobile');
+
+function toggleMenu(event){
+    if (event.type == 'touchstart') event.preventDefault()
+        const nav = document.querySelector('nav.nav');
+        nav.classList.toggle('active'); 
+        const active = nav.classList.contains('active');      
+    event.currentTarget.setAttribute('aria-expanded' , 'true');
+
+    if (active){ event.currentTarget.setAttribute('aria-label' , 'Fechar Menu')
+    } else{
+        event.currentTarget.setAttribute('aria-label' , 'Abrir Menu')
+    }
+}
+
+btnmobile.addEventListener('click' , toggleMenu)
+btnmobile.addEventListener('touchstart' , toggleMenu)
+
+</script>
+
 </body>
 </html>

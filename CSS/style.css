@@ -11,6 +11,20 @@ body{
     background-image: linear-gradient(#11181E , #1b2024);
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00da91;
+    border-radius: 30px;
+}
+
 .header{
     background-color: #11181E;
     display: flex;

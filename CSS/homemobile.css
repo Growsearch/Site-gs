@@ -81,6 +81,7 @@ div.grid-1{
     width: 280px;
     height: 640px;
     margin-bottom: 25px;
+    display: none;
 }
 
 div#img-relatorios{

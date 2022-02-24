@@ -24,7 +24,7 @@ main{
 #conteudo-quemsomos{
     font-family: Arial, Helvetica, sans-serif;
     margin: 10px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.534);
     padding: 20px;
     max-width: 850px;
     border-radius: 20px;

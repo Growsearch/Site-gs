@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,7 +28,7 @@
 </header>
 
     <main class="apresentaçao">
-        <h1>
+        <h1 class="maquina-escrever">
             Guia mais prático e completo feito para você!
         </h1>
         <p>A nova era da economia transformando o aprendizado em diversão!</p>
@@ -106,6 +106,8 @@
 </footer>
     
 <script>
+                 // FAZENDO A PARTE DO MENU MOBILE 
+
     const btnmobile = document.querySelector('button.btn-mobile');
 
 function toggleMenu(event){
@@ -123,6 +125,18 @@ function toggleMenu(event){
 
 btnmobile.addEventListener('click' , toggleMenu)
 btnmobile.addEventListener('touchstart' , toggleMenu)
+
+                  // PARTE DA MAQUINA DE ESCREVER.
+function typeWriter(elemento){
+    const textoArray = elemento.innerHTML.split('');
+    elemento.innerHTML = '';
+    textoArray.forEach((letra, i) => {
+        setTimeout(() => elemento.innerHTML += letra, 70 * i);
+    });
+}
+
+const titulo = document.querySelector('.maquina-escrever');
+typeWriter(titulo);
 
 </script>
 

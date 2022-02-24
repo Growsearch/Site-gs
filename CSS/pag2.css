@@ -81,6 +81,26 @@ body{
     border-radius: 20px;
 }
 
+.maquina-escrever {
+    font-family: monospace , sans-serif;
+}
+
+.maquina-escrever::after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca  .7s infinite;
+}
+    
+@keyframes pisca {
+    0%, 100% {
+        opacity: 1;
+}
+    50% {
+        opacity: 0;
+}
+}
+
 #info-do-ebook{
     font-size: 1.2rem;
     background-image: linear-gradient(#00ffaa , #00ffaa3a);
@@ -241,6 +261,7 @@ footer{
         width: 300px;
         /*margin: 10px 10px 10px 6px;*/
         margin: auto;
+        padding: 10px;
     }
 
     #info-do-ebook > h2{

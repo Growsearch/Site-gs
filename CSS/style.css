@@ -199,13 +199,16 @@ button#ativar:hover{
 h2#bemvindo{
     text-shadow: 2px 2px 5px rgba(128, 128, 128, 0.589);
     font-size: 2rem;
-    margin: auto;
+    /*margin: auto;*/
+    margin-left: 25px;
+    padding-left: 25px;
+    text-align: left;
     margin-bottom: 20px; 
     color: #00ffaa;
     background-color: #11181E;
     border:  groove #00ffaa6b;
     border-radius: 10px;
-    max-width: 700px;
+    max-width: 400px;
     box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.377);
 }
 
@@ -296,7 +299,7 @@ h2#bemvindo{
     grid-area: d;
 }
 
-#confira-blog>h1{
+#confira-blog > h1 {
     background-color: #11181E;
     color: #fff;
     text-shadow: 2px 2px 5px rgb(36, 36, 36);
@@ -307,7 +310,7 @@ h2#bemvindo{
     border-radius: 20px;
 }
 
-#confira-blog>p{
+#confira-blog > p {
     color: #050918;
     line-height: 20px;
     margin-top: 10px;
@@ -315,7 +318,7 @@ h2#bemvindo{
     color: rgb(44, 44, 44);
 }
 
-#confira-blog>a>h3{
+#confira-blog > a > h3 {
     text-align: center;
     margin-top: 20px;
     padding: 20px;
@@ -326,7 +329,7 @@ h2#bemvindo{
     text-shadow: 2px 2px 4px #2e2e2e;
     box-shadow: 2px 2px 2px grey;
 }
-#confira-blog>a{
+#confira-blog > a {
     text-decoration: none;
 }
 
@@ -361,7 +364,7 @@ h2#bemvindo{
     border: groove 2px #00ffaa;
     border-radius:  5px 10px;
 }
-.listas>ul>li>h3{
+.listas> ul > li > h3{
     background-color: rgba(0, 0, 0, 0.781);
     padding: 5px;
     border-radius: 10px;
@@ -580,7 +583,7 @@ div#img-relatorios{
     margin-bottom: 30px;
     /*border: groove 2px rgba(32, 30, 41, 0.493);*/
     border-top: groove 5px #00ffaa;
-    border-bottom: groove 5px #b35cc4;
+    border-bottom: groove 5px rgb(120, 15, 134);
     border-radius: 30px;
     box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.404);
 }
@@ -607,6 +610,47 @@ div#img-relatorios{
     grid-area: c;
 }
 
+#paragrafo-ebook > .ebook-list > dt {
+    width: 240px;
+    margin: 15px 0px 15px 0px;
+    font-size: 20px;
+    color: #00ffaa;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* AQUI NESTA PARTE IREI ANIMAR A UL DO CONTEUDO DO EBOOK */
+
+#paragrafo-ebook > .ebook-list > dd {
+    display: none;
+}
+
+#paragrafo-ebook > .ebook-list > dt::after {
+    content: '⤦ click';
+    margin-left: 10px;
+}
+
+#paragrafo-ebook > .ebook-list > dt.ativo::after {
+    content: '⤣ click';
+}
+
+#paragrafo-ebook > .ebook-list > dd.ativo {
+    display: block;
+    animation: slideDown .5s forwards;
+}
+
+@keyframes slideDown {
+    from{
+        opacity: 0;
+        max-height: 0;
+    }
+
+    to{
+        opacity: 1;
+        max-height: 200px;
+    }
+}
+
 .botao-ebook{
     margin: 5px 0px 30px 20px;
     padding: 20px;
@@ -628,8 +672,8 @@ div#img-relatorios{
 .botao-previa-ebook{
     margin: 5px 10px 30px 20px;
     padding: 20px;
-    background-color: #ad68c2;
-    border: double 5px #008311;
+    background-color: rgb(120, 15, 134);
+    border: double 5px #b522c2;
     border-radius: 30px;
     color: #fff;
     width: 250px;
@@ -714,7 +758,7 @@ div#img-relatorios{
 }
 
 #imagens>div:hover{
-    background-color: #b35cc4;
+    background-color: rgb(120, 15, 134);
     color: #fff;
 }
 

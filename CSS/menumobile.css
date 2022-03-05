@@ -17,13 +17,13 @@
     .hamburguer{
         display: block;
         border-top: 2px solid;
-        width: 20px;
+        width: 30px;
     }
         
     .hamburguer::after , .hamburguer::before{
         content: '';
         display: block;
-        width: 20px;
+        width: 30px;
         height: 2px;
         background: currentColor;
         margin-top: 5px;

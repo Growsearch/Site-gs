@@ -7,8 +7,8 @@
     AQUI É A CSS QUE ESTILIZA A PARTE DE BODY DA HOME. NADA MAIS.
     */
 
-#container{
-    height: 1050px;
+main#container {
+    height: 300px;
     display: grid;
     grid-template-columns: 1;
     grid-template-rows: 3;
@@ -16,11 +16,14 @@
 }
     
 .info{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-family: 'Courier New', Courier, monospace;
+    width: 250px;
     margin: auto;
     padding: 50px 10px 10px 10px;
     text-align: center;
     grid-row: 1;
+    line-height: 23px;
  }
     
 button#ativar{
@@ -30,7 +33,8 @@ button#ativar{
 }
         
 .frase{
-    font-size: 15px;
+    font-family: monospace;
+    font-size: 13px;
     background: none;
     color: white;
     margin: auto;
@@ -44,11 +48,23 @@ button#ativar{
 /* ESSA É A PARTE DO SEJA BEM VINDOS A GROW SEARCH*/
 
 h2#bemvindo{
-    font-size: 25px;
+    margin: auto;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-family: monospace;
+    padding: 8px;
+    text-align: center;
+    width: 250px;
 }
 
 .primeirobox>h3{
-    font-size: 18px;
+    font-size: 15px;
+    font-family: monospace;
+}
+
+.primeirobox>p {
+    font-size: 13px;
+    font-family: 'Courier New', Courier, monospace;
 }
     
 div.grid-1{
@@ -62,25 +78,66 @@ div.grid-1{
 }
 
 #quemsomos{
-    margin-bottom: 33px;
-    
+    width: 300px;
+    height: 230px;
+    margin-bottom: 25px;  
+    background: transparent;
+}
+
+#quemsomos > p {
+    font-family: monospace;
+    font-size: 18px;
+    color: #eefff9;
+}
+
+#quemsomos > a > h3 {
+    font-size: 17px;
+    font-family: monospace;
+    padding: 13px;
 }
 
 #confira-blog{
     width: 300px;
     height: 230px;
     margin-bottom: 25px;
+    background-color: transparent;
+}
+
+#confira-blog > p {
+    font-family: monospace;
+    font-size: 18px;
+    color: #eefff9;
+}
+
+#confira-blog > a > h3 {
+    font-size: 17px;
+    font-family: monospace;
+    padding: 13px;
 }
 
 .listas{
     width: 280px;
-    height: 700px;
+    height: 672px;
+    background-color: transparent;
+}
+
+.listas > h2 {
+    font-size: 22px;
+    text-align: center;
+}
+
+.listas > ul > li > h3 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.listas>ul>li>p {
+    font-family: monospace;
+    line-height: 17px;
+    font-weight: bold;
+    color: #1f1f1f;
 }
 
 #oque-esta-porvir{
-    width: 280px;
-    height: 640px;
-    margin-bottom: 25px;
     display: none;
 }
 
@@ -96,28 +153,134 @@ div#img-relatorios{
     display: none;
 }
 
+.centralizar > h2 {
+    font-family: monospace;
+    font-size: 30px;
+    width: 320px;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
 .centralizar > p{
+    width: 320px;
     font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
 }
 
     
 #receitas-relatorios{
-    width: 250px;
+    width: 240px;
+    background: transparent;
+    border: none;
+    box-shadow: -2px -3px 2px rgba(0, 0, 0, 0.603) ;
 }
     
 #receitas-relatorios>.botao-1,.botao-2{
     width: 50px;
     height: 50px;
+    align-items: center;
 }
     
 .cta-ebook{
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+#foto-ebook {
+    width: 340px;
+    height: 370px;
+}
+
+#foto-ebook > img {
+    height: 400px;
+    width:  260px;
+    padding: 0px;
+    margin-left: 20px;
+}
+
+ #anunciando-ebook-home > h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.637);
+    height: 108px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    background-color: #3a3a3a34;
+    padding: 20px;
+}
+
+#diasGarantia {
+    color: #1f1f1f;
+    background-color: #00ffaa;
+    width: 200px;
+    margin-bottom: 6px;
+    font-family: monospace;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 30px;
+    box-shadow: 2px 3px 5px rgba(5, 5, 5, 0.555);
+}
+
+#paragrafo-ebook > .ebook-list > dt {
+    width: 240px;
+    margin: 15px 0px 15px 0px;
+    font-size: 20px;
+    color: #00ffaa;
+    font-weight: bold;
+}
+#paragrafo-ebook {
+    line-height: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#pdoemogi {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.671);
+    margin: 15px 0px 15px 0px;
+    padding: 8px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.botao-ebook {
+    padding: 9px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+}
+
+.botao-previa-ebook {
+    padding: 9px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 #frase-buffet{
     display: none;
 }
-   
+
+.apres-blog > h2{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.apres-blog > p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+    width: 300px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+#imagens 
+
+#imagens > #not-4, #not-5 , #not-6 {
+    display: none;
+}
+  
 }

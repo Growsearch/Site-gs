@@ -33,6 +33,7 @@ body{
     align-items: center;
     flex-wrap: wrap;
     font-family: Arial, Helvetica, sans-serif;
+    height: 75px;
 }
 
 .header>a{
@@ -48,7 +49,7 @@ body{
     margin-left: 12px;
     list-style: none;
     font: solid;
-    box-shadow: 2px 2px 2px grey;
+    box-shadow: 2px 2px 2px black;
     border-radius: 15px;
 }
 
@@ -59,19 +60,14 @@ body{
 .menu>li>a{
     display: block;
     padding: 10px;
-    background-color: #00ffaa;
+    background-image: linear-gradient(#00ffaa , #028358);
     border-radius: 15px;
     color: rgb(65, 65, 65);
     text-decoration: none;
     font-weight: bold; 
-    border: groove 2px white;
+    border: groove 2px #028358;
 }
 
-.menu>li>a:hover{
-    background-color: #070e25;
-    color: #00ffaa;
-    border: groove 1px rgba(255, 255, 255, 0.418);
-}
 
 /*      BOTAO PARA P MENU MOBILE  (configuração dele é no @media, la em baixo!)  */
 .btn-mobile{
@@ -79,31 +75,25 @@ body{
 }
 
 main#container{
-   /* max-width: 100px 10px 100px 10px;*/
-    /*background-image: url(imagens-do-site/futuristico.png);
-    background-attachment: fixed;
-    display: flex;
-    flex-wrap: wrap;*/
-
     display: grid;
     grid-template-columns: 2fr;
     align-items: center;
     justify-content: space-between;
     height: 350px;
-    border-top: 12px groove /*#44f187*/ #00ffaa;
+    border-top: 8px groove /*#44f187*/ #00ffaa;
 }
 
 .info{
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-family: monospace , sans-serif;
     font-weight: normal;
     /*color: #44f187;*/
-    color: rgb(233, 233, 233);
-    max-width: 400px;
+    color: rgb(207, 207, 207);
+    max-width: 500px;
     margin-left: 45px;
     padding: 50px 20px 100px 20px ;
-    text-shadow: 2px 2px 2px #000;
-    line-height: 40px;
+    text-shadow: 2px 2px 3px #000;
+    line-height: 50px;
     grid-column: 1;
 }
 
@@ -127,7 +117,6 @@ button#ativar{
     padding: 10px 22px 30px 15px;
     font-family:  Arial, Helvetica, sans-serif;
     font-size: 1rem;
-    font-weight: bold;
     background: #00ffaa;
     color: #0e351d;
     display: block;
@@ -136,7 +125,6 @@ button#ativar{
     height: 15px;
     grid-column: 2;
     grid-row: 1;
-
     border: solid 2px #00ffaa;
     border-radius: 20px;
     box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.747);
@@ -149,7 +137,8 @@ button#ativar:hover{
 }
 
 .frase{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
     width: 250px;
     color: #050918;
     margin: 10px 10px 20px 10px;
@@ -181,25 +170,28 @@ button#ativar:hover{
     /*essa class servirá caso queira colocar algum background-image no fundo. */
      border-bottom: 10px groove /*#44f187*/ #00ffaa;
      padding-bottom: 10px;
-     font-family: Arial, Helvetica, sans-serif;
+     font-family: monospace;
     }
 
 .primeirobox{  /*SECTION QUE CONTEM A PARTE DO SEJAM BEM-VINDOS A GS E AS FRASES EMBAIXO,(esquerda da tela e primeira no mobile)*/
     text-align: center;
     padding: 20px;
-    color: #fff;
+    width: 850px;
+    margin: auto;
+    color: rgb(182, 182, 182);
+    text-shadow: 2px 2px 4px black;
 }
 
 .primeirobox>h3{
     font-size: 1.5rem;
     padding-bottom: 5px;
-    color: #fff;
+    color: rgb(182, 182, 182);
+    text-shadow: 2px 2px 4px black;
 }
 
 h2#bemvindo{
     text-shadow: 2px 2px 5px rgba(128, 128, 128, 0.589);
     font-size: 2rem;
-    /*margin: auto;*/
     margin-left: 25px;
     padding-left: 25px;
     text-align: left;
@@ -217,8 +209,8 @@ h2#bemvindo{
 
 .grid-1{
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(#11181E , #292b2e , #62636496);
-    border-bottom: 10px groove #00ffaa;
+    background-image: linear-gradient(#11181E , #292b2e , #62636460);
+    border-bottom: 5px groove #00ffaa;
     display: grid;
     max-width: 1300px;
     margin: auto;
@@ -233,8 +225,7 @@ h2#bemvindo{
 /*  QUEM SOMOS -- BOX VERDE */
 
 #quemsomos{
-    background-color: #e9e9e980;
-    color: #fff;
+    background-color: #e9e9e927;
     padding: 10px;
     text-align: justify;
     border-radius: 10px;
@@ -251,7 +242,6 @@ h2#bemvindo{
     font-size: 25px;
     padding: 10px;
     color: /*#00ffaa*/ #fff;
-    /*color:  #01DB29*/;
     text-shadow: 1px 1px 1px grey;
     border: groove #44f187;
     border-radius: 10px;
@@ -261,7 +251,8 @@ h2#bemvindo{
 #quemsomos>p{
     padding: 20px;
     font-size:  20px;
-    color: rgb(44, 44, 44);
+    color: rgb(199, 199, 199);
+    text-shadow: 2px 2px 2px black;
 }
 
 #quemsomos>a{
@@ -271,17 +262,11 @@ h2#bemvindo{
 #quemsomos>a>h3{
    text-align: center;
    padding: 20px;
-   background-color: #00da91;
+   background-image: linear-gradient(#00ffaa , #028358);
    border: groove 3px #31af62;
-   border-radius: 30px;
+   border-radius: 15px;
    box-shadow: 2px 2px 2px grey;
    color: #00410c;
-}
-
-#quemsomos>a>h3:hover{
-    box-shadow: 0px;
-    border: groove 1px #20703f;
-    text-shadow: 0px 0px 0px grey;
 }
 
 /* CONFIRA O BLOG --  BOX ROXO*/
@@ -289,7 +274,7 @@ h2#bemvindo{
 #confira-blog{
     height: 220px;
     width: 350px;
-    background-color: #e9e9e980;
+    background-color: #e9e9e927;
     color: #fff;
     padding: 10px;
     text-align: justify;
@@ -311,33 +296,27 @@ h2#bemvindo{
 }
 
 #confira-blog > p {
-    color: #050918;
+    padding: 10px 20px 0px 20px;
     line-height: 20px;
     margin-top: 10px;
     font-size:  20px;
-    color: rgb(44, 44, 44);
+    color: rgb(199, 199, 199);
+    text-shadow: 2px 2px 2px black;
 }
 
 #confira-blog > a > h3 {
     text-align: center;
     margin-top: 20px;
     padding: 20px;
-    background-color: rgb(120, 15, 134);
+    background-image: linear-gradient(rgb(120, 15, 134) , rgb(93, 9, 104));
     border: groove 3px #b522c2;
-    border-radius: 30px;
+    border-radius: 15px;
     color: #fff;
-    text-shadow: 2px 2px 4px #2e2e2e;
+    text-shadow: 2px 2px 2px #2e2e2e;
     box-shadow: 2px 2px 2px grey;
 }
 #confira-blog > a {
     text-decoration: none;
-}
-
-#confira-blog>a>h3:hover{
-    background-color: rgb(146, 20, 163);
-    box-shadow: 0px;
-    border: groove 1px #612f64;
-    text-shadow: 0px;
 }
 
 /* TODA A PARTE DE LISTAS NO MEIO DO SITE*/
@@ -393,7 +372,7 @@ h2#bemvindo{
 /* O QUE ESTA POR VIR*/
 
 #oque-esta-porvir{
-    border: groove 2px #00ffaa;
+    border: groove 3px #575757;
     border-radius: 10px;
     background-color: #e9e9e921;
     padding: 20px;
@@ -403,16 +382,16 @@ h2#bemvindo{
 
 #oque-esta-porvir>h2{
     color: #11181E;
-    background-image:linear-gradient(#8b8b8b , #44f187) ;
+    background-image: linear-gradient(#00ffaa , #028358);
     padding: 10px;
     border: groove #525252;
     border-radius: 10px 40px;
     margin-bottom: 20px;
     text-align: center;
-    box-shadow: 2px 2px 6px #525252;
+    box-shadow: 2px 2px 6px black;
 }
 
-#oque-esta-porvir>p{
+#oque-esta-porvir > p {
     color: #11181E;
     line-height: 30px;
     font-size:  20px;
@@ -420,26 +399,20 @@ h2#bemvindo{
     margin-top: 10px;
 }
 
-#oque-esta-porvir>a>h3{
+#oque-esta-porvir > a > h3 {
     text-align: center;
     margin-top: 50px;
     background-color: #11181E;
     padding: 20px;
-    border: groove 3px #00ffaa;
-    border-radius: 30px;
+    border: groove 1px #00ffaa;
+    border-radius: 15px;
     box-shadow: 2px 2px 4px rgb(24, 24, 24);
     color: #fff;
     text-decoration: none;
 }
+
 #oque-esta-porvir>a{
     text-decoration: none;
-}
-
-#oque-esta-porvir>a>h3:hover{
-    background-color: #00ffaa;
-    box-shadow: 0px 0px 0px;
-    color: #050918;
-    border: groove 2px #050918a1;
 }
 
 #tele-h3{
@@ -495,12 +468,21 @@ div#img-relatorios{
 /* AQUI É ONDE FICA A DESCRICAO E OS BOTOES P INSTAGRAM E PARA O TELEGRAM*/
 
 .centralizar{
+    width: 1000px;
+    margin: auto;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: center;
     color: #fff;
     padding: 30px; 
     text-shadow: 2px 2px 2px rgba(82, 82, 82, 0.342); 
+}
+
+.centralizar > h2 {
+    font-size: 1.8rem;
+}
+.centralizar > p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /* AONDE TEM UM BOX E ONDE OS CIRCULOS DE INSTAGRAM E TELEGRAM ESTÃO.*/
@@ -511,7 +493,6 @@ div#img-relatorios{
     gap: 20px;
     background-color: #f7f7f715;
     padding: 20px;
-    border: groove 2px grey ;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.473);
     border-radius: 20px;
     margin: auto;
@@ -571,8 +552,6 @@ div#img-relatorios{
 /* BOX DO EBOOK GUIA INICIANTE */
 
 .cta-ebook{
-    font-family: Arial, Helvetica, sans-serif;
-    /*background-image: linear-gradient(#07071b7a, #11181e71);*/
     background-image: linear-gradient(#05070e36  , #cccccc15);
     max-width: 1260px;
     display: grid;
@@ -582,10 +561,10 @@ div#img-relatorios{
     margin: auto;
     margin-bottom: 30px;
     /*border: groove 2px rgba(32, 30, 41, 0.493);*/
-    border-top: groove 5px #00ffaa;
-    border-bottom: groove 5px rgb(120, 15, 134);
+    border-top: groove 2px #00ffaa;
+    border-bottom: groove 2px rgb(120, 15, 134);
     border-radius: 30px;
-    box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.404);
+    box-shadow: 4px 4px 5px black;
 }
 
 #foto-ebook{
@@ -595,13 +574,13 @@ div#img-relatorios{
     grid-area: a;
 }
 
-
-#anunciando-ebook-home>h2{
+#anunciando-ebook-home > h2 {
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
-    padding: 0px 0px 40px 20px;
+    padding: 0px 0px 20px 20px;
     max-width: 550px;
     text-align: start;
-    font-size: 2rem; 
+    font-size: 1.8rem; 
     grid-area: b;   
 }
 
@@ -610,13 +589,31 @@ div#img-relatorios{
     grid-area: c;
 }
 
+#paragrafo-ebook > #diasGarantia {
+    width: 350px;
+    margin: 0px 0px 25px 0px;
+    padding: 10px;
+    border: groove 1px yellow;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 30px;
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
 #paragrafo-ebook > .ebook-list > dt {
-    width: 240px;
+    width: 470px;
     margin: 15px 0px 15px 0px;
+    padding: 15px;
     font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
     color: #00ffaa;
+    background: rgba(0, 0, 0, 0.479);
     font-weight: bold;
     cursor: pointer;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 15px;
 }
 
 /* AQUI NESTA PARTE IREI ANIMAR A UL DO CONTEUDO DO EBOOK */
@@ -626,12 +623,17 @@ div#img-relatorios{
 }
 
 #paragrafo-ebook > .ebook-list > dt::after {
-    content: '⤦ click';
+    content: '(clique para esconder)' ;
+    color: white;
+    font-size: .5em;
     margin-left: 10px;
 }
 
 #paragrafo-ebook > .ebook-list > dt.ativo::after {
-    content: '⤣ click';
+    content: '(clique aqui para ler)';
+    margin-left: 10px;
+    color: white;
+    font-size: .5em;
 }
 
 #paragrafo-ebook > .ebook-list > dd.ativo {
@@ -654,26 +656,23 @@ div#img-relatorios{
 .botao-ebook{
     margin: 5px 0px 30px 20px;
     padding: 20px;
-    background-color: #00ffaa;
-    border: groove 3px #00da91;
-    border-radius: 30px;
+    background-image: linear-gradient(#00ffaa , #028358);
+    border: groove 1px #00865aaf;
+    border-radius: 15px;
     width: 250px;
-    
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.555);
 }
+
 .botao-ebook>a{
     text-decoration: none;
-    color: #11181E;
-}
-.botao-ebook:hover{
-    background: #00da91;
-    border: groove 2px #00da91;
+    color: #cbffee;
 }
 
 .botao-previa-ebook{
     margin: 5px 10px 30px 20px;
     padding: 20px;
-    background-color: rgb(120, 15, 134);
-    border: double 5px #b522c2;
+    background-image: linear-gradient(rgb(120, 15, 134) , rgb(93, 9, 104));
+    border: double 2px #b522c2;
     border-radius: 30px;
     color: #fff;
     width: 250px;

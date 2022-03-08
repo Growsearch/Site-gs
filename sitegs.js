@@ -116,7 +116,7 @@ function initAccordion(){
 
     if(ebookLista.length) {
         ebookLista[0].classList.toggle(activeClass);
-        ebookLista[0].nextElementSibling.classList.toggle(activeClass);
+        //ebookLista[0].nextElementSibling.classList.toggle(activeClass);
 
           function activeEbook() {
              this.classList.toggle(activeClass);
@@ -128,5 +128,4 @@ function initAccordion(){
         });
     }
 }
-
 initAccordion();

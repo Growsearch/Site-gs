@@ -57,14 +57,22 @@ h2#bemvindo{
     width: 250px;
 }
 
+.primeirobox {
+    width: 300px;
+}
+
 .primeirobox>h3{
     font-size: 15px;
     font-family: monospace;
+    width: 300px;
+    margin: auto;
 }
 
 .primeirobox>p {
     font-size: 13px;
     font-family: 'Courier New', Courier, monospace;
+    width: 300px;
+    margin: auto;
 }
     
 div.grid-1{
@@ -215,15 +223,19 @@ div#img-relatorios{
 }
 
 #diasGarantia {
-    color: #1f1f1f;
-    background-color: #00ffaa;
-    width: 200px;
+    color: #c5c5c5;
+    width: 150px;
     margin-bottom: 6px;
     font-family: monospace;
     font-size: 15px;
     padding: 5px;
-    border-radius: 30px;
     box-shadow: 2px 3px 5px rgba(5, 5, 5, 0.555);
+}
+
+#paragrafo-ebook > #diasGarantia {
+    width: 150px;
+    border-radius: 15px;
+    margin: auto;
 }
 
 #paragrafo-ebook > .ebook-list > dt {
@@ -236,6 +248,7 @@ div#img-relatorios{
 #paragrafo-ebook {
     line-height: 20px;
     font-family: 'Courier New', Courier, monospace;
+    width: 300px;
 }
 
 #pdoemogi {

@@ -161,6 +161,10 @@ div#img-relatorios{
     display: none;
 }
 
+.centralizar {
+    width: 300px;
+}
+
 .centralizar > h2 {
     font-family: monospace;
     font-size: 30px;
@@ -219,32 +223,36 @@ div#img-relatorios{
     border-radius: 30px;
     margin-bottom: 20px;
     background-color: #3a3a3a34;
-    padding: 20px;
+    padding: 25px;
 }
 
-#diasGarantia {
+#paragrafo-ebook > #diasGarantia {
     color: #c5c5c5;
-    width: 150px;
+    width: 190px;
     margin-bottom: 6px;
     font-family: monospace;
     font-size: 15px;
     padding: 5px;
     box-shadow: 2px 3px 5px rgba(5, 5, 5, 0.555);
-}
-
-#paragrafo-ebook > #diasGarantia {
-    width: 150px;
     border-radius: 15px;
     margin: auto;
 }
 
 #paragrafo-ebook > .ebook-list > dt {
     width: 240px;
-    margin: 15px 0px 15px 0px;
+    margin: 35px 0px 25px 15px;
     font-size: 20px;
-    color: #00ffaa;
+    color: #c5c5c5;
     font-weight: bold;
+    background-image: linear-gradient(#c5c5c579 , #1f1f1f);
+    border: groove 2px rgb(0, 255, 149);
 }
+
+#paragrafo-ebook > .ebook-list > dd {
+    margin-left: 30px;
+    font-size: .8rem;
+}
+
 #paragrafo-ebook {
     line-height: 20px;
     font-family: 'Courier New', Courier, monospace;
@@ -252,11 +260,15 @@ div#img-relatorios{
 }
 
 #pdoemogi {
+    font-size: .8rem;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.671);
     margin: 15px 0px 15px 0px;
     padding: 8px;
     border-radius: 30px;
+    border: groove 1px rgb(26, 21, 1);
     text-align: center;
+    text-shadow: 
+    2px 2px 3px black;
 }
 
 .botao-ebook {
@@ -264,6 +276,8 @@ div#img-relatorios{
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 13px;
+    background-image: linear-gradient(#c5c5c554 , #1f1f1f);
+    border: groove 2px rgb(0, 255, 149);
 }
 
 .botao-previa-ebook {
@@ -272,6 +286,7 @@ div#img-relatorios{
     font-family: 'Courier New', Courier, monospace;
     font-size: 13px;
     font-weight: bold;
+    background-image: linear-gradient(#c5c5c554 , #1f1f1f);
 }
 
 #frase-buffet{
@@ -289,8 +304,6 @@ div#img-relatorios{
     margin-left: 30px;
     margin-top: 30px;
 }
-
-#imagens 
 
 #imagens > #not-4, #not-5 , #not-6 {
     display: none;

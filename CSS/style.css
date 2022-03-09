@@ -434,9 +434,9 @@ h2#bemvindo{
 div#img-relatorios{
     color: #fff;
     background-image: url(imagens-do-site/fundo-relatorioempresas.png);
-    border: groove 2px #e4e4e4;
+    border: groove 2px #505050;
     border-radius: 15px;
-    box-shadow: 2px 2px 2px rgba(165, 165, 165, 0.671);
+    box-shadow: 2px 2px 4px rgba(75, 75, 75, 0.671);
     padding: 20px;
     margin-top: 35px;
     max-width: 670px;
@@ -561,8 +561,7 @@ div#img-relatorios{
     margin: auto;
     margin-bottom: 30px;
     /*border: groove 2px rgba(32, 30, 41, 0.493);*/
-    border-top: groove 2px #00ffaa;
-    border-bottom: groove 2px rgb(120, 15, 134);
+    border: groove 2px #3d3d3d;
     border-radius: 30px;
     box-shadow: 4px 4px 5px black;
 }
@@ -587,18 +586,19 @@ div#img-relatorios{
 #paragrafo-ebook{
     color: #fff;
     grid-area: c;
+    align-self: flex-start;
 }
 
 #paragrafo-ebook > #diasGarantia {
-    width: 350px;
+    width: 300px;
     margin: 0px 0px 25px 0px;
     padding: 10px;
     border: groove 1px yellow;
     box-shadow: 2px 2px 4px black;
-    border-radius: 30px;
+    border-radius: 20px 5px;
     text-align: center;
     font-family: monospace;
-    font-weight: bold;
+    font-weight: lighter;
     font-size: 1.2rem;
 }
 
@@ -608,8 +608,8 @@ div#img-relatorios{
     padding: 15px;
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
-    color: #00ffaa;
-    background: rgba(0, 0, 0, 0.479);
+    color: #cacaca;
+    background-image: linear-gradient(#c5c5c579 , #1f1f1f);
     font-weight: bold;
     cursor: pointer;
     box-shadow: 2px 2px 4px black;
@@ -656,8 +656,8 @@ div#img-relatorios{
 .botao-ebook{
     margin: 5px 0px 30px 20px;
     padding: 20px;
-    background-image: linear-gradient(#00ffaa , #028358);
-    border: groove 1px #00865aaf;
+    background-image: linear-gradient(#c5c5c554 , #1f1f1f);
+    border: groove 2px rgb(0, 255, 149);
     border-radius: 15px;
     width: 250px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.555);
@@ -671,11 +671,12 @@ div#img-relatorios{
 .botao-previa-ebook{
     margin: 5px 10px 30px 20px;
     padding: 20px;
-    background-image: linear-gradient(rgb(120, 15, 134) , rgb(93, 9, 104));
-    border: double 2px #b522c2;
-    border-radius: 30px;
+    background-image: linear-gradient(#c5c5c554 , #1f1f1f);
+    border: groove 2px #b522c2;
+    border-radius: 15px;
     color: #fff;
     width: 250px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.589);
 }
 
 .botao-previa-ebook>a{

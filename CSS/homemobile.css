@@ -305,8 +305,23 @@ div#img-relatorios{
     margin-top: 30px;
 }
 
-#imagens > #not-4, #not-5 , #not-6 {
+#imagens >  #not-5 , #not-6 {
     display: none;
+}
+
+#imagens {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#imagens > div {
+    width: 121px;
+    height: 192px;
+}
+
+#imagens > div > p {
+    font-size: .5rem;
+    line-height: 13px;
 }
   
 }

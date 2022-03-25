@@ -209,17 +209,23 @@ h2#bemvindo{
 
 .grid-1{
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(#11181E , #292b2e , #62636460);
+    /*background-image: linear-gradient(#11181E , #292b2e , #62636460);*/
+    background: #13161a9c;
     border-bottom: 5px groove #00ffaa;
     display: grid;
     max-width: 1300px;
+    height: 700px;
     margin: auto;
+    margin-top: 20px;
     margin-bottom: 30px;
     padding: 20px;
     gap: 20px;
-    grid-template-areas: 
+   /* grid-template-areas: 
     "a b c"
-    "d b c";
+    "d b c"; */
+
+    grid-template-areas: "a b c"
+                         "d d d";
 }
 
 /*  QUEM SOMOS -- BOX VERDE */
@@ -228,9 +234,9 @@ h2#bemvindo{
     background-color: #e9e9e927;
     padding: 10px;
     text-align: justify;
-    border-radius: 10px;
-    box-shadow: 3px 5px 5px rgb(44, 44, 44);
-    border: groove 3px /*#050918*/ #00ffaaa4;
+    border-radius: 15px;
+    box-shadow: 4px 5px 4px rgb(0, 0, 0);
+    border: groove 3px #5c5c5cc7;
     max-width: 350px;
     grid-area: a;
     height: 220px;
@@ -265,8 +271,8 @@ h2#bemvindo{
    background-image: linear-gradient(#00ffaa , #028358);
    border: groove 3px #31af62;
    border-radius: 15px;
-   box-shadow: 2px 2px 2px grey;
-   color: #00410c;
+   box-shadow: 4px 4px 2px rgb(19, 19, 19);
+   color: #fff;
 }
 
 /* CONFIRA O BLOG --  BOX ROXO*/
@@ -278,10 +284,11 @@ h2#bemvindo{
     color: #fff;
     padding: 10px;
     text-align: justify;
-    border-radius: 10px;
-    box-shadow: 3px 5px 5px rgb(44, 44, 44);
-    border: groove 3px /*#11181E;*/ rgb(120, 15, 134);
-    grid-area: d;
+    border-radius: 15px;
+    box-shadow: 4px 5px 4px rgb(3, 3, 3);
+    border: groove 3px #555555c7;
+    /*grid-area: d;*/
+    grid-area: b;
 }
 
 #confira-blog > h1 {
@@ -312,9 +319,10 @@ h2#bemvindo{
     border: groove 3px #b522c2;
     border-radius: 15px;
     color: #fff;
-    text-shadow: 2px 2px 2px #2e2e2e;
-    box-shadow: 2px 2px 2px grey;
+    text-shadow: 3px 3px 2px #4b4b4b;
+    box-shadow: 4px 4px 2px rgb(22, 22, 22);
 }
+
 #confira-blog > a {
     text-decoration: none;
 }
@@ -322,27 +330,40 @@ h2#bemvindo{
 /* TODA A PARTE DE LISTAS NO MEIO DO SITE*/
 
 .listas{
-    grid-column: 2;
-    grid-row: 1;
-    padding: 20px;
-    height: 94%;
-    /*background-color: #050918;*/
-    background-color: #e9e9e967;
+    width: 1100px;
+    padding: 40px;
+    height: 300px;
+    margin: auto;
+    /*background-color: #e9e9e91f;*/
+    background: #181C20;
     border-radius: 10px;
     color: #fff;
-    box-shadow: 3px 3px 5px #000;
+    box-shadow: 4px 4px 4px #000;
     border: groove 2px #777777;
-    max-width: 350px; 
-    grid-area: b; 
+    /*grid-area: b;*/
+    grid-area: d;
 }
 
 .listas>h2{
     background-color: rgba(4, 4, 24, 0.938);
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     border: groove 2px #00ffaa;
     border-radius:  5px 10px;
+    text-align: center;
 }
+
+.listas > ul {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2;
+    justify-content: space-around;
+    gap: 25px;
+    width: 800px;
+    margin: auto;
+}
+
 .listas> ul > li > h3{
     background-color: rgba(0, 0, 0, 0.781);
     padding: 5px;
@@ -369,40 +390,62 @@ h2#bemvindo{
     font-weight: bold;
 }
 
+#tele-h3{
+    /* color: rgb(0, 195, 255); */
+    color: rgb(187, 187, 187);
+    grid-column: 1;
+    grid-row: 1;
+ }
+ #desv-etf{
+    /* color: tomato;*/
+    color: rgb(187, 187, 187);
+    grid-column: 2;
+    grid-row: 1;
+ }
+ #guia-h3{
+     /*color: #00ffaa;*/
+     color: rgb(187, 187, 187);
+     grid-column: 1;
+     grid-row: 2;
+ }
+ #bonus-h3{
+     color: rgb(187, 187, 187);
+     grid-column: 2;
+     grid-row: 2;
+ }
+ 
 /* O QUE ESTA POR VIR*/
 
 #oque-esta-porvir{
+    height: 200px;
+    width: 300px;
     border: groove 3px #575757;
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: #e9e9e921;
     padding: 20px;
-    box-shadow: 5px 8px 5px rgb(26, 26, 26);
+    box-shadow: 5px 5px 2px rgb(7, 7, 7);
     grid-area: c;
 }
 
 #oque-esta-porvir>h2{
     color: #11181E;
     background-image: linear-gradient(#00ffaa , #028358);
-    padding: 10px;
     border: groove #525252;
     border-radius: 10px 40px;
-    margin-bottom: 20px;
     text-align: center;
     box-shadow: 2px 2px 6px black;
 }
 
 #oque-esta-porvir > p {
-    color: #11181E;
-    line-height: 30px;
+    padding: 10px;
     font-size:  20px;
-    color: rgb(255, 255, 255);
-    margin-top: 10px;
+    color: rgb(199, 199, 199);
+    text-shadow: 2px 2px 2px black;
 }
 
 #oque-esta-porvir > a > h3 {
     text-align: center;
-    margin-top: 50px;
-    background-color: #11181E;
+    background-image: linear-gradient(#00ffaa , #028358);
     padding: 20px;
     border: groove 1px #00ffaa;
     border-radius: 15px;
@@ -413,22 +456,6 @@ h2#bemvindo{
 
 #oque-esta-porvir>a{
     text-decoration: none;
-}
-
-#tele-h3{
-   /* color: rgb(0, 195, 255); */
-   color: rgb(187, 187, 187);
-}
-#desv-etf{
-   /* color: tomato;*/
-   color: rgb(187, 187, 187);
-}
-#guia-h3{
-    /*color: #00ffaa;*/
-    color: rgb(187, 187, 187);
-}
-#bonus-h3{
-    color: rgb(187, 187, 187);
 }
 
 div#img-relatorios{

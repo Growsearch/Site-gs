@@ -111,7 +111,7 @@ if (target.length) {
     // PARTE DE CLICAR E APARECER A ESCRITA , NA PARTE DE CTA-EBOOK!!
 
 function initAccordion(){
-    const ebookLista = document.querySelectorAll('.ebook-list dt');
+    const ebookLista = document.querySelectorAll('#edit-list dt');
     const activeClass = 'ativo';
 
     if(ebookLista.length) {

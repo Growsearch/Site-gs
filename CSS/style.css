@@ -576,96 +576,150 @@ div#img-relatorios{
     border: groove 1px black;
 }
 
-/* BOX DO EBOOK GUIA INICIANTE */
 
-.cta-ebook{
-    background-image: linear-gradient(#05070e36  , #cccccc15);
-    max-width: 1260px;
-    display: grid;
-    grid-template-areas: "a b d"
-                         "a c e";
-    align-items: center;
+.div-pictureKindle > .img-kindle > #kindleImg {
+    border-radius: 25px;
     margin: auto;
-    margin-bottom: 30px;
-    /*border: groove 2px rgba(32, 30, 41, 0.493);*/
-    border: groove 2px #3d3d3d;
-    border-radius: 30px;
-    box-shadow: 4px 4px 5px black;
+    display: block;
+    box-shadow: 4px 4px 5px #000;
+    width: 900px;
 }
 
-#foto-ebook{
-    max-width: 300px;
-    /*height: 500px;*/
-    height: 100%;
-    grid-area: a;
-}
+                  /* BOX DO EBOOK GUIA INICIANTE */
 
-#anunciando-ebook-home > h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #ffffff;
-    padding: 0px 0px 20px 20px;
-    max-width: 550px;
-    text-align: start;
-    font-size: 1.8rem; 
-    grid-area: b;   
-}
+                .box-ebook{
+                    padding-top: 15px;
+                    width: 1350px;
+                    height: 380px;
+                    background: linear-gradient(#11181E , #00da91);
+                    margin: auto;
+                    margin-bottom: 50px;
+                    display: grid;
+                    grid-template-areas: "a b d"
+                                         "a c d"
+                                         "a e p"
+                                         "a e p";
+                    grid-template-rows: 80px 80px 100px;
+                    grid-template-columns: 300px 550px 350px;
+                    row-gap: 10px;
+                    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.493);
+                    border-radius: 25px;
+                    border: groove 2px rgb(51, 51, 51);
+                    border-top: none;
+                }
+                
+                #capa-ebook {
+                    grid-area: a;
+                }
+                
+                #text-cta {
+                    grid-area: b;
+                    width: 600px;
+                    height: 100px;
+                    color: aliceblue;
+                    font-family: monospace;
+                    font-size: 1.3rem;
+                }
+                
+                .botoes-ebook {
+                    grid-area: c;
+                    height: 100px;
+                    width: 450px;
+                }
+                
+                #checkout {
+                    padding: 15px 40px 15px 40px;
+                    background-image: linear-gradient(#00ffaa , #028358);
+                    cursor: pointer;
+                    border-radius: 20px;
+                    margin-right: 30px;
+                }
 
-#paragrafo-ebook{
-    color: #fff;
-    grid-area: c;
-    align-self: flex-start;
-}
+                #previa-ebook {
+                    padding: 15px 40px 15px 40px;
+                    background-image: linear-gradient(#00ffaa , #028358);
+                    cursor: pointer;
+                    border-radius: 20px;
+                    margin-left: 30px;
+                }
+                
+                #edit-list {
+                    grid-area: e;
+                    color: white;
+                    width: 450px;
+                    font-size: 1.5rem;
+                    width: 450px;
+                }
 
-#paragrafo-ebook > #diasGarantia {
-    width: 300px;
-    margin: 0px 0px 25px 0px;
-    padding: 10px;
-    border: groove 1px yellow;
-    box-shadow: 2px 2px 4px black;
-    border-radius: 20px 5px;
-    text-align: center;
-    font-family: monospace;
-    font-weight: lighter;
-    font-size: 1.2rem;
-}
-
-#paragrafo-ebook > .ebook-list > dt {
-    width: 470px;
-    margin: 15px 0px 15px 0px;
-    padding: 15px;
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    color: #cacaca;
-    background-image: linear-gradient(#c5c5c579 , #1f1f1f);
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 2px 2px 4px black;
-    border-radius: 15px;
-}
+                #diasGarantia {
+                    grid-area: d;
+                    padding: 20px;
+                    border: groove 2px #b522c2;
+                    box-shadow: 2px 2px 2px black;
+                    color: white;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    align-self: center;
+                    border-radius: 25px;
+                    text-align: center;
+                    background-color: #11181E;
+                }
+                
+                #pdoemogi {
+                    height: 55px;
+                    width: 330px;
+                    box-shadow: 2px 2px 2px black;
+                    border-radius: 20px;
+                    grid-area: p;
+                    padding: 20px;
+                    padding-bottom: 20px;
+                    color: white;
+                    text-align: center;
+                    border: solid 2px rgb(51, 51, 51);
+                    background-color: #11181E;
+                }
 
 /* AQUI NESTA PARTE IREI ANIMAR A UL DO CONTEUDO DO EBOOK */
 
-#paragrafo-ebook > .ebook-list > dd {
+#titulo-dt {
+    border: solid 1px #00da91;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px black;
+    width: 450px;
+    cursor: pointer;
+    background-color: #11181E;
+    font-family: monospace;
+    font-size: 1.2rem;
+}
+
+#edit-list > dd {
     display: none;
 }
 
-#paragrafo-ebook > .ebook-list > dt::after {
+#edit-list > dt::after {
     content: '(clique para esconder)' ;
     color: white;
     font-size: .5em;
     margin-left: 10px;
 }
 
-#paragrafo-ebook > .ebook-list > dt.ativo::after {
+#edit-list > dt.ativo::after {
     content: '(clique aqui para ler)';
     margin-left: 10px;
     color: white;
     font-size: .5em;
 }
 
-#paragrafo-ebook > .ebook-list > dd.ativo {
+#edit-list > dd.ativo {
     display: block;
     animation: slideDown .5s forwards;
+    width: 450px;
+    border: groove 1px white;
+    border-radius: 15px;
+    background-color: rgba(231, 231, 231, 0.719);
+    color: #0a0c0e;
+    font-size: 1.1rem;
+    padding: 15px;
 }
 
 @keyframes slideDown {
@@ -679,43 +733,6 @@ div#img-relatorios{
         max-height: 200px;
     }
 }
-
-.botao-ebook{
-    margin: 5px 0px 30px 20px;
-    padding: 20px;
-    background-image: linear-gradient(#c5c5c554 , #1f1f1f);
-    border: groove 2px rgb(0, 255, 149);
-    border-radius: 15px;
-    width: 250px;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.555);
-}
-
-.botao-ebook>a{
-    text-decoration: none;
-    color: #cbffee;
-}
-
-.botao-previa-ebook{
-    margin: 5px 10px 30px 20px;
-    padding: 20px;
-    background-image: linear-gradient(#c5c5c554 , #1f1f1f);
-    border: groove 2px #b522c2;
-    border-radius: 15px;
-    color: #fff;
-    width: 250px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.589);
-}
-
-.botao-previa-ebook>a{
-    color: #fff;
-    text-decoration: none;
-}
-
-#pdoemogi{
-    color: rgba(255, 255, 255, 0.356);
-    margin-top: 20px;
-}
-
               /* popup com o scroll --  frase com img do buffet*/
 
 #frase-buffet{

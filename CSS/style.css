@@ -1,14 +1,11 @@
 *{
-    /*font-family: 'Work Sans', sans-serif;*/
-    /*font-family: 'Red Hat Mono', monospace;*/
-    /*font-family: 'Roboto', sans-serif;*/
     margin: 0px;
     padding: 0px;
 }
 
 body{
-    /*background-image: linear-gradient(rgb(255, 255, 255), rgba(9, 7, 34, 0.795), rgb(255, 255, 255));
-    background-image: linear-gradient(#11181E , #1b2024);*/
+    width: 1350px;
+    margin: auto;
     background: linear-gradient(#010d14 , #010d14 , rgb(0, 27, 20), #010d14);
 }
 
@@ -69,8 +66,8 @@ body{
     border: groove 2px #028358;
 }
 
-
 /*      BOTAO PARA P MENU MOBILE  (configuração dele é no @media, la em baixo!)  */
+
 .btn-mobile{
     display: none;
 }
@@ -82,6 +79,7 @@ main#container{
     justify-content: space-between;
     height: 350px;
     border-top: 4px groove /*#44f187*/ #00ffaa;
+    height: 250px;
 }
 
 .info{
@@ -141,11 +139,12 @@ button#ativar:hover{
     font-size: 1.2rem;
     font-family: Arial, Helvetica, sans-serif;
     width: 250px;
-    color: #050918;
-    margin: 10px 10px 20px 10px;
-    background-color: #00ffaa;
+    /*color: #050918;*/
+    color: #fff;
+    margin: 10px 20px 20px 10px;
+    background: linear-gradient(#00da91 , #028358);
     padding: 20px;
-    border: double 2px white;
+    border: double 2px rgb(199, 199, 199);
     border-radius: 20px;
     grid-column: 2;
     grid-row: 1;
@@ -175,7 +174,8 @@ button#ativar:hover{
      border-radius: 10px;
     }
 
-.primeirobox{  /*SECTION QUE CONTEM A PARTE DO SEJAM BEM-VINDOS A GS E AS FRASES EMBAIXO,(esquerda da tela e primeira no mobile)*/
+.primeirobox{ 
+ /*SECTION QUE CONTEM A PARTE DO SEJAM BEM-VINDOS A GS E AS FRASES EMBAIXO,(esquerda da tela e primeira no mobile)*/
     text-align: center;
     padding: 20px;
     width: 850px;
@@ -211,19 +211,20 @@ h2#bemvindo{
 .grid-1{
     font-family: Arial, Helvetica, sans-serif;
     /*background-image: linear-gradient(#11181E , #292b2e , #62636460);*/
-    /*background: #13161a9c;*/
-    background: #13161a;
+    /*background: #13161a9c;
+    background: #13161a;*/
+    background: none;
     border-radius: 20px;
-    border: 2px groove #3d3d3d;
+    /*border: 2px groove #3d3d3d;*/
     display: grid;
     max-width: 1250px;
-    height: 700px;
+    height: 620px;
     margin: auto;
     margin-top: 20px;
-    margin-bottom: 30px;
-    padding: 20px;
-    gap: 20px;
-    box-shadow: 4px 4px 5px black;
+    margin-bottom: 20px;
+    padding: 10px;
+    gap: 15px;
+    /*box-shadow: 4px 4px 5px black;*/
 
     grid-template-areas: "a b c"
                          "d d d";
@@ -337,7 +338,7 @@ h2#bemvindo{
     margin: auto;
     /*background-color: #e9e9e91f;*/
     background: #181C20;
-    border-radius: 10px;
+    border-radius: 15px;
     color: #fff;
     box-shadow: 4px 4px 4px #000;
     border: groove 2px #777777;
@@ -345,8 +346,10 @@ h2#bemvindo{
     grid-area: d;
 }
 
-.listas>h2{
-    background: linear-gradient(#010d14 , #00da91);
+.listas > h2 {
+    text-shadow: 2px 2px 2px black;
+    color: rgb(235, 235, 235);
+    background: linear-gradient(#003025 , #00da91);
     padding: 10px;
     margin-bottom: 30px;
     border: groove 2px #252525;
@@ -376,8 +379,9 @@ h2#bemvindo{
 .listas>ul>li>p{
     padding: 10px 20px;
     /*font-weight: bold;*/
-    font-size:  17px;
+    font-size:  18px;
     color: rgb(29, 29, 29);
+    text-shadow: 2px 2px 4px rgba(37, 37, 37, 0.829);
     /*background-color: rgba(0, 0, 0, 0.158);*/
     background-image: linear-gradient(#00ffaa , #00ffaa3a);
     border-radius: 10px;
@@ -468,10 +472,9 @@ div#img-relatorios{
     border-radius: 15px;
     box-shadow: 2px 2px 4px rgba(75, 75, 75, 0.671);
     padding: 20px;
-    margin-top: 35px;
+    margin: 0px 0px 30px 300px;
     max-width: 670px;
     height: 185px;
-    margin: auto;
 }
 
 #img-relatorios>h2{
@@ -498,25 +501,31 @@ div#img-relatorios{
 /* AQUI É ONDE FICA A DESCRICAO E OS BOTOES P INSTAGRAM E PARA O TELEGRAM*/
 
 .centralizar{
+    background-color: #181C20;
     width: 1160px;
     margin: auto;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    font-weight: bold;
     text-align: center;
-    
     padding: 30px; 
     text-shadow: 2px 2px 2px rgba(48, 48, 48, 0.342); 
+    box-shadow: 4px 4px 3px black;
+    border-radius: 20px;
+    border: 2px groove #777777;
 }
 
 .centralizar > h2 {
     font-size: 1.8rem;
     font-family: 'Courier New', Courier, monospace;
     color: #fff;
+    text-shadow: 2px 2px 4px black;
 }
-.centralizar > p{
+.centralizar > p {
     /*font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;*/
     font-family: monospace;
     width: 1160px;
     color: rgb(182, 182, 182);
+    text-shadow: 2px 2px 4px black;
 }
 
 /* AONDE TEM UM BOX E ONDE OS CIRCULOS DE INSTAGRAM E TELEGRAM ESTÃO.*/
@@ -525,11 +534,11 @@ div#img-relatorios{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    background-color: #f7f7f715;
+    background-color: #181C20;
     padding: 20px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.473);
     border-radius: 20px;
-    margin: auto;
+    margin: 20px 0px 10px 450px;
     margin-bottom: 20px;
     width: 400px;
 }
@@ -537,30 +546,30 @@ div#img-relatorios{
 .botao-1{
     margin: 0 auto;
     text-align: center;
-    padding: 10px;
+    padding: 8px;
     background-image:linear-gradient(rgb(5, 5, 61),rgba(255, 6, 89, 0.473), rgba(255, 0, 242, 0.685), rgba(255, 255, 0, 0.514));
     border: groove 2px rgba(255, 6, 89, 0.473);
     border-radius: 50px;
     max-width: 300px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.438);
 }
-.botao-1>a{
+.botao-1 > a {
     color: #fff;
     text-decoration: none;
 }
 
-.botao-1>a>img{
+.botao-1 > a > img {
     width: 50px;
     height: 50px;
 }
 
-.botao-1:hover{
+.botao-1:hover {
     box-shadow: 0px 0px 0px;
     border: groove 1px rgba(255, 6, 89, 0.473);
 }
-.botao-2{
+.botao-2 {
     margin: 0 auto;
-    padding: 10px;
+    padding: 8px;
     max-width: 300px;
     text-align: center;
     border: groove 2px #204652;
@@ -583,12 +592,14 @@ div#img-relatorios{
     border: groove 1px black;
 }
 
-
-.div-pictureKindle > .img-kindle > #kindleImg {
-    border-radius: 25px;
-    margin: auto;
-    display: block;
-    box-shadow: 4px 4px 5px #000;
+.picBanner {
+    text-align: center;
+}
+#foto-banner{
+    border-radius: 20px;
+    border: 2px darkgoldenrod solid;
+    margin-bottom: 20px;
+    box-shadow: 3px 4px 3px black;
 }
 
                   /* BOX DO EBOOK GUIA INICIANTE */
@@ -599,6 +610,7 @@ div#img-relatorios{
     height: 380px;
     /*background: linear-gradient(#161616 , #0e0f0f);*/
     background: #13161a ;
+    background-image: url(imagens-do-site/);
     margin: auto;
     margin-bottom: 50px;
     display: grid;
@@ -641,9 +653,11 @@ div#img-relatorios{
     border-radius: 20px;
     margin-right: 30px;
 
-    color: rgb(34, 34, 34);
+    color: rgb(219, 219, 219);
     font-size: 1rem;
+    font-weight: bold;
     text-shadow: 2px 2px 3px black;
+    box-shadow: 2px 2px 3px black;
 }
 
 #previa-ebook {
@@ -655,7 +669,9 @@ div#img-relatorios{
 
     color: rgb(179, 179, 179);
     font-size: 1rem;
+    font-weight: bold;
     text-shadow: 2px 2px 3px black;
+    box-shadow: 2px 2px 3px black;
 }
                 
                 #edit-list {
@@ -669,21 +685,20 @@ div#img-relatorios{
                 #diasGarantia {
                     grid-area: d;
                     padding: 20px;
-                    border: groove 3px #b522c2;
-                    box-shadow: 2px 2px 2px black;
+                    border: 2px #00ffaa solid;
+                    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.89);
                     color: white;
                     font-family: 'Courier New', Courier, monospace;
                     align-self: center;
                     border-radius: 25px;
                     text-align: center;
-                    background-color: rgba(54, 54, 54, 0.966);
+                    background-color: #11181E;
 
                     height: 50px;
                     width: 100px;
                     position: absolute;
-                    right: -30px;
-                    top: -40px;
-                    
+                    right: -104px;
+                    top: -40px;  
                 }
                 
                 #pdoemogi {
@@ -706,10 +721,10 @@ div#img-relatorios{
                 /* AQUI NESTA PARTE IREI ANIMAR A UL DO CONTEUDO DO EBOOK */
 
 #titulo-dt {
-    border: solid 1px #00da91;
+    border: solid 1px #777777;
     padding: 15px;
     border-radius: 20px;
-    box-shadow: 2px 2px 2px black;
+    box-shadow: 3px 3px 4px black;
     width: 450px;
     cursor: pointer;
     background-color: #11181E;
@@ -741,8 +756,8 @@ div#img-relatorios{
     width: 450px;
     border: groove 1px white;
     border-radius: 15px;
-    background-color: rgba(231, 231, 231, 0.719);
-    color: #0a0c0e;
+    background-color: rgba(65, 65, 65, 0.719);
+    color: #e7e7e7;
     font-size: 1.1rem;
     padding: 15px;
 }

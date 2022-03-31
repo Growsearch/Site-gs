@@ -594,6 +594,7 @@ div#img-relatorios{
 
 .picBanner {
     text-align: center;
+    display: none;
 }
 #foto-banner{
     border-radius: 20px;
@@ -608,9 +609,7 @@ div#img-relatorios{
     padding-top: 15px;
     width: 1300px;
     height: 380px;
-    /*background: linear-gradient(#161616 , #0e0f0f);*/
-    background: #13161a ;
-    background-image: url(imagens-do-site/);
+    background-image: url(imagemSiteCSS/fundo-ebooKindle.jpg);
     margin: auto;
     margin-bottom: 50px;
     display: grid;

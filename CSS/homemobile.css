@@ -6,6 +6,19 @@
     
     AQUI É A CSS QUE ESTILIZA A PARTE DE BODY DA HOME. NADA MAIS.
     */
+* {
+    margin: 0px;
+    padding: 0px;
+    max-width: 400px;
+}    
+
+body {
+    margin: auto;
+}
+
+header {
+    max-width: 375px;
+}
 
 main#container {
     height: 300px;
@@ -13,17 +26,23 @@ main#container {
     grid-template-columns: 1;
     grid-template-rows: 3;
     align-content: center;
+    max-width: 400px;
 }
     
 .info{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-family: 'Courier New', Courier, monospace;
     width: 250px;
-    margin: auto;
-    padding: 50px 10px 10px 10px;
+    margin-top: 40px ;
+    padding: 20px 20px 20px 20px;
     text-align: center;
     grid-row: 1;
     line-height: 23px;
+    
+
+    background: #2c2c2c;
+    border-radius: 50px;
+    border: 2px groove #00ffaa;
  }
     
 button#ativar{
@@ -43,6 +62,10 @@ button#ativar{
     grid-row: 3;
     grid-column: 1;
     padding-bottom: 40px;
+}
+
+#conteudo {
+    width: 400px;
 }
 
 /* ESSA É A PARTE DO SEJA BEM VINDOS A GROW SEARCH*/
@@ -71,62 +94,37 @@ h2#bemvindo{
 .primeirobox>p {
     font-size: 13px;
     font-family: 'Courier New', Courier, monospace;
-    width: 300px;
-    margin: auto;
+    width: 300px; 
+} 
+
+.scroll-mobile {
+    overflow-x: scroll;
 }
     
 div.grid-1{
-    margin: auto;
-    padding: 20px;
+    height: 270px;
+    padding: 15px;
     display: grid;
-    grid-template-areas: "a"
-                         "d"
-                         "b"
-                         "c";
+    grid-template-areas: "a d b"
+                         "c c c";
 }
 
 #quemsomos{
-    width: 300px;
-    height: 230px;
-    margin-bottom: 25px;  
-    background: transparent;
-}
-
-#quemsomos > p {
-    font-family: monospace;
-    font-size: 18px;
-    color: #eefff9;
-}
-
-#quemsomos > a > h3 {
-    font-size: 17px;
-    font-family: monospace;
-    padding: 13px;
+    width: 300px; 
+    grid-area: a;
 }
 
 #confira-blog{
     width: 300px;
-    height: 230px;
-    margin-bottom: 25px;
-    background-color: transparent;
-}
-
-#confira-blog > p {
-    font-family: monospace;
-    font-size: 18px;
-    color: #eefff9;
-}
-
-#confira-blog > a > h3 {
-    font-size: 17px;
-    font-family: monospace;
-    padding: 13px;
+    grid-area: d;
 }
 
 .listas{
+    display: none;
     width: 280px;
     height: 672px;
     background-color: transparent;
+    grid-area: c;
 }
 
 .listas > h2 {
@@ -145,8 +143,8 @@ div.grid-1{
     color: #1f1f1f;
 }
 
-#oque-esta-porvir{
-    display: none;
+#oque-esta-porvir {
+    grid-area: b;
 }
 
 div#img-relatorios{
@@ -155,6 +153,8 @@ div#img-relatorios{
     width: 300px;
     height: 210px;
     background-image: url(imagens-do-site/receitaempresas-mobile.png);
+
+    display: none;
 }
 
 #img-relatorios>h2{
@@ -163,11 +163,12 @@ div#img-relatorios{
 
 .centralizar {
     width: 300px;
+    margin-top: 50px ;
 }
 
 .centralizar > h2 {
     font-family: monospace;
-    font-size: 30px;
+    font-size: 22px;
     width: 320px;
     color: #fff;
     margin-bottom: 10px;
@@ -184,19 +185,18 @@ div#img-relatorios{
     
 #receitas-relatorios{
     width: 240px;
-    background: transparent;
     border: none;
-    box-shadow: -2px -3px 2px rgba(0, 0, 0, 0.603) ;
+    margin: 20px 0px 10px 50px;
 }
     
-#receitas-relatorios>.botao-1,.botao-2{
+#receitas-relatorios > .botao-1, .botao-2{
     width: 50px;
     height: 50px;
     align-items: center;
 }
     
-.cta-ebook{
-    display: flex;
+.box-ebook{
+    display: none;
     flex-wrap: wrap;
     padding: 20px;
     margin-top: 0px;
@@ -317,6 +317,7 @@ div#img-relatorios{
 #imagens > div {
     width: 121px;
     height: 192px;
+    display: none;
 }
 
 #imagens > div > p {

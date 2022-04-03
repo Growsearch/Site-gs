@@ -9,7 +9,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    max-width: 400px;
+    max-width: 370px;
 }    
 
 body {
@@ -17,7 +17,13 @@ body {
 }
 
 header {
-    max-width: 375px;
+    max-width: 350px;
+    height: 50px;
+    padding: 0px;
+}
+
+.logo > img {
+    width: 100px;
 }
 
 main#container {
@@ -26,15 +32,16 @@ main#container {
     grid-template-columns: 1;
     grid-template-rows: 3;
     align-content: center;
-    max-width: 400px;
+    max-width: 370px;
 }
     
 .info{
+    margin: auto;
     font-size: 1.1rem;
     font-family: 'Courier New', Courier, monospace;
-    width: 250px;
+    width: 270px;
     margin-top: 40px ;
-    padding: 20px 20px 20px 20px;
+    padding: 20px 15px 20px 15px;
     text-align: center;
     grid-row: 1;
     line-height: 23px;
@@ -65,7 +72,11 @@ button#ativar{
 }
 
 #conteudo {
-    width: 400px;
+    padding-top: 20px;
+    border-top: 1px groove #1f1f1f;
+    border-bottom: #00ffaa groove 2px;
+    width: 100%;
+    box-shadow: 2px 2px 2px black;
 }
 
 /* ESSA É A PARTE DO SEJA BEM VINDOS A GROW SEARCH*/
@@ -162,21 +173,21 @@ div#img-relatorios{
 }
 
 .centralizar {
-    width: 300px;
+    width: 250px;
     margin-top: 50px ;
 }
 
 .centralizar > h2 {
     font-family: monospace;
     font-size: 22px;
-    width: 320px;
+    width: 250px;
     color: #fff;
     margin-bottom: 10px;
     text-align: left;
 }
 
 .centralizar > p{
-    width: 320px;
+    width: 250px;
     font-size: 15px;
     font-family: 'Courier New', Courier, monospace;
     text-align: left;

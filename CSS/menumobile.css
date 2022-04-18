@@ -11,7 +11,7 @@
         background: none;
         border: none;
         cursor: pointer;
-        gap: 5px;
+        gap: 2px;
     }
         
     .hamburguer{
@@ -49,7 +49,7 @@
     .menu{
         display: block;
         position: absolute;
-        width: 100%;
+        width: 120px;
         top: 80px;
         right: 0px;
         height: 0px;
@@ -61,39 +61,44 @@
     }
         
     .nav.active .menu{
-        height: calc(100vh - 70px);
+        /*height: calc(100vh - 70px);*/
         visibility: visible;
         overflow-y: auto;
+        height: 210px;
+
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.726);
+        border-radius: 20px;
+        border: groove 1px #00ffaa;
     }
         
     .menu a {
         padding: 1rem 0px;
-        margin: 10px 45px;
+        margin: 0px 0px 0px 10px;
         border-bottom: 2px solid #00ffaa;
         text-align: center;
         border-radius: none;
     }
         
-    .menu>li{
+    .menu > li {
         border: none;
         border-radius: none;
         box-shadow: none;
-        width: 100%;
+        width: 100px;
     }
         
-    .menu>li>a{
+    .menu > li > a {
         border: none;
         border-bottom: 2px solid rgba(0 , 0 , 0 , 0.5);
         border-radius: none;
         background: none;
         color: #00ffaa;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-family: monospace;
         background: #1b2024;
         margin-top: 20px;
     }
         
-    .menu>li>a:hover{
+    .menu > li > a:hover {
         color: #fff;
         background: #1b2024;
     }

@@ -9,7 +9,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    max-width: 370px;
+    max-width: 360px;
 }    
 
 body {
@@ -34,9 +34,10 @@ main#container {
     max-width: 100%;
     margin-bottom: 5px;
 
-   /* background: url(imagemSiteCSS/fundo-homeGS.png);*/
-   /*background: url(imagemSiteCSS/Cópia\ de\ fundo-blog.png);*/
-   background: url(imagemSiteCSS/grow-background3.jpg);
+    background: url(imagemSiteCSS/background-homemobile.jpg);
+   /* background: url(imagemSiteCSS/fundo-homeGS.png);
+   background: url(imagemSiteCSS/Cópia\ de\ fundo-blog.png);
+   /*background: url(imagemSiteCSS/grow-background3.jpg);*/
 }
     
 .info{
@@ -68,26 +69,28 @@ button#ativar{
         
 .frase{
     font-family: monospace;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
     background: #00ffaaaf;
     /*color: black;*/
     color: black;
-    width: 310px;
+    width: 290px;
     margin: auto;
     margin-top: 10px;
     border: 2px groove black;
     text-align: center;
     grid-row: 3;
     grid-column: 1;
-    padding-bottom: 30px;
+    padding: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.76);
+    border-radius: 5px 20px;
 }
 
 #conteudo {
     padding-top: 20px;
     border: 1px groove #838383a8;
     border-bottom: #00ffaa groove 1px;
-    width: 350px;
+    width: 340px;
     margin: auto;
     box-shadow: 2px 2px 2px black;
     line-height: 20px;
@@ -343,23 +346,50 @@ div#img-relatorios{
     margin-top: 30px;
 }
 
-#imagens >  #not-5 , #not-6 {
+ #not-5 , #not-6 {
     display: none;
 }
 
 #imagens {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 150px 150px 150px 150px;
+    overflow-x: scroll;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+#imagens::-webkit-scrollbar {
+    height: 8px;
+}
+
+
+#imagens::-webkit-scrollbar-corner {
+    margin-top: 100px;
+}
+
+#imagens::-webkit-scrollbar-thumb {
+    background: #00da91;
 }
 
 #imagens > div {
-    width: 121px;
-    height: 192px;
-    display: none;
+    width: 100px;
+    height: 160px;
+    display: block;
 }
 
 #imagens > div > p {
+    display: none;
     font-size: .5rem;
     line-height: 13px;
+}
+
+#imagens > div > a > img {
+    display: none;
+}
+
+footer {
+    background-color: #1a1a1a;
+    font-family: monospace;
+    font-size: 1.1rem;
 }
 }

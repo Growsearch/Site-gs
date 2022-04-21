@@ -34,7 +34,7 @@ main#container {
     max-width: 100%;
     margin-bottom: 5px;
 
-    background: url(imagemSiteCSS/background-homemobile.jpg);
+    background: url(imagemSiteCSS/background-ebook.jpg);
    /* background: url(imagemSiteCSS/fundo-homeGS.png);
    background: url(imagemSiteCSS/Cópia\ de\ fundo-blog.png);
    /*background: url(imagemSiteCSS/grow-background3.jpg);*/
@@ -163,22 +163,6 @@ div.grid-1{
     grid-area: c;
 }
 
-.listas > h2 {
-    font-size: 22px;
-    text-align: center;
-}
-
-.listas > ul > li > h3 {
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.listas>ul>li>p {
-    font-family: monospace;
-    line-height: 17px;
-    font-weight: bold;
-    color: #1f1f1f;
-}
-
 #oque-esta-porvir {
     grid-area: b;
     width: 270px;
@@ -206,6 +190,8 @@ div#img-relatorios{
 .centralizar {
     width: 250px;
     margin-top: 50px ;
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .centralizar > h2 {
@@ -222,12 +208,17 @@ div#img-relatorios{
     font-size: 15px;
     font-family: 'Courier New', Courier, monospace;
     text-align: left;
+    
 }
   
 #receitas-relatorios{
-    width: 240px;
-    border: none;
-    margin: 20px 0px 10px 50px;
+    width: 250px;
+    border: 2px groove #777777;
+    margin: auto;
+    border-radius: 0px;
+    margin-bottom: 20px;
+    padding: 30px;
+    border-radius: 0px 0px 10px 10px;
 }
     
 #receitas-relatorios > .botao-1, .botao-2{
@@ -236,106 +227,14 @@ div#img-relatorios{
     align-items: center;
 }
     
-.box-ebook{
-    display: none;
-    flex-wrap: wrap;
-    padding: 20px;
-    margin-top: 0px;
-    padding-top: 0px;
-}
-
-#foto-ebook {
-    width: 340px;
-    height: 370px;
-}
-
-#foto-ebook > img {
-    height: 400px;
-    width:  260px;
-    padding: 0px;
-    margin-left: 20px;
-}
-
- #anunciando-ebook-home > h2 {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.637);
-    height: 108px;
-    border-radius: 30px;
-    margin-bottom: 20px;
-    background-color: #3a3a3a34;
-    padding: 25px;
-}
-
-#paragrafo-ebook > #diasGarantia {
-    color: #c5c5c5;
-    width: 190px;
-    margin-bottom: 6px;
-    font-family: monospace;
-    font-size: 15px;
-    padding: 5px;
-    box-shadow: 2px 3px 5px rgba(5, 5, 5, 0.555);
-    border-radius: 15px;
-    margin: auto;
-}
-
-#paragrafo-ebook > .ebook-list > dt {
-    width: 240px;
-    margin: 35px 0px 25px 15px;
-    font-size: 20px;
-    color: #c5c5c5;
-    font-weight: bold;
-    background-image: linear-gradient(#c5c5c579 , #1f1f1f);
-    border: groove 2px rgb(0, 255, 149);
-}
-
-#paragrafo-ebook > .ebook-list > dd {
-    margin-left: 30px;
-    font-size: .8rem;
-}
-
-#paragrafo-ebook {
-    line-height: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    width: 300px;
-}
-
-#pdoemogi {
-    font-size: .8rem;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.671);
-    margin: 15px 0px 15px 0px;
-    padding: 8px;
-    border-radius: 30px;
-    border: groove 1px rgb(26, 21, 1);
-    text-align: center;
-    text-shadow: 
-    2px 2px 3px black;
-}
-
-.botao-ebook {
-    padding: 9px;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 13px;
-    background-image: linear-gradient(#c5c5c554 , #1f1f1f);
-    border: groove 2px rgb(0, 255, 149);
-}
-
-.botao-previa-ebook {
-    padding: 9px;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 13px;
-    font-weight: bold;
-    background-image: linear-gradient(#c5c5c554 , #1f1f1f);
-}
-
-#frase-buffet{
+.box-ebook {
     display: none;
 }
 
 .apres-blog > h2{
     font-family: 'Courier New', Courier, monospace;
+    color: rgba(180, 180, 180, 0.747);
+    text-shadow: none;
 }
 
 .apres-blog > p {
@@ -343,7 +242,9 @@ div#img-relatorios{
     font-size: 13px;
     width: 300px;
     margin-left: 30px;
-    margin-top: 30px;
+    margin-top: 10px;
+    color: rgb(182, 182, 182);
+    text-shadow: none;
 }
 
  #not-5 , #not-6 {
@@ -351,11 +252,13 @@ div#img-relatorios{
 }
 
 #imagens {
+    background: linear-gradient(rgba(128, 128, 128, 0.514) , rgba(65, 65, 65, 0.568));
     display: grid;
     grid-template-columns: 150px 150px 150px 150px;
     overflow-x: scroll;
     width: 100%;
     justify-content: flex-start;
+    border-radius: 0px;
 }
 
 #imagens::-webkit-scrollbar {
@@ -368,13 +271,14 @@ div#img-relatorios{
 }
 
 #imagens::-webkit-scrollbar-thumb {
-    background: #00da91;
+    background: #00ffaa;
 }
 
 #imagens > div {
     width: 100px;
     height: 160px;
     display: block;
+    background-color: #1f1f1f;
 }
 
 #imagens > div > p {
@@ -388,6 +292,8 @@ div#img-relatorios{
 }
 
 footer {
+
+    margin-top: 30px;
     background-color: #1a1a1a;
     font-family: monospace;
     font-size: 1.1rem;

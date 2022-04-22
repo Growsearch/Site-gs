@@ -53,8 +53,8 @@
         top: 80px;
         right: 0px;
         height: 0px;
-        background: #3d474e;
-        transition: 0.6s;
+        background: #11181E;
+        transition: 0.3s;
         z-index: 1000;
         visibility: hidden;
         overflow-y: hidden;
@@ -63,12 +63,13 @@
     .nav.active .menu{
         /*height: calc(100vh - 70px);*/
         visibility: visible;
-        overflow-y: auto;
+        overflow-y: hidden;
         height: 210px;
 
         box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.726);
-        border-radius: 20px;
+        border-radius: 0px 0px 20px 20px;
         border: groove 1px #00ffaa;
+        border-top: none;
     }
         
     .menu a {

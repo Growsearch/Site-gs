@@ -6,7 +6,7 @@
 body{
     width: 1350px;
     margin: auto;
-    background: linear-gradient(#010d14 , #010d14 , rgb(0, 27, 20), #010d14);
+    background: linear-gradient(#15151b , #202226, #202226);
 }
 
 ::-webkit-scrollbar {
@@ -77,17 +77,18 @@ main#container{
     grid-template-columns: 2fr;
     align-items: center;
     justify-content: space-between;
-    height: 350px;
+    height: 360px;
     border-top: 4px groove /*#44f187*/ #00ffaa;
     height: 250px;
 }
 
 .info{
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-family: monospace , sans-serif;
     font-weight: normal;
     /*color: #44f187;*/
-    color: rgb(207, 207, 207);
+    /*color: rgb(207, 207, 207);*/
+    color: rgb(226, 226, 226);
     max-width: 500px;
     margin-left: 45px;
     padding: 50px 20px 100px 20px ;
@@ -168,7 +169,7 @@ button#ativar:hover{
 
     /*background-image: linear-gradient(#11181E , #292b2e , #62636486);
     /*essa class servirá caso queira colocar algum background-image no fundo. */
-     border-bottom: 4px groove /*#44f187*/ #00ffaa;
+     border-bottom: 2px groove /*#44f187*/ #8a8a8a;
      padding-bottom: 10px;
      font-family: monospace;
      border-radius: 10px;
@@ -192,7 +193,7 @@ button#ativar:hover{
 
 h2#bemvindo{
     text-shadow: 2px 2px 5px rgba(128, 128, 128, 0.589);
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-left: 55px;
     padding-left: 25px;
     text-align: left;
@@ -201,7 +202,7 @@ h2#bemvindo{
     background-color: #11181E;
     border:  groove #00ffaa6b;
     border-radius: 10px;
-    max-width: 400px;
+    max-width: 350px;
     box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.377);
 }
 
@@ -463,14 +464,20 @@ h2#bemvindo{
     text-decoration: none;
 }
 
+.mudando-cor {
+    background: rgb(70, 70, 70);
+    padding: 20px;
+    border-top: 2px groove #000;
+}
+
 div#img-relatorios{
     color: #fff;
     
     /*background-image: url(imagens-do-site/fundo-relatorioempresas.png);*/
-    background: #13161a;
-    border: groove 2px #505050;
+    background: #11181E;
+    border: groove 3px #11181E;
     border-radius: 15px;
-    box-shadow: 2px 2px 4px rgba(75, 75, 75, 0.671);
+    box-shadow: 4px 2px 3px rgb(10, 10, 10);
     padding: 20px;
     margin: 0px 0px 30px 300px;
     max-width: 670px;
@@ -501,7 +508,7 @@ div#img-relatorios{
 /* AQUI É ONDE FICA A DESCRICAO E OS BOTOES P INSTAGRAM E PARA O TELEGRAM*/
 
 .centralizar{
-    background-color: #181C20;
+    background-color: #181c20b6;
     width: 1160px;
     margin: auto;
     font-size: 1.1rem;
@@ -509,9 +516,9 @@ div#img-relatorios{
     text-align: center;
     padding: 30px; 
     text-shadow: 2px 2px 2px rgba(48, 48, 48, 0.342); 
-    box-shadow: 4px 4px 3px black;
+    box-shadow: -4px -4px 3px rgba(0, 0, 0, 0.562);
     border-radius: 20px;
-    border: 2px groove #777777;
+    border: 2px groove #11181E;
 }
 
 .centralizar > h2 {
@@ -534,13 +541,14 @@ div#img-relatorios{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    background-color: #181C20;
+    background-color: #181c20b6;
     padding: 20px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.473);
-    border-radius: 20px;
-    margin: 20px 0px 10px 450px;
+    border-radius: 0px 0px 20px 20px ;
+    margin: auto;
     margin-bottom: 20px;
     width: 400px;
+    box-shadow:  -2px 3px rgba(0, 0, 0, 0.521);
+    border: 2px groove #11181E;
 }
 
 .botao-1{
@@ -608,10 +616,11 @@ div#img-relatorios{
  .box-ebook{
     padding-top: 15px;
     width: 1300px;
-    height: 380px;
+    height: 370px;
     background-image: url(imagemSiteCSS/fundo-ebooKindle.jpg);
     margin: auto;
     margin-bottom: 50px;
+    margin-top: 15px;
     display: grid;
     grid-template-areas: "a b d"
                          "a c d"
@@ -818,25 +827,28 @@ div#img-relatorios{
 #imagens{
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 30px;
     /*color: #050918;*/
     color: #f3f5f4;
     line-height: 25px;
     display: flex;
-    flex-wrap: wrap;
-    max-width: 1350px;
+    flex-wrap: nowrap;
+    max-width: 1300px;
     justify-content: center;
     /*background-color: rgba(75, 74, 74, 0.356);*/
     background: #13161a;
     border-radius: 20px;
+
+    overflow-x: scroll;
 }
 
-#imagens>div{
+#imagens > div {
     font-family: Arial, Helvetica, sans-serif;
     margin: 10px;
     background-color: rgba(233, 233, 233, 0.192);
     padding: 20px;
     font-size:  17px;
-    max-width: 300px;
+    width: 300px;
     border: groove 2px rgba(0, 0, 0, 0.658);
     border-radius: 15px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.548);

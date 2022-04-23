@@ -23,6 +23,39 @@ body{
     border-radius: 30px;
 }
 
+.titulosInicial-i {
+    font-family: monospace;
+    font-size: 1.7rem;
+    color: #00da91;
+    text-shadow: 2px 2px 2px black;
+    background: #181C20;
+    box-shadow: 2px 2px 2px black;
+    padding: 10px;
+    position: absolute;
+    left: 25px;
+    top: 1220px;
+    border-radius: 20px;
+    border: 2px groove #00da91;
+    z-index: 1000;
+}
+
+.titulos-inicial {
+    /* ESTA CLASSE AQUE É PARA OS TITULOS ( IMITANDO NETFLIX)  */
+    font-family: monospace;
+    font-size: 1.7rem;
+    color: #00da91;
+    text-shadow: 2px 2px 2px black;
+    background: #181C20;
+    box-shadow: 2px 2px 2px black;
+    padding: 10px;
+    position: absolute;
+    left: 5px;
+    top: -50px;
+    border-radius: 20px;
+    border: 2px groove #00da91;
+    z-index: 1000;
+}
+
 .header{
     background-color: #11181E;
     display: flex;
@@ -465,21 +498,23 @@ h2#bemvindo{
 }
 
 .mudando-cor {
-    background: rgb(70, 70, 70);
+    background: rgb(87, 87, 87);
     padding: 20px;
     border-top: 2px groove #000;
+    border-bottom: 2px groove black;
+    margin-bottom: 30px;
 }
 
 div#img-relatorios{
     color: #fff;
     
-    /*background-image: url(imagens-do-site/fundo-relatorioempresas.png);*/
-    background: #11181E;
-    border: groove 3px #11181E;
+    background-image: url(imagemSiteCSS/fundo-relatorioempresas.png);
+    /*background: #181c20b6;*/
+    border: groove 3px #181c208e;
     border-radius: 15px;
-    box-shadow: 4px 2px 3px rgb(10, 10, 10);
+    box-shadow: -2px -2px 3px rgba(10, 10, 10, 0.5);
     padding: 20px;
-    margin: 0px 0px 30px 300px;
+    margin: 0px 0px 10px 300px;
     max-width: 670px;
     height: 185px;
 }
@@ -507,16 +542,24 @@ div#img-relatorios{
 
 /* AQUI É ONDE FICA A DESCRICAO E OS BOTOES P INSTAGRAM E PARA O TELEGRAM*/
 
+.dividindoPag {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 20px;
+}
+
 .centralizar{
     background-color: #181c20b6;
-    width: 1160px;
-    margin: auto;
+    width: 760px;
+    height: 270px;
+    margin-left: 50px;
     font-size: 1.1rem;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
     padding: 30px; 
     text-shadow: 2px 2px 2px rgba(48, 48, 48, 0.342); 
-    box-shadow: -4px -4px 3px rgba(0, 0, 0, 0.562);
+    box-shadow: -4px -4px 3px 0px rgba(0, 0, 0, 0.712);
     border-radius: 20px;
     border: 2px groove #11181E;
 }
@@ -530,35 +573,35 @@ div#img-relatorios{
 .centralizar > p {
     /*font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;*/
     font-family: monospace;
-    width: 1160px;
+    width: 760px;
     color: rgb(182, 182, 182);
     text-shadow: 2px 2px 4px black;
 }
 
 /* AONDE TEM UM BOX E ONDE OS CIRCULOS DE INSTAGRAM E TELEGRAM ESTÃO.*/
 #receitas-relatorios{
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-wrap: wrap;
+    height: 300px;
+    width: 230px;
     gap: 20px;
     background-color: #181c20b6;
     padding: 20px;
-    border-radius: 0px 0px 20px 20px ;
-    margin: auto;
-    margin-bottom: 20px;
-    width: 400px;
-    box-shadow:  -2px 3px rgba(0, 0, 0, 0.521);
+    box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.856);
+    border: 2px groove #11181E;
+    border-radius: 20px;
+    align-items: center;
+
     border: 2px groove #11181E;
 }
 
 .botao-1{
-    margin: 0 auto;
+    margin: auto;
+    margin-bottom: 5px;
     text-align: center;
     padding: 8px;
     background-image:linear-gradient(rgb(5, 5, 61),rgba(255, 6, 89, 0.473), rgba(255, 0, 242, 0.685), rgba(255, 255, 0, 0.514));
     border: groove 2px rgba(255, 6, 89, 0.473);
     border-radius: 50px;
-    max-width: 300px;
+    max-width: 100px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.438);
 }
 .botao-1 > a {
@@ -572,13 +615,13 @@ div#img-relatorios{
 }
 
 .botao-1:hover {
-    box-shadow: 0px 0px 0px;
-    border: groove 1px rgba(255, 6, 89, 0.473);
+    background: #00da91;
 }
+
 .botao-2 {
-    margin: 0 auto;
+    margin: auto;
     padding: 8px;
-    max-width: 300px;
+    max-width: 100px;
     text-align: center;
     border: groove 2px #204652;
     background-color: rgba(0, 195, 255, 0.678);
@@ -596,20 +639,18 @@ div#img-relatorios{
 }
 
 .botao-2:hover{
-    box-shadow: 0px 0px 0px;
-    border: groove 1px black;
+    background: #00da91;
 }
 
-.picBanner {
+#receitas-relatorios > p {
+    color: #fff;
+    font-family:  monospace;
     text-align: center;
-    display: none;
+    margin: 15px;
 }
-#foto-banner{
-    border-radius: 20px;
-    border: 2px darkgoldenrod solid;
-    margin-bottom: 20px;
-    box-shadow: 3px 4px 3px black;
-}
+
+/* !!!!  SAINDO DA PARTE DA MUDANÇA DE COR  !!!!*/
+
 
                   /* BOX DO EBOOK GUIA INICIANTE */
 
@@ -682,13 +723,13 @@ div#img-relatorios{
     box-shadow: 2px 2px 3px black;
 }
                 
-                #edit-list {
-                    grid-area: e;
-                    color: white;
-                    width: 450px;
-                    font-size: 1.5rem;
-                    width: 450px;
-                }
+#edit-list {
+    grid-area: e;
+    color: white;
+    width: 450px;
+    font-size: 1.5rem;
+    width: 450px;
+}
 
                 #diasGarantia {
                     grid-area: d;

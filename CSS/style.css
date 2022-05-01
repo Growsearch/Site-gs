@@ -665,7 +665,7 @@ div#img-relatorios{
     padding-top: 15px;
     width: 1300px;
     height: 370px;
-    background-image: url(imagemSiteCSS/fundo-ebooKindle.jpg);
+    background-image: url(imagemSiteCSS/kindle-ebooKindle.jpg);
     margin: auto;
     margin-bottom: 50px;
     margin-top: 15px;
@@ -926,7 +926,7 @@ div#img-relatorios{
 /* RODAPÉ DO SITE */
 
 footer {
-    width: 1310px;
+    max-width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     color: #fff;

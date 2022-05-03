@@ -111,7 +111,7 @@ main#container{
     align-items: center;
     justify-content: space-between;
     height: 360px;
-    border-top: 4px groove /*#44f187*/ #00ffaa;
+    border-top: 4px groove /*#44f187*/ #00ffaa; 
     height: 250px;
 }
 
@@ -150,15 +150,16 @@ button#ativar{
     padding: 10px 22px 30px 15px;
     font-family:  Arial, Helvetica, sans-serif;
     font-size: 1rem;
-    background: #00ffaa;
-    color: #0e351d;
+    /*background: linear-gradient(#00da91 , #028358);*/
+    background: linear-gradient(#D92B00 , #8C1C00);
+    color: #fff;
     display: block;
     margin: auto;
     margin-bottom: 0px;
     height: 15px;
     grid-column: 2;
     grid-row: 1;
-    border: solid 4px #3a3a3a8f;
+    border: groove 4px #3a3a3a8f;
     border-radius: 20px;
     box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.747);
     cursor: pointer;
@@ -176,7 +177,7 @@ button#ativar:hover{
     /*color: #050918;*/
     color: #fff;
     margin: 10px 20px 20px 10px;
-    background: linear-gradient(#00da91 , #028358);
+    background: linear-gradient(#8C1C00 , #D92B00);
     padding: 20px;
     border: double 2px rgb(199, 199, 199);
     border-radius: 20px;
@@ -306,7 +307,8 @@ h2#bemvindo{
    text-align: center;
    padding: 20px;
    background-image: linear-gradient(#00ffaa , #028358);
-   border: groove 3px #31af62;
+   /*border: groove 3px #31af62;*/
+   border: groove 3px #028358;
    border-radius: 15px;
    box-shadow: 4px 4px 2px rgb(19, 19, 19);
    color: #fff;
@@ -324,7 +326,9 @@ h2#bemvindo{
     border-radius: 15px;
     box-shadow: 4px 5px 4px rgb(3, 3, 3);
     /*border: groove 3px #555555c7;*/
-    border:  groove 3px #b522c2;
+    /*border:  groove 3px #b522c2;
+    border: groove 3px #870085;*/
+    border: groove 3px #D92B00;
     /*grid-area: d;*/
     grid-area: b;
 }
@@ -336,7 +340,8 @@ h2#bemvindo{
     text-align: center;
     padding: 5px;
     margin: 5px;
-    border: groove 4px #b35cc4;
+    /*border: groove 4px #870085;*/
+    border: groove 4px #8C1C00;
     border-radius: 20px;
 }
 
@@ -353,8 +358,11 @@ h2#bemvindo{
     text-align: center;
     margin-top: 20px;
     padding: 20px;
-    background-image: linear-gradient(rgb(120, 15, 134) , rgb(93, 9, 104));
-    border: groove 3px #b522c2;
+    /*background-image: linear-gradient(rgb(120, 15, 134) , rgb(93, 9, 104));
+    background: linear-gradient(#870085 , #963B94);*/
+    background: linear-gradient(#D92B00 , #8C1C00);
+    /*border: groove 3px #963B94;*/
+    border: groove 3px #8C1C00;
     border-radius: 15px;
     color: #fff;
     text-shadow: 3px 3px 2px #4b4b4b;
@@ -475,7 +483,7 @@ h2#bemvindo{
 
 #oque-esta-porvir>h2{
     color: #11181E;
-    background-image: linear-gradient(#00ffaa , #028358);
+    /*background-image: linear-gradient(#00ffaa , #028358);*/
     border: groove #525252;
     border-radius: 10px 40px;
     text-align: center;
@@ -561,19 +569,19 @@ h2#bemvindo{
     box-shadow: 2px 2px 3px black;
 }
                 
-                #previa-ebook {
-                    padding: 15px 40px 15px 40px;
-                    background-image: linear-gradient(rgb(120, 15, 134) , rgb(93, 9, 104) );
-                    cursor: pointer;
-                    border-radius: 20px;
-                    margin-left: 30px;
+#previa-ebook {
+    padding: 15px 40px 15px 40px;
+    background: linear-gradient(#D92B00 , #8C1C00);
+    cursor: pointer;
+    border-radius: 20px;
+    margin-left: 30px;
                 
-                    color: rgb(179, 179, 179);
-                    font-size: 1rem;
-                    font-weight: bold;
-                    text-shadow: 2px 2px 3px black;
-                    box-shadow: 2px 2px 3px black;
-                }
+    color: rgb(179, 179, 179);
+    font-size: 1rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px black;
+    box-shadow: 2px 2px 3px black;
+}
                                 
                 #edit-list {
                     grid-area: e;
@@ -586,7 +594,7 @@ h2#bemvindo{
                 #diasGarantia {
                     grid-area: d;
                     padding: 20px;
-                    border: 2px #00ffaa solid;
+                    border: 2px #FF4719 solid;
                     box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.89);
                     color: white;
                     font-family: 'Courier New', Courier, monospace;
@@ -622,7 +630,7 @@ h2#bemvindo{
                 /* AQUI NESTA PARTE IREI ANIMAR A UL DO CONTEUDO DO EBOOK */
                 
                 #titulo-dt {
-                    border: solid 1px #777777;
+                    border: solid 1px #FF4719;
                     padding: 15px;
                     border-radius: 20px;
                     box-shadow: 3px 3px 4px black;
@@ -658,8 +666,9 @@ h2#bemvindo{
                     border: groove 1px white;
                     border-radius: 15px;
                     /*background-color: rgba(65, 65, 65, 0.719);*/
-                    background: #00da91;
-                    color: #2e2e2e;
+                    background: linear-gradient(#003025 , #00da91);
+                    color: rgb(211, 211, 211);
+                    text-shadow: 2px 1px 2px black;
                     font-size: 1.1rem;
                     padding: 15px;
                 }
@@ -871,6 +880,7 @@ div#img-relatorios{
 .titulosInicial-blog {
     font-family: monospace;
     font-size: 1.2rem;
+    /*color: #00da91;*/
     color: #00da91;
     text-shadow: 2px 2px 2px black;
     background: #181C20;
@@ -880,7 +890,7 @@ div#img-relatorios{
     left: 5px;
     top: 2350px;
     border-radius: 20px;
-    border: 2px groove #00da91;
+    border: 2px groove #FF4719;
     z-index: 1000;
     margin: 20px 0px 20px 40px;
 }

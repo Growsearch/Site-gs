@@ -177,7 +177,7 @@ button#ativar:hover{
     /*color: #050918;*/
     color: #fff;
     margin: 10px 20px 20px 10px;
-    background: linear-gradient(#8C1C00 , #D92B00);
+    background: linear-gradient(#D92B00 , #8C1C00);
     padding: 20px;
     border: double 2px rgb(199, 199, 199);
     border-radius: 20px;
@@ -842,38 +842,6 @@ div#img-relatorios{
 
 /* !!!!  SAINDO DA PARTE DA MUDANÇA DE COR  !!!!*/
 
-
-              /* popup com o scroll --  frase com img do buffet*/
-
-#frase-buffet{
-    color: #fff;
-    background-image: url('imagens-do-site/foto-buffet-fundo.png');
-    border: groove 2px #e4e4e4;
-    border-radius: 15px;
-    box-shadow: 2px 2px 2px rgba(165, 165, 165, 0.671);
-    padding: 20px;
-    margin-top: 35px;
-    width: 670px;
-    margin: auto;
-}
-
-#frase-buffet p {
-    width: 350px;
-}
-#frase-buffet>h2{
-    padding: 10px;
-}
-
-[data-anime]#frase-buffet{
-    opacity: 0;
-    transition: .3s;
-    transform: translate3d(50px , 0px , 0px);
-}
-
-[data-anime]#frase-buffet.animate{
-    opacity: 1;
-    transform: translate3d(0px , 0px , 0px);
-}
 
 /* APRESENTANDO O BLOG */
 

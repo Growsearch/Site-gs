@@ -43,8 +43,9 @@ ativar.addEventListener('click' , clicou)
 
 function clicou(){
     ativar.innerText = 'Clique para sair e voltar o slide!'
-    ativar.style.background = 'rgb(44, 44, 44)'
+    ativar.style.background = 'transparent'
     ativar.style.color = 'white'
+    ativar.style.fontSize = '12px'
 }
 
 // MENU MOBILE !

@@ -15,12 +15,11 @@ body{
 }
 
 ::-webkit-scrollbar-track {
-    background: #000;
-    border-radius: 30px;
+    background: #064d41;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #00da91;
+    background: #02e0bb;
     border-radius: 30px;
 }
 
@@ -51,10 +50,9 @@ body{
     padding: 10px;
     position: absolute;
     left: 5px;
-    top: -50px;
+    top: -30px;
     border-radius: 20px;
     border: 2px groove #02e0bb;
-    z-index: 1000;
 }
 
 .header{
@@ -304,7 +302,7 @@ h2#bemvindo{
     margin-bottom: 45px;
     padding: 10px;
     gap: 10px;
-    border-bottom: double 2px #00000075;
+    /*border-bottom: double 2px #00000075;*/
     /*box-shadow: 4px 4px 5px black;*/
 
     grid-template-areas: "a b c"
@@ -438,8 +436,8 @@ h2#bemvindo{
     background: none;
     border-radius: 15px;
     color: #fff;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.664);
-    border: groove 2px #070708;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.568);
+    border: groove 1px #070708;
     /*grid-area: b;*/
     grid-area: d;
 
@@ -464,6 +462,7 @@ h2#bemvindo{
     text-align: left;
     position: absolute;
     left: 50px;
+    top: 700px;
 }
 
 .listas > ul {
@@ -593,7 +592,7 @@ h2#bemvindo{
 
          /* BOX DO EBOOK GUIA INICIANTE */
 
-.box-ebook{
+.box-ebook {
     padding-top: 15px;
     width: 1300px;
     height: 370px;
@@ -773,7 +772,7 @@ h2#bemvindo{
     padding: 20px;
     border-top: 2px groove #000;
     border-bottom: 2px groove black;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     margin-top: 105px;
 }
 
@@ -837,14 +836,17 @@ div#img-relatorios{
 }
 
 .centralizar > h2 {
-    font-size: 1.8rem;
-    font-family: 'Courier New', Courier, monospace;
-    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    width: 600px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #02e0bb;
     text-shadow: 2px 2px 4px black;
 }
 .centralizar > p {
     /*font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;*/
-    font-family: monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
     width: 760px;
     color: rgb(182, 182, 182);
     text-shadow: 2px 2px 4px black;
@@ -887,7 +889,7 @@ div#img-relatorios{
 }
 
 .botao-1:hover {
-    background: #00da91;
+    background: #02e0bb;
 }
 
 .botao-2 {
@@ -911,7 +913,7 @@ div#img-relatorios{
 }
 
 .botao-2:hover{
-    background: #00da91;
+    background: #02e0bb;
 }
 
 #receitas-relatorios > p {
@@ -930,7 +932,7 @@ div#img-relatorios{
     font-family: monospace;
     font-size: 1.2rem;
     /*color: #00da91;*/
-    color: #00da91;
+    color: #02e0bb;
     text-shadow: 2px 2px 2px black;
     background: #181C20;
     box-shadow: 2px 2px 2px black;
@@ -939,9 +941,9 @@ div#img-relatorios{
     left: 5px;
     top: 2350px;
     border-radius: 20px;
-    border: 2px groove #FF4719;
+    border: 2px groove #02e0bb;
     z-index: 1000;
-    margin: 20px 0px 20px 40px;
+    margin: 20px 0px 30px 40px;
 }
 
 #imagens{
@@ -991,12 +993,13 @@ div#img-relatorios{
 
 footer {
     max-width: 100%;
+    height: 150px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     color: #fff;
-    background-color: #00da91;
+    background: linear-gradient(#02e0bb , #064d41);
     padding: 20px;
-    border-top: groove 2px #44f187;
+    border-top: groove 2px #e92f00;
     color: black;
 }
 

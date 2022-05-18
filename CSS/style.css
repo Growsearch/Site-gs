@@ -33,7 +33,7 @@ body{
     padding: 10px;
     position: absolute;
     left: 30px;
-    top: 1670px;
+    top: 1690px;
     border-radius: 20px;
     border: 2px groove #02e0bb;
     z-index: 1000;
@@ -300,10 +300,9 @@ h2#bemvindo{
     max-width: 1366px;
     height: 750px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     padding: 10px;
     gap: 10px;
-    /*border-bottom: double 2px #00000075;*/
     /*box-shadow: 4px 4px 5px black;*/
 
     grid-template-areas: "a b c"
@@ -607,17 +606,17 @@ h2#bemvindo{
 .box-ebook {
     padding-top: 15px;
     width: 1300px;
-    height: 370px;
+    height: 390px;
     /*background-image: url(imagemSiteCSS/kindle-ebooKindle.jpg);*/
     margin: auto;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     margin-top: 15px;
     display: grid;
     grid-template-areas: "a b d"
                          "a c d"
                          "a e p"
                          "a e p";
-    grid-template-rows: 80px 80px 100px;
+    grid-template-rows: 100px 100px 190px;
     grid-template-columns: 300px 550px 350px;
     row-gap: 10px;
     /*box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.493);*/
@@ -674,20 +673,21 @@ h2#bemvindo{
     box-shadow: 2px 2px 3px black;
 }
                                 
-                #edit-list {
-                    grid-area: e;
-                    color: white;
-                    width: 450px;
-                    font-size: 1.5rem;
-                    width: 450px;
-                }
+#edit-list {
+    grid-area: e;
+    color: white;
+    width: 450px;
+    font-size: 1.5rem;
+    width: 450px;
+}
                 
                 #diasGarantia {
                     grid-area: d;
                     padding: 20px;
                     border: 2px #D92B00 solid;
                     box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.89);
-                    color: #D92B00;
+                    color: #e92f00;
+                    font-size: 1.2rem;
                     font-weight: bold;
                     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                     align-self: center;
@@ -696,23 +696,24 @@ h2#bemvindo{
                     background-color: #11181E;
                 
                     height: 50px;
-                    width: 100px;
+                    width: 150px;
                     position: absolute;
                     right: -104px;
                     top: -40px;  
                 }
                                 
                 #pdoemogi {
-                    height: 25px;
+                    text-align: left;
+                    height: 50px;
                     width: 300px;
+                    padding: 8px;
                     box-shadow: 2px 2px 2px black;
                     border-radius: 20px;
                     grid-area: p;
-                    padding: 20px;
+                    /*padding: 20px;*/
                     color: white;
-                    text-align: center;
                     border: solid 2px rgb(51, 51, 51);
-                    background-color: #11181e69;
+                    background-color: #202020;
                 
                     position: absolute;
                     bottom: 110px;
@@ -968,7 +969,7 @@ div#img-relatorios{
     max-width: 1350px;
     justify-content: flex-start;
     /*background-color: rgba(75, 74, 74, 0.356);*/
-    background: #13161a;
+    background: transparent;
 
     overflow-x: scroll;
     border-top: 2px solid #000;

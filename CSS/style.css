@@ -605,9 +605,10 @@ h2#bemvindo{
 
 .box-ebook {
     padding-top: 15px;
-    width: 1300px;
+    width: 1350px;
     height: 390px;
     /*background-image: url(imagemSiteCSS/kindle-ebooKindle.jpg);*/
+    background: #282A2D;
     margin: auto;
     margin-bottom: 70px;
     margin-top: 15px;
@@ -633,6 +634,7 @@ h2#bemvindo{
     grid-area: b;
     width: 650px;
     height: 100px;
+    /*color: #0c0c0f;*/
     color: #e7e7e7;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: normal;
@@ -649,28 +651,27 @@ h2#bemvindo{
     padding: 15px 40px 15px 40px;
     background: linear-gradient(#02e0bb , #087462);
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 15px;
     margin-right: 30px;
                 
-    color: rgb(219, 219, 219);
+    color: #0c0c0f;
     font-size: 1rem;
     font-weight: bold;
-    text-shadow: 2px 2px 3px black;
-    box-shadow: 2px 2px 3px black;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.521);
 }
                 
 #previa-ebook {
     padding: 15px 40px 15px 40px;
-    background: linear-gradient(#e92f00 , #D92B00);
+    /*background: linear-gradient(#e92f00 , #D92B00);*/
+    background: #adadad9a;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 15px;
     margin-left: 30px;
                 
-    color: rgb(179, 179, 179);
+    color: #0c0c0f;
     font-size: 1rem;
     font-weight: bold;
-    text-shadow: 2px 2px 3px black;
-    box-shadow: 2px 2px 3px black;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.527);
 }
                                 
 #edit-list {
@@ -683,55 +684,54 @@ h2#bemvindo{
                 
                 #diasGarantia {
                     grid-area: d;
-                    padding: 20px;
-                    border: 2px #D92B00 solid;
-                    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.89);
                     color: #e92f00;
-                    font-size: 1.2rem;
-                    font-weight: bold;
+                    font-size: 2rem;
+                    font-style: italic;
+                    font-weight: normal;
                     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                     align-self: center;
-                    border-radius: 25px;
                     text-align: center;
-                    background-color: #11181E;
+                    text-shadow: 2px 2px 3px black;
                 
                     height: 50px;
-                    width: 150px;
+                    width: 170px;
                     position: absolute;
-                    right: -104px;
-                    top: -40px;  
+                    right: 10px;
+                    top: 100px;  
                 }
                                 
                 #pdoemogi {
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                     text-align: left;
                     height: 50px;
-                    width: 300px;
+                    width: 280px;
                     padding: 8px;
-                    box-shadow: 2px 2px 2px black;
-                    border-radius: 20px;
+                    border-radius: 10px;
                     grid-area: p;
                     /*padding: 20px;*/
-                    color: white;
-                    border: solid 2px rgb(51, 51, 51);
-                    background-color: #202020;
+                    color: rgba(255, 255, 255, 0.671);
+                    border: solid 1px #0c0c0f80;
+                    /*background-color: #adadad46;*/
                 
                     position: absolute;
-                    bottom: 110px;
+                    bottom: 185px;
                     right: -60px;
                 }
                 
                 /* AQUI NESTA PARTE IREI ANIMAR A UL DO CONTEUDO DO EBOOK */
                 
                 #titulo-dt {
-                    border: solid 1px #FF4719;
+                    border: solid 1px #0c0c0f;
                     padding: 15px;
-                    border-radius: 20px;
+                    border-radius: 15px;
                     box-shadow: 3px 3px 4px black;
                     width: 450px;
                     cursor: pointer;
-                    background-color: #11181E;
+                    background: linear-gradient(#adadad9a , #adadad3d) ;
                     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                     font-size: 1.2rem;
+                    font-weight: normal;
+                    color: #e7e7e7;
                 }
                 
                 #edit-list > dd {
@@ -740,7 +740,7 @@ h2#bemvindo{
                 
                 #edit-list > dt::after {
                     content: '(clique para esconder)' ;
-                    color: white;
+                    color: #0c0c0f;
                     font-size: .5em;
                     margin-left: 10px;
                 }
@@ -748,7 +748,7 @@ h2#bemvindo{
                 #edit-list > dt.ativo::after {
                     content: '(clique aqui para ler)';
                     margin-left: 10px;
-                    color: white;
+                    color: #e7e7e7;
                     font-size: .5em;
                 }
                 
@@ -756,13 +756,14 @@ h2#bemvindo{
                     display: block;
                     animation: slideDown .5s forwards;
                     width: 450px;
-                    border: groove 1px white;
-                    border-radius: 15px;
+                    margin-top: 10px;
+                    border: groove 1px #02e0bb;
+                    border-radius: 10px;
                     /*background-color: rgba(65, 65, 65, 0.719);*/
                     background: linear-gradient(#0c0c0f ,#15151b);
                     color: rgb(211, 211, 211);
                     text-shadow: 2px 1px 2px black;
-                    font-size: 1.1rem;
+                    font-size: 1rem;
                     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                     padding: 15px;
                 }
@@ -782,10 +783,10 @@ h2#bemvindo{
         /*   ESTA É A PARTE DE MUDANDO DE COR !!!!   */
 
 .mudando-cor {
-    background: rgba(63, 63, 63, 0.781);
+    /*background: rgba(63, 63, 63, 0.781);*/
     padding: 20px;
-    border-top: 2px groove #000;
-    border-bottom: 2px groove black;
+    border-top: 2px groove #02e0bb;
+    /*border-bottom: 2px groove black;*/
     margin-bottom: 50px;
     margin-top: 105px;
 }
@@ -799,9 +800,12 @@ div#img-relatorios{
     border-radius: 15px;
     box-shadow: -2px -2px 3px rgba(10, 10, 10, 0.5);
     padding: 20px;
-    margin: 0px 0px 10px 300px;
-    max-width: 630px;
+    margin: 0px 0px 10px 60px;
+    width: 600px;
     height: 185px;
+
+    position: absolute;
+    top: 2000px;
 }
 
 #img-relatorios>h2{
@@ -829,24 +833,23 @@ div#img-relatorios{
 
 .dividindoPag {
     display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
     gap: 20px;
+    height: 500px;
 }
 
 .centralizar{
-    background-color: #181c20b6;
+    background-color: transparent;
     width: 760px;
-    height: 270px;
+    height: 70px;
     margin-left: 50px;
     font-size: 1.1rem;
     font-weight: bold;
     text-align: left;
     padding: 30px; 
     text-shadow: 2px 2px 2px rgba(48, 48, 48, 0.342); 
-    box-shadow: -4px -4px 3px 0px rgba(0, 0, 0, 0.712);
-    border-radius: 20px;
-    border: 2px groove #11181E;
+    /*border: 2px groove #11181E;*/
 }
 
 .centralizar > h2 {
@@ -869,11 +872,10 @@ div#img-relatorios{
 /* AONDE TEM UM BOX E ONDE OS CIRCULOS DE INSTAGRAM E TELEGRAM ESTÃO.*/
 #receitas-relatorios{
     height: 300px;
-    width: 230px;
+    width: 250px;
     gap: 20px;
-    background-color: #181c20b6;
+    background-color: transparent;
     padding: 20px;
-    box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.856);
     border: 2px groove #11181E;
     border-radius: 20px;
     align-items: center;
@@ -953,7 +955,7 @@ div#img-relatorios{
     padding: 10px;
     position: absolute;
     left: 5px;
-    top: 2320px;
+    top: 2260px;
     border-radius: 20px;
     border: 2px groove #02e0bb;
     z-index: 1000;
@@ -972,7 +974,7 @@ div#img-relatorios{
     background: transparent;
 
     overflow-x: scroll;
-    border-top: 2px solid #000;
+    border-top: 2px solid #02e0bb;
 }
 
 #not-1 , #not-2 , #not-3 , #not-4 {

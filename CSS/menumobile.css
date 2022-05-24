@@ -33,7 +33,7 @@
         
     .nav.active .hamburguer{
         border-top-color: transparent ;
-        color: #00ffaa;
+        color: #02e0bb;
     }
         
     .nav.active .hamburguer::before{
@@ -67,15 +67,15 @@
         height: 210px;
 
         box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.726);
-        border-radius: 0px 0px 20px 20px;
-        border: groove 1px #00ffaa;
+        border-radius: 0px 0px 10px 10px;
+        border: groove 1px #02e0bb;
         border-top: none;
     }
         
     .menu a {
         padding: 1rem 0px;
         margin: 0px 0px 0px 10px;
-        border-bottom: 2px solid #00ffaa;
+        border-bottom: 2px solid #02e0bb;
         text-align: center;
         border-radius: none;
     }
@@ -92,7 +92,7 @@
         border-bottom: 2px solid rgba(0 , 0 , 0 , 0.5);
         border-radius: none;
         background: none;
-        color: #00ffaa;
+        color: #02e0bb;
         font-size: 1rem;
         font-family: monospace;
         background: #1b2024;

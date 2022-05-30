@@ -829,8 +829,7 @@ h2#bemvindo{
 .mudando-cor {
     /*background: rgba(63, 63, 63, 0.781);*/
     padding: 20px;
-    border-top: 2px groove #02e0bb;
-    /*border-bottom: 2px groove black;*/
+    border-top: 1px groove #02e0bb;
     margin-bottom: 50px;
     margin-top: 105px;
 }
@@ -990,7 +989,8 @@ div#img-relatorios{
 
 .titulosInicial-blog {
     font-family: monospace;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-weight: 500;
     /*color: #00da91;*/
     color: #02e0bb;
     text-shadow: 2px 2px 2px black;
@@ -1000,7 +1000,7 @@ div#img-relatorios{
     position: absolute;
     left: 5px;
     top: 2260px;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 2px groove #02e0bb;
     z-index: 1000;
     margin: 20px 0px 30px 40px;
@@ -1018,7 +1018,7 @@ div#img-relatorios{
     background: transparent;
 
     overflow-x: scroll;
-    border-top: 2px solid #02e0bb;
+    border-top: solid 1px #02e0bb;
 }
 
 #not-1 , #not-2 , #not-3 , #not-4 {
@@ -1027,7 +1027,7 @@ div#img-relatorios{
     background-color: rgba(233, 233, 233, 0.192);
     padding: 20px;
     font-size:  17px;
-    width: 230px;
+    width: 200px;
     height: 285px;
     border: groove 2px rgba(0, 0, 0, 0.658);
     border-radius: 15px;

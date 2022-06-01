@@ -7,6 +7,7 @@
     <!--<link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="CSS/pag2.css">
     <link rel="stylesheet" href="CSS/menumobile.css">
+    <link rel="stylesheet" href="CSS/ebookmobile.css">
     <title>Guia Investidor iniciante</title>
 </head>
 <body>
@@ -47,6 +48,10 @@
         <h3> R$ 18,97 para comprar</h3>
     </div>
 
+    <div class="stick-lettering">
+        <p>Confira o E-book na página da Amazon</p>
+    </div>
+
     <img class="stick-amazon"  src="imagens-do-site/stick-amazon.png" alt="stick-amazon">
 
 <!-- dividir os div's em classe e dentro por mais div para fazer o grid -->
@@ -56,7 +61,11 @@
     </div>
 
     <main class="grid1" id="main-importante">
-        <div id="img-ebook"><img src="imagens-do-site/capa-ebook-nova.png">
+        <div id="img-ebook">
+            <picture>
+                <source media="(max-width: 600px )" srcset="imagens-do-site/capa-ebook-novap.png">
+                <img src="imagens-do-site/capa-ebook-nova.png" alt="">
+            </picture>
         </div>
 
         <ul class="lista-de-lis">

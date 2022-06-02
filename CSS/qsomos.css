@@ -44,7 +44,7 @@ main{
     padding: 20px;
     max-width: 850px;
     border-radius: 8px;
-    border: groove 1px #02e0bb;
+    /*border: groove 1px #02e0bb;*/
 }
 
 #conteudo-quemsomos > h1 {
@@ -63,14 +63,16 @@ main{
 }
 
 #conteudo-quemsomos > p {
+    width: 900px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: left;
     line-height: 25px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 #com-imagens {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 20px;
+    margin: 40px;
     padding: 20px;
     background-color: #02e0bb2f;
     color: #e7e7e7;
@@ -85,7 +87,7 @@ main{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.336);
 }
 
-#com-imagens>p{
+#com-imagens > p {
     margin-top: 15px;
     line-height: 25px;
     font-weight: 500;
@@ -104,10 +106,11 @@ aside{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     height: 750px;
     max-width: 400px;
-    background: #282A2D;
+    background: #2d3033;
     margin: 10px;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 8px;
+    border: 1px solid #111416;
 }
 
 aside > h1 {
@@ -123,47 +126,51 @@ div{
 }
 
 #not-1Blog{
-    background-color: #913AF3;
+    background-color: #1B1D20;
+    color: #e7e7e7;
+    font-weight: 500;
     height: 170px;
     width: 250px;
     margin-left: 40px;
     text-align: center;
     padding: 15px;
-    border: 2px groove #913AF3;
+    /*border: 3px groove #913AF3;*/
     border-radius: 15px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.651);
 }
 
-#not-1Blog:hover{
-    background-color: #b522c2a6 ; 
+#not-1Blog:hover{ 
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.438);
-    color: #fff;
-    font-weight: bold;    
+    color: #fff;  
 }
 
-#not-2{
-    background-color: rgb(235, 235, 235);
-    width: 300px;
+#not-2Blog {
+    height: 170px;
+    width: 250px;
+    margin-left: 40px;
+    color: #e7e7e7;
+    font-weight: 500;
+    background-color: #1B1D20;
     text-align: center;
     padding: 15px;
-    border: 2px groove rgb(148, 1, 148);
+    /*border: 3px groove #913AF3;*/
     border-radius: 15px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.651);
 }
 
-#not-2:hover{
-    background-color: #b522c298 ;
+#not-2Blog:hover{
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.438);
     color: #fff;
     font-weight: bold;
 }
 
-#not-3{
-    width: 250px;
-    height: 50px;
+#not-3Blog{
+    width: 240px;
+    height: 40px;
     padding: 20px;
-    margin-left: 50px;
-    background-color: #fff;
+    margin-top: 50px;
+    margin-left: 40px;
+    background-color: #913AF3;
     text-align: center;
     border-radius: 20px;
     color: black;
@@ -171,161 +178,31 @@ div{
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.651);
 }
 
-#not-3>a{
+#not-3Blog > a {
+    width: 200px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 500;
     text-decoration: none;
-    color: black;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.233);
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.233);
 }
 
-#not-3:hover{
-    background-color: #b522c298;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.438);
+#not-3Blog:hover{
+    padding: 23px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.438);
 }
 
-/*   MEDIA QUERIES PARA SITE MOBILE */
 
-@media (max-width:600px){
+#footer-qsomos {
+    margin-top: 50px;
+    padding: 20px;
+    background: #13161a;
+    text-align: center;
+    color: #e7e7e7;
+    border-top: groove 1px #e7e7e7;
+}
+#footer-qsomos > a {
+    color: #02e0bb;
 
-        /* CONIGURAÇÃO DE HEADER */
-
-    
-     .btn-mobile{
-        display: flex;
-        padding: .5rem 1rem;
-        font: bold 1rem sans-serif;
-        color: #fff;
-        background: none;
-        border: none;
-        cursor: pointer;
-        gap: 5px;
-    }
-        
-    .hamburguer{
-        display: block;
-        border-top: 2px solid;
-        width: 20px;
-    }
-        
-    .hamburguer::after , .hamburguer::before{
-        content: '';
-        display: block;
-        width: 20px;
-        height: 2px;
-        background: currentColor;
-        margin-top: 5px;
-        transition: .3s;
-        position: relative;
-    }
-        
-    .nav.active .hamburguer{
-        border-top-color: transparent ;
-        color: #00ffaa;
-    }
-        
-    .nav.active .hamburguer::before{
-        transform: rotate(135deg);
-        
-     }
-            
-    .nav.active .hamburguer::after{
-        transform: rotate(-135deg);
-        top: -7px;
-    }
-        
-    .menu{
-        display: block;
-        position: absolute;
-        width: 100%;
-        top: 80px;
-        right: 0px;
-        height: 0px;
-        background: #3d474e;
-        transition: 0.6s;
-        z-index: 1000;
-        visibility: hidden;
-        overflow-y: hidden;
-    }
-        
-    .nav.active .menu{
-        height: calc(100vh - 70px);
-        visibility: visible;
-        overflow-y: auto;
-    }
-        
-    .menu a {
-        padding: 1rem 0px;
-        margin: 10px 45px;
-        border-bottom: 2px solid #00ffaa;
-        text-align: center;
-        border-radius: none;
-    }
-        
-    .menu>li{
-        border: none;
-        border-radius: none;
-        box-shadow: none;
-        width: 100%;
-    }
-        
-    .menu>li>a{
-        border: none;
-        border-bottom: 2px solid rgba(0 , 0 , 0 , 0.5);
-        border-radius: none;
-        background: none;
-        color: #00ffaa;
-        font-size: 1.2rem;
-        font-family: monospace;
-        background: #1b2024;
-        margin-top: 20px;
-    }
-        
-    .menu>li>a:hover{
-        color: #fff;
-        background: #1b2024;
-    }
-/*   ACABADO A CONFIGURAÇÃO DO MENU MOBILE */
-
-    #conteudo-completo{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    #conteudo-quemsomos{
-        margin: 5px;
-        padding: 10px;
-    }
-    #com-imagens{
-        width: 87%;
-        margin: 0px;
-    }
-
-    #telegram-qsomos{
-        padding: 5px;
-        width: 100%;
-    }
-
-    #conteudo-completo>#noticias-blog{
-        width: 320px;
-    }
-
-    #noticias-blog{
-        margin: 5px;
-        padding: 10px;
-    }
-    #noticias-blog>div{
-        max-width: 280px;
-        margin: 0px;
-        margin-bottom: 10px;
-    }
-    div>a>img{
-        width: 250px;
-    }
-
-    .img-not{
-        width: 270px;
-    }
-    
 }

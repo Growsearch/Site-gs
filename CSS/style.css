@@ -122,7 +122,11 @@ body{
     display: none;
 }
 
-main#container{
+#boxComImgs {
+    /*background: linear-gradient(#1B1D20 , #02e0bb75 );*/
+}
+
+section#container{
     display: grid;
     grid-template-columns: 2fr;
     align-items: center;

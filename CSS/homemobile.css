@@ -25,7 +25,7 @@ header {
     width: 100px;
 }
 
-main#container {
+section#container {
     height: 340px;
     display: grid;
     grid-template-columns: 1;

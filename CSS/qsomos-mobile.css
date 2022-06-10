@@ -104,10 +104,12 @@
 #conteudo-completo{
     display: flex;
     flex-wrap: wrap;
-    max-width: 400px;
+    max-width: 350px;
+    height: 1700px;
 }
 
 #conteudo-quemsomos{
+    max-width: 300px;
     margin: 5px;
     padding: 10px;
 }
@@ -144,19 +146,25 @@
     width: 320px;
 }
 
-#noticias-blog{
+#noticias-blog {
+    max-width: 340px;
+    margin-left: 20px;
     height: 600px;
-    margin-top: 235px;
+    margin-top: 200px;
     padding: 10px;
 }
-#noticias-blog>div{
-    max-width: 280px;
-    margin: 0px;
-    margin-bottom: 10px;
+
+#noticias-blog > a > div {
+    max-width: 200px;
+    margin-right: 50px;
+    margin-bottom: 0px;
 }
-div>a>img{
-    width: 250px;
+
+#noticias-blog > div {
+    margin: auto;
+    margin-top: 60px;
 }
+
 
 .img-not{
     width: 270px;

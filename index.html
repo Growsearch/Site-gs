@@ -39,7 +39,7 @@
 <main id="boxComImgs">
     <section id="container">
         <!-- <img src="imagens-do-site/Design sem nome.png"> -->
-        <div class="info">
+        <div class="info"  id="infoPrincipal">
             <p> Tudo sobre Tecnologia e Investimentos em uma única plataforma.</p>
         </div>
     
@@ -151,12 +151,14 @@
     <h1 class="titulos-inicial" data-anime="left">Produtos</h1>
         <img id='capa-ebook' src="imagens-do-site/capa-ebook-nova.png" alt="ebook-capaNova">
 
-        <h2 id="text-cta" class="animer"> Sim... Tudo que um iniciante gostaria de saber sobre o mercado de compra e venda de ações.</h2>
+        <div class="info">
+            <p id="text-cta" > Sim... Tudo que um iniciante gostaria de saber sobre o mercado de compra e venda de ações. </p>
+        </div>
 
     <section class="botoes-ebook">
         <a href="pag2.html"><button id="checkout">Quero meu e-book </button></a>
         
-        <button id="previa-ebook" onclick="porvir()">Conferir a prévia</button>
+        <button id="previa-ebook" onclick= "carregar()" >Conferir a prévia</button>
     </section>
 
     <dl id="edit-list">
@@ -263,8 +265,10 @@
         </section>
 
     </footer>
+
+    <script type="module" src="JS/script.js"></script>
+    <script src="JS/modules/mensagens.js"></script>
 </body>
 </html>
 
-<script src="modulesJS/sitegs.js"></script>
-<script src="modulesJS/interacoes.js"></script>
+

@@ -14,7 +14,7 @@ function maquinaEscrev(elemento) {
 const prodSpeak = document.querySelector('.info > p');
 maquinaEscrev(prodSpeak);
 
-const prodSpeak2 = document.querySelector('#text-cta');
+const prodSpeak2 = document.querySelector('.text-cta');
 maquinaEscrev(prodSpeak2);
 
 }

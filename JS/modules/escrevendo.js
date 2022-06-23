@@ -14,11 +14,7 @@ function maquinaEscrev(elemento) {
 const prodSpeak = document.querySelector('.info > p');
 maquinaEscrev(prodSpeak);
 
-const prodSpeak2 = document.querySelector('.text-cta');
-maquinaEscrev(prodSpeak2);
-
 }
-// resolvido a parte de maquina de escrever.  Abaixo irei fazer a integração com 
-// o scroll para que so comece quando o usuario chegar a section.
+
 
 

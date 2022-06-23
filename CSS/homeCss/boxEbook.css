@@ -1,0 +1,200 @@
+/* BOX DO EBOOK GUIA INICIANTE */
+
+.box-ebook {
+    padding-top: 15px;
+    width: 1350px;
+    height: 390px;
+    /*background-image: url(imagemSiteCSS/kindle-ebooKindle.jpg);*/
+    background: none;
+    margin: auto;
+    margin-bottom: 70px;
+    margin-top: 15px;
+    display: grid;
+    grid-template-areas: "a b d"
+        "a c d"
+        "a e p"
+        "a e p";
+    grid-template-rows: 100px 100px 190px;
+    grid-template-columns: 300px 550px 350px;
+    row-gap: 10px;
+    /*box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.493);*/
+    border-radius: 10px;
+    /*border: groove 1px #070708;*/
+    position: relative;
+}
+
+#capa-ebook {
+    grid-area: a;
+}
+
+.text-cta {
+    opacity: 0;
+    grid-area: b;
+    width: 650px;
+    height: 100px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    font-size: 1.8rem;
+}
+
+.text-cta.ativo {
+    opacity: 1;
+}
+
+.botoes-ebook {
+    grid-area: c;
+    height: 100px;
+    width: 550px;
+}
+
+#checkout {
+    height: 60px;
+    padding: 15px 40px 15px 40px;
+    /*background: linear-gradient(#02e0bb , #087462);*/
+    background: linear-gradient(#0c0c0f, #15151b);
+    cursor: pointer;
+    border-radius: 8px;
+    border: solid 1px #02e0bb;
+    margin-right: 30px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.534);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.521);
+}
+
+#checkout::after {
+    content: ">";
+    margin-left: 20px;
+}
+
+#previa-ebook {
+    height: 40px;
+    padding: 15px 40px 35px 40px;
+    /*background: linear-gradient(#01947B , #006d5bcb);*/
+    background: linear-gradient(#0c0c0f, #15151b);
+    cursor: pointer;
+    border-radius: 8px;
+    border: groove 1px #02e0bb98;
+    margin-left: 30px;
+    color: #e7e7e7;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.548);
+    font-size: .8rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.527);
+}
+
+#edit-list {
+    grid-area: e;
+    color: white;
+    width: 450px;
+    font-size: 1.5rem;
+    width: 450px;
+}
+
+#diasGarantia {
+    grid-area: d;
+    /*color: #913AF3;*/
+    color: #e7e7e7;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: normal;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    align-self: center;
+    text-align: center;
+    text-shadow: -2px -2px 3px black;
+
+    height: 50px;
+    width: 190px;
+    position: absolute;
+    right: 10px;
+    top: 100px;
+}
+
+#diasGarantia::before {
+    content: "|";
+    color: #02e0bb;
+}
+
+#pdoemogi {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: left;
+    height: 50px;
+    width: 280px;
+    padding: 8px;
+    border-radius: 10px;
+    grid-area: p;
+    /*padding: 20px;*/
+    color: #ececec;
+    border: solid 1px #02e0bb;
+    background-color: #0c0c0f;
+
+    position: absolute;
+    bottom: 185px;
+    right: -60px;
+}
+
+/* AQUI NESTA PARTE IREI ANIMAR A UL DO CONTEUDO DO EBOOK */
+
+#titulo-dt {
+    /*border: solid 1px #02e0bb;*/
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px black;
+    width: 380px;
+    cursor: pointer;
+    /*background: linear-gradient(#adadad9a , #adadad3d) ;*/
+    background: linear-gradient(#0c0c0f, #15151b);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #e7e7e7;
+}
+
+#edit-list>dd {
+    display: none;
+}
+
+#edit-list>dt::after {
+    content: '(clique para esconder)';
+    color: #0c0c0f;
+    font-size: .5em;
+    margin-left: 10px;
+}
+
+#edit-list>dt.ativo::after {
+    content: '(clique aqui para ler)';
+    margin-left: 10px;
+    color: #e7e7e7;
+    font-size: .5em;
+}
+
+#edit-list>dd.ativo {
+    display: block;
+    animation: slideDown .5s forwards;
+    width: 450px;
+    margin-top: 10px;
+    border: groove 1px #e7e7e7;
+    border-radius: 10px;
+    /*background-color: rgba(65, 65, 65, 0.719);*/
+    background: linear-gradient(#0c0c0f, #15151b);
+    color: rgb(211, 211, 211);
+    text-shadow: 2px 1px 2px black;
+    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 15px;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        max-height: 0;
+    }
+
+    to {
+        opacity: 1;
+        max-height: 200px;
+    }
+}

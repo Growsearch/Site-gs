@@ -1,9 +1,9 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-body{
+body {
     max-width: 1350px;
     margin: auto;
     /*background: linear-gradient(#15151b , #202226, #202226);*/
@@ -58,9 +58,9 @@ body{
     z-index: 1000;
 }
 
-.header{
+.header {
     /*background-color: #11181E;*/
-    background: linear-gradient(#13161a , #272727);
+    background: linear-gradient(#13161a, #272727);
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -70,7 +70,7 @@ body{
     height: 70px;
 }
 
-.header > a {
+.header>a {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 30px;
     color: rgb(224, 224, 224);
@@ -85,20 +85,20 @@ body{
     margin-right: 30px;
 }
 
-.menu > li{
+.menu>li {
     margin-left: 10px;
     list-style: none;
     /*box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.527);*/
     border-radius: 15px;
 }
 
-.menu>li>a:hover{
+.menu>li>a:hover {
     box-shadow: none;
     color: #02e0bb;
     text-decoration: underline;
 }
 
-.menu > li > a {
+.menu>li>a {
     display: block;
     font-size: 18px;
     font-weight: 400;
@@ -110,7 +110,7 @@ body{
     /*border: groove 1px #e7e7e7;*/
 }
 
-.menu > #bloghead > a:hover {
+.menu>#bloghead>a:hover {
     color: #b676ff;
     /*border: groove 1px #e7e7e7;*/
 }
@@ -118,7 +118,7 @@ body{
 
 /*      BOTAO PARA P MENU MOBILE  (configuração dele é no @media, la em baixo!)  */
 
-.btn-mobile{
+.btn-mobile {
     display: none;
 }
 
@@ -132,7 +132,9 @@ section#container {
     align-items: flex-start;
     padding-top: 45px;
     justify-content: space-between;
-    border-top: 2px groove /*#02e0bb*/ rgb(224, 224, 224);
+    border-top: 2px groove
+        /*#02e0bb*/
+        rgb(224, 224, 224);
     height: 170px;
 }
 
@@ -151,7 +153,7 @@ section#container {
     color: #e7e7e7;
 }
 
-.info > p::before {
+.info>p::before {
     content: "";
     display: inline-block;
     background: rgb(224, 224, 224);
@@ -162,28 +164,31 @@ section#container {
     border-radius: 10px;
 }
 
-.info > p::after {
+.info>p::after {
     content: '|';
     margin-left: 5px;
     opacity: 1;
-    animation: pisca  .7s infinite;
+    animation: pisca .7s infinite;
 }
 
 @keyframes pisca {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 1;
     }
+
     50% {
         opacity: 0;
     }
 }
 
-button#ativar{
+button#ativar {
     padding: 10px 22px 30px 15px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 15px;
     font-weight: 500;
-    background: linear-gradient(#02e0bb , #01947B);
+    background: linear-gradient(#02e0bb, #01947B);
     color: #fff;
     display: block;
     margin: 200px 30px 0px 0px;
@@ -202,14 +207,14 @@ button#ativar::after {
     margin-left: 10px;
 }
 
-button#ativar:hover{
+button#ativar:hover {
     height: 50px;
     width: 275px;
     align-items: center;
     box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.829);
 }
 
-.frase{
+.frase {
     font-size: 1.2rem;
     font-family: Arial, Helvetica, sans-serif;
     width: 250px;
@@ -229,38 +234,39 @@ button#ativar:hover{
     opacity: 0;
 }
 
-.frase.animar{
+.frase.animar {
     animation: slide 1s forwards;
 }
 
-@keyframes slide{
-    to{
+@keyframes slide {
+    to {
         opacity: 2;
         transform: translateX(0);
     }
 }
 
-#conteudo{ /* MAIN QUE CONTEM A GRANDE PARTE DO CONTEUDO DO SITE */
+#conteudo {
+    /* MAIN QUE CONTEM A GRANDE PARTE DO CONTEUDO DO SITE */
 
     /*background-image: linear-gradient(#11181E , #292b2e , #62636486);
     /*essa class servirá caso queira colocar algum background-image no fundo. */
-     padding-bottom: 20px;
-     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-     height: 70px;
-     margin-bottom: 20px;
+    padding-bottom: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 70px;
+    margin-bottom: 20px;
 }
 
-h2#bemvindo{
+h2#bemvindo {
     text-shadow: 2px 2px 5px rgba(39, 39, 39, 0.774);
     font-size: 1.5rem;
     margin-left: 55px;
     padding: 5px 5px 5px 25px;
     text-align: left;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     color: #f3f5f4cb;
     /*background-color: #11181E;*/
-    background: linear-gradient(#181C20 , #15151b);
-    border:  groove .5px #02e0bb;
+    background: linear-gradient(#181C20, #15151b);
+    border: groove .5px #02e0bb;
     border-radius: 5px;
     max-width: 290px;
     box-shadow: 2px 2px 2px rgba(20, 20, 20, 0.952)
@@ -268,7 +274,7 @@ h2#bemvindo{
 
 /* UMA DAS PARTES MAIS IMPORTANTES, PARTE QUE CONTEM A MAIOR PARTE DE INFORMACOES DO SITE. */
 
-.grid-1{
+.grid-1 {
     font-family: Arial, Helvetica, sans-serif;
     background: #282A2D;
     /*border: 2px groove #3d3d3d;*/
@@ -282,12 +288,12 @@ h2#bemvindo{
     /*box-shadow: 4px 4px 5px black;*/
 
     grid-template-areas: "a b c"
-                         "d d d";
+        "d d d";
 }
 
 /*  QUEM SOMOS -- BOX VERDE */
 
-#quemsomos{
+#quemsomos {
     /*background: linear-gradient(#e9e9e921 , rgb(32, 32, 32));*/
     background: #1B1D20;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -323,17 +329,17 @@ h2#bemvindo{
 
 #quemsomos > p {
     padding: 20px;
-    font-size:  18px;
+    font-size: 18px;
     /*color: rgb(199, 199, 199);*/
     color: #e7e7e7;
     text-shadow: 2px 2px 2px black;
 }
 
-#quemsomos>a{
+#quemsomos > a {
     text-decoration: none;
 }
 
-#quemsomos>a>h3{
+#quemsomos > a > h3 {
     text-align: center;
     padding: 15px;
     /*background-image: linear-gradient(#02e0bb , #087462);*/
@@ -342,7 +348,8 @@ h2#bemvindo{
     border-radius: 10px;
     box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.897);
     color: #ececec;
-    text-shadow: 2px 2px 2px #1b151596;;
+    text-shadow: 2px 2px 2px #1b151596;
+    ;
     font-size: 18px;
     font-weight: 500;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -354,7 +361,7 @@ h2#bemvindo{
 
 /* CONFIRA O BLOG --  BOX ROXO*/
 
-#confira-blog{
+#confira-blog {
     height: 150px;
     width: 350px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -388,11 +395,12 @@ h2#bemvindo{
     left: 800px;
     top: 410px;
 }
+
 #confira-blog > p {
     padding: 10px 20px 0px 20px;
     line-height: 25px;
     margin-top: 10px;
-    font-size:  18px;
+    font-size: 18px;
     /*color: rgb(199, 199, 199);*/
     color: #e7e7e7;
     text-shadow: 2px 2px 2px black;
@@ -423,7 +431,7 @@ h2#bemvindo{
 
 /* TODA A PARTE DE LISTAS NO MEIO DO SITE*/
 
-.listas{
+.listas {
     width: 90%;
     padding: 10px 10px 40px 10px;
     height: 350px;
@@ -452,10 +460,11 @@ h2#bemvindo{
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.445);
     width: 280px;
     color: #02e0bb;
-    background: #1B1D20;;
+    background: #1B1D20;
+    ;
     padding: 10px;
     border: groove 2px #02e0bb;
-    border-radius:  8px;
+    border-radius: 8px;
     text-align: left;
     position: absolute;
     left: 50px;
@@ -502,15 +511,15 @@ h2#bemvindo{
     list-style: none;
 }
 
-.listas> ul > li > h3 {
-    grid-column: 2 , 3;
+.listas > ul > li > h3 {
+    grid-column: 2, 3;
 
     height: 50px;
     /*background: linear-gradient(#02e0bb , #0b6455);*/
     background: #1B1D20;
     padding: 10px;
-    border-radius: 8px 8px 8px 8px ;
-    border: groove 1px /*#0c0c0f*/ #02e0bb;
+    border-radius: 8px 8px 8px 8px;
+    border: groove 1px #02e0bb;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.603);
     text-align: center;
     /*color: #0c0c0f;*/
@@ -520,53 +529,56 @@ h2#bemvindo{
     font-size: 1.2rem;
 }
 
-.listas > ul > li > p {
+.listas>ul>li>p {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 10px 20px;
     height: 70px;
-    font-size:  14px;
+    font-size: 14px;
     /*color: #15151b;*/
     color: #e7e7e7;
     /*background: linear-gradient(#02e0bb , #0b6455);*/
-    border-radius: 8px 8px 10px 10px ;
+    border-radius: 8px 8px 10px 10px;
     border: solid 1px #1B1D20;
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.603);
     margin-bottom: 3px;
 }
 
-.listas>ul>li>p:hover{
+.listas>ul>li>p:hover {
     /*background: linear-gradient(#087462 , #02e0bb) ;*/
     background: #913AF3;
     font-weight: 500;
 }
 
-#tele-h3{
+#tele-h3 {
     /* color: rgb(0, 195, 255); */
     color: rgb(187, 187, 187);
     grid-column: 1;
     grid-row: 1;
- }
- #desv-etf{
+}
+
+#desv-etf {
     /* color: tomato;*/
     color: rgb(187, 187, 187);
     grid-column: 2;
     grid-row: 1;
- }
- #guia-h3{
-     /*color: #00ffaa;*/
-     color: rgb(187, 187, 187);
-     grid-column: 1;
-     grid-row: 2;
- }
- #bonus-h3{
-     color: rgb(187, 187, 187);
-     grid-column: 2;
-     grid-row: 2;
- }
- 
+}
+
+#guia-h3 {
+    /*color: #00ffaa;*/
+    color: rgb(187, 187, 187);
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#bonus-h3 {
+    color: rgb(187, 187, 187);
+    grid-column: 2;
+    grid-row: 2;
+}
+
 /* O QUE ESTA POR VIR*/
 
-#oque-esta-porvir{
+#oque-esta-porvir {
     height: 150px;
     width: 350px;
     padding: 10px;
@@ -574,7 +586,8 @@ h2#bemvindo{
     border-radius: 10px;
     /*background: linear-gradient(#e9e9e921 , rgb(32, 32, 32));*/
     background: #1B1D20;
-    
+    box-shadow: 2px 2px 2px #0c0c0f;
+
     grid-area: c;
 }
 
@@ -582,7 +595,7 @@ h2#bemvindo{
     border: solid 1px #02e0bb;
 }
 
-#oque-esta-porvir > #stickNov {
+#oque-esta-porvir>#stickNov {
     padding: 10px;
     background: #0c0c0f;
     color: #02e0bb;
@@ -596,18 +609,18 @@ h2#bemvindo{
     top: 410px;
 }
 
-#oque-esta-porvir > p {
+#oque-esta-porvir>p {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 10px 20px 0px 20px;
     line-height: 25px;
     margin-top: 10px;
-    font-size:  18px;
+    font-size: 18px;
     /*color: rgb(199, 199, 199);*/
     color: #e7e7e7;
     text-shadow: 2px 2px 2px black;
 }
 
-#oque-esta-porvir > a > h3 {
+#oque-esta-porvir>a>h3 {
     text-align: center;
     /*background-image: linear-gradient(#02e0bb , #087462);*/
     background: #1B1D20;
@@ -628,206 +641,14 @@ h2#bemvindo{
     width: 200px;
 }
 
-#oque-esta-porvir>a{
+#oque-esta-porvir>a {
     text-decoration: none;
 }
 
-         /* BOX DO EBOOK GUIA INICIANTE */
+/* BOX DO EBOOK GUIA INICIANTE 
+@import url(CSS/homeCss/boxEbook.css);
 
-.box-ebook {
-    padding-top: 15px;
-    width: 1350px;
-    height: 390px;
-    /*background-image: url(imagemSiteCSS/kindle-ebooKindle.jpg);*/
-    background: none;
-    margin: auto;
-    margin-bottom: 70px;
-    margin-top: 15px;
-    display: grid;
-    grid-template-areas: "a b d"
-                         "a c d"
-                         "a e p"
-                         "a e p";
-    grid-template-rows: 100px 100px 190px;
-    grid-template-columns: 300px 550px 350px;
-    row-gap: 10px;
-    /*box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.493);*/
-    border-radius: 10px;
-    /*border: groove 1px #070708;*/
-    position: relative;
-}
-                                
-#capa-ebook {
-    grid-area: a;
-}
-                                
-.text-cta {
-    grid-area: b;
-    width: 650px;
-    height: 100px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: lighter;
-    font-size: 1.8rem;
-}
-                                
-.botoes-ebook {
-    grid-area: c;
-    height: 100px;
-    width: 550px;
-}
-                                
-#checkout {
-    height: 60px;
-    padding: 15px 40px 15px 40px;
-    /*background: linear-gradient(#02e0bb , #087462);*/
-    background: linear-gradient(#0c0c0f ,#15151b);
-    cursor: pointer;
-    border-radius: 8px;
-    border: solid 1px #02e0bb;
-    margin-right: 30px;            
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 500;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.534);
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.521);
-}
-#checkout::after {
-    content: ">";
-    margin-left: 20px;
-}
-                
-#previa-ebook {
-    height: 40px;
-    padding: 15px 40px 35px 40px;
-    /*background: linear-gradient(#01947B , #006d5bcb);*/
-    background: linear-gradient(#0c0c0f ,#15151b);
-    cursor: pointer;
-    border-radius: 8px;
-    border: groove 1px #02e0bb98;
-    margin-left: 30px;      
-    color: #e7e7e7;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.548);
-    font-size: .8rem;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 500;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.527);
-}
-                                
-#edit-list {
-    grid-area: e;
-    color: white;
-    width: 450px;
-    font-size: 1.5rem;
-    width: 450px;
-}
-                
-                #diasGarantia {
-                    grid-area: d;
-                    /*color: #913AF3;*/
-                    color: #e7e7e7;
-                    font-size: 2rem;
-                    font-style: italic;
-                    font-weight: normal;
-                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                    align-self: center;
-                    text-align: center;
-                    text-shadow: -2px -2px 3px black;
-                
-                    height: 50px;
-                    width: 190px;
-                    position: absolute;
-                    right: 10px;
-                    top: 100px;  
-                }
-
-#diasGarantia::before {
-    content: "|";
-    color: #02e0bb;
-}
-                                
-                #pdoemogi {
-                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                    text-align: left;
-                    height: 50px;
-                    width: 280px;
-                    padding: 8px;
-                    border-radius: 10px;
-                    grid-area: p;
-                    /*padding: 20px;*/
-                    color: #ececec;
-                    border: solid 1px #02e0bb;
-                    background-color: #0c0c0f;
-                
-                    position: absolute;
-                    bottom: 185px;
-                    right: -60px;
-                }
-                
-                /* AQUI NESTA PARTE IREI ANIMAR A UL DO CONTEUDO DO EBOOK */
-                
-                #titulo-dt {
-                    /*border: solid 1px #02e0bb;*/
-                    padding: 15px;
-                    border-radius: 10px;
-                    box-shadow: 3px 3px 4px black;
-                    width: 380px;
-                    cursor: pointer;
-                    /*background: linear-gradient(#adadad9a , #adadad3d) ;*/
-                    background: linear-gradient(#0c0c0f ,#15151b);
-                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                    font-size: 1.2rem;
-                    font-weight: normal;
-                    color: #e7e7e7;
-                }
-                
-                #edit-list > dd {
-                    display: none;
-                }
-                
-                #edit-list > dt::after {
-                    content: '(clique para esconder)' ;
-                    color: #0c0c0f;
-                    font-size: .5em;
-                    margin-left: 10px;
-                }
-                
-                #edit-list > dt.ativo::after {
-                    content: '(clique aqui para ler)';
-                    margin-left: 10px;
-                    color: #e7e7e7;
-                    font-size: .5em;
-                }
-                
-                #edit-list > dd.ativo {
-                    display: block;
-                    animation: slideDown .5s forwards;
-                    width: 450px;
-                    margin-top: 10px;
-                    border: groove 1px #e7e7e7;
-                    border-radius: 10px;
-                    /*background-color: rgba(65, 65, 65, 0.719);*/
-                    background: linear-gradient(#0c0c0f ,#15151b);
-                    color: rgb(211, 211, 211);
-                    text-shadow: 2px 1px 2px black;
-                    font-size: 1rem;
-                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                    padding: 15px;
-                }
-                
-                @keyframes slideDown {
-                    from{
-                        opacity: 0;
-                        max-height: 0;
-                    }
-                
-                    to{
-                        opacity: 1;
-                        max-height: 200px;
-                    }
-                }
-
-        /*   ESTA É A PARTE DE MUDANDO DE COR !!!!   */
+/*   ESTA É A PARTE DE MUDANDO DE COR !!!!   */
 
 .mudando-cor {
     /*background: rgba(63, 63, 63, 0.781);*/
@@ -837,11 +658,11 @@ h2#bemvindo{
     margin-top: 105px;
 }
 
-div#img-relatorios{
+div#img-relatorios {
     color: #fff;
-    
-    background-image: url(imagemSiteCSS/_fundoRelatorioempresas.jpg);
-    /*background: #181c20b6;*/
+
+    /*background-image: url(imagemSiteCSS/_fundoRelatorioempresas.jpg);
+    background: #181c20b6;*/
     border: groove 3px #181c208e;
     border-radius: 15px;
     box-shadow: -2px -2px 3px rgba(10, 10, 10, 0.5);
@@ -854,7 +675,7 @@ div#img-relatorios{
     top: 2000px;
 }
 
-#img-relatorios>h2{
+#img-relatorios>h2 {
     margin-top: 15px;
     width: 275px;
     font-size: 1.8rem;
@@ -862,17 +683,18 @@ div#img-relatorios{
     text-shadow: 2px 2px 4px rgba(128, 128, 128, 0.644);
 }
 
-/*       ANIMAÇÃO DATA-ANIME     */ /*    IMPORTANTE !!!*/
+/*       ANIMAÇÃO DATA-ANIME     */
+/*    IMPORTANTE !!!*/
 
 [data-anime] {
     opacity: 0;
     transition: .3s;
-    transform: translate3d(-50px , 0 , 0);
+    transform: translate3d(-50px, 0, 0);
 }
 
-[data-anime].animate{
+[data-anime].animate {
     opacity: 1;
-    transform: translate3d(0px , 0px , 0px);
+    transform: translate3d(0px, 0px, 0px);
 }
 
 /* AQUI É ONDE FICA A DESCRICAO E OS BOTOES P INSTAGRAM E PARA O TELEGRAM*/
@@ -885,7 +707,7 @@ div#img-relatorios{
     height: 500px;
 }
 
-.centralizar{
+.centralizar {
     background-color: transparent;
     width: 760px;
     height: 70px;
@@ -894,12 +716,12 @@ div#img-relatorios{
     font-size: 1.1rem;
     font-weight: bold;
     text-align: left;
-    padding: 30px; 
-    text-shadow: 2px 2px 2px rgba(48, 48, 48, 0.342); 
+    padding: 30px;
+    text-shadow: 2px 2px 2px rgba(48, 48, 48, 0.342);
     /*border: 2px groove #11181E;*/
 }
 
-.centralizar > h2 {
+.centralizar>h2 {
     font-size: 1.5rem;
     margin-bottom: 20px;
     font-weight: 500;
@@ -908,7 +730,8 @@ div#img-relatorios{
     color: #02e0bb;
     text-shadow: 2px 2px 4px black;
 }
-.centralizar > p {
+
+.centralizar>p {
     /*font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;*/
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: lighter;
@@ -919,7 +742,7 @@ div#img-relatorios{
 }
 
 /* AONDE TEM UM BOX E ONDE OS CIRCULOS DE INSTAGRAM E TELEGRAM ESTÃO.*/
-#receitas-relatorios{
+#receitas-relatorios {
     margin-top: 100px;
     height: 300px;
     width: 250px;
@@ -933,7 +756,7 @@ div#img-relatorios{
     border: 2px groove #11181E;
 }
 
-.botao-1{
+.botao-1 {
     margin: auto;
     margin-bottom: 5px;
     text-align: center;
@@ -944,12 +767,13 @@ div#img-relatorios{
     max-width: 100px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.438);
 }
-.botao-1 > a {
+
+.botao-1>a {
     color: #fff;
     text-decoration: none;
 }
 
-.botao-1 > a > img {
+.botao-1>a>img {
     width: 50px;
     height: 50px;
 }
@@ -968,23 +792,24 @@ div#img-relatorios{
     border-radius: 50px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.438);
 }
-.botao-2>a{
+
+.botao-2>a {
     text-decoration: none;
     color: #070e25;
 }
 
-.botao-2>a>img{
+.botao-2>a>img {
     width: 50px;
     height: 50px;
 }
 
-.botao-2:hover{
+.botao-2:hover {
     background: #02e0bb;
 }
 
-#receitas-relatorios > p {
+#receitas-relatorios>p {
     color: #fff;
-    font-family:  monospace;
+    font-family: monospace;
     text-align: center;
     margin: 15px;
 }
@@ -1013,7 +838,7 @@ div#img-relatorios{
     margin: 20px 0px 30px 40px;
 }
 
-#imagens{
+#imagens {
     margin: 0px 0px 20px 0px;
     /*color: #050918;*/
     line-height: 25px;
@@ -1028,12 +853,15 @@ div#img-relatorios{
     border-top: solid 1px #02e0bb;
 }
 
-#not-1 , #not-2 , #not-3 , #not-4 {
+#not-1,
+#not-2,
+#not-3,
+#not-4 {
     font-family: Arial, Helvetica, sans-serif;
     margin: 70px 0px 15px 20px;
     background-color: rgba(233, 233, 233, 0.192);
     padding: 20px;
-    font-size:  17px;
+    font-size: 17px;
     width: 200px;
     height: 285px;
     border: groove 2px rgba(0, 0, 0, 0.658);
@@ -1045,6 +873,7 @@ div#img-relatorios{
 #not-1 {
     background: url(imagemSiteCSS/Bitcoin.jpg);
 }
+
 #not-1:hover {
     background: url(imagemSiteCSS/hover-blogMaterias.jpg);
 }
@@ -1052,6 +881,7 @@ div#img-relatorios{
 #not-2 {
     background: url(imagemSiteCSS/faang-fotoBlog.jpg);
 }
+
 #not-2:hover {
     background: url(imagemSiteCSS/hover-blogMaterias.jpg);
 }

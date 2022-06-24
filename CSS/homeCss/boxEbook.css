@@ -6,7 +6,7 @@
     height: 390px;
     /*background-image: url(imagemSiteCSS/kindle-ebooKindle.jpg);*/
     background: none;
-    margin: auto;
+    margin: auto;   
     margin-bottom: 70px;
     margin-top: 15px;
     display: grid;
@@ -179,7 +179,8 @@
     border: groove 1px #e7e7e7;
     border-radius: 10px;
     /*background-color: rgba(65, 65, 65, 0.719);*/
-    background: linear-gradient(#0c0c0f, #15151b);
+    /*background: linear-gradient(#0c0c0f, #15151b);*/
+    background: linear-gradient(#007a66 , #02e0bb9c);
     color: rgb(211, 211, 211);
     text-shadow: 2px 1px 2px black;
     font-size: 1rem;

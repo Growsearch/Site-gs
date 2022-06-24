@@ -70,7 +70,7 @@ body {
     height: 70px;
 }
 
-.header>a {
+.header > a {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 30px;
     color: rgb(224, 224, 224);
@@ -85,20 +85,20 @@ body {
     margin-right: 30px;
 }
 
-.menu>li {
+.menu > li {
     margin-left: 10px;
     list-style: none;
     /*box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.527);*/
     border-radius: 15px;
 }
 
-.menu>li>a:hover {
+.menu > li > a:hover {
     box-shadow: none;
     color: #02e0bb;
     text-decoration: underline;
 }
 
-.menu>li>a {
+.menu > li > a {
     display: block;
     font-size: 18px;
     font-weight: 400;
@@ -110,7 +110,7 @@ body {
     /*border: groove 1px #e7e7e7;*/
 }
 
-.menu>#bloghead>a:hover {
+.menu > #bloghead > a:hover {
     color: #b676ff;
     /*border: groove 1px #e7e7e7;*/
 }
@@ -154,14 +154,11 @@ section#container {
 }
 
 .info>p::before {
-    content: "";
-    display: inline-block;
-    background: rgb(224, 224, 224);
-    width: 15px;
-    height: 5px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    border-radius: 10px;
+    content: '';
+    height: 8px;
+    background: #02e0bb;
+    padding: 2px 2px;
+    margin-right: 20px;
 }
 
 .info>p::after {
@@ -294,15 +291,15 @@ h2#bemvindo {
 /*  QUEM SOMOS -- BOX VERDE */
 
 #quemsomos {
-    /*background: linear-gradient(#e9e9e921 , rgb(32, 32, 32));*/
     background: #1B1D20;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.438);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 10px;
     text-align: left;
     border-radius: 8px;
     /*box-shadow: 4px 5px 4px rgb(0, 0, 0);*/
     /*border: groove 3px #5c5c5cc7;*/
-    border: .2px solid #e7e7e7;
+    border: .2px solid #080808;
     max-width: 350px;
     grid-area: a;
     height: 150px;
@@ -314,9 +311,10 @@ h2#bemvindo {
 }
 
 #quemsomos > #stickQsomos {
-    padding: 10px;
-    background: #0c0c0f;
-    color: #02e0bb;
+    padding: 5px 15px;
+    /*background: #0c0c0f;
+    color: #02e0bb;*/
+    background: linear-gradient(#01947B , #02e0bb);
     font-family: monospace;
     border: solid 1px #02e0bb;
     border-radius: 5px;
@@ -324,7 +322,7 @@ h2#bemvindo {
 
     position: absolute;
     left: 375px;
-    top: 410px;
+    top: 420px;
 }
 
 #quemsomos > p {
@@ -342,18 +340,17 @@ h2#bemvindo {
 #quemsomos > a > h3 {
     text-align: center;
     padding: 15px;
-    /*background-image: linear-gradient(#02e0bb , #087462);*/
-    background: #1B1D20;
-    border: groove 2px #02e0bb;
+    background: #15151b;
+    /*background: linear-gradient(#01947B , #02e0bb);*/
+    border: groove 1px #02e0bb;
     border-radius: 10px;
     box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.897);
-    color: #ececec;
-    text-shadow: 2px 2px 2px #1b151596;
-    ;
+    /*color: #ececec;*/
+    color: #e7e7e7;
+    /*text-shadow: 1px 1px 1px #1b151596;*/
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-shadow: 2px 2px 2px #1b151596;
 
     width: 230px;
     margin-left: 36px;
@@ -367,13 +364,12 @@ h2#bemvindo {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     /*background: linear-gradient(#e9e9e921 , rgb(32, 32, 32));*/
     background: #1B1D20;
-    color: #fff;
     padding: 10px;
     text-align: left;
     border-radius: 8px;
     margin-left: 15px;
-    border: solid .5px #e7e7e7;
-    /*border: groove 1px #D92B00;
+    border: solid .5px #080808;
+    box-shadow: 1px 1px 2px #0c0c0f;
     /*grid-area: d;*/
     grid-area: b;
 }
@@ -383,9 +379,11 @@ h2#bemvindo {
 }
 
 #confira-blog > #stickBlog {
-    padding: 10px;
-    background: #0c0c0f;
-    color: #913AF3;
+    padding: 5px 15px;
+    /*background: #0c0c0f;*/
+    background: linear-gradient(#6b2ab6 ,#913AF3);
+    /*color: #913AF3;*/
+    color: #e7e7e7;
     font-family: monospace;
     border: solid 1px #913AF3;
     border-radius: 5px;
@@ -393,7 +391,7 @@ h2#bemvindo {
 
     position: absolute;
     left: 800px;
-    top: 410px;
+    top: 420px;
 }
 
 #confira-blog > p {
@@ -410,9 +408,9 @@ h2#bemvindo {
     text-align: center;
     margin-top: 20px;
     padding: 15px;
-    /*background: #913AF3;*/
-    background: #1B1D20;
-    border: groove 2px #983eff;
+    background: #15151b;
+    /*background: linear-gradient(#732fc2 , #913AF3); COLORIDO */
+    border: groove 1px #983eff;
     border-radius: 10px;
     color: rgb(219, 219, 219);
     box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.897);
@@ -543,7 +541,7 @@ h2#bemvindo {
     margin-bottom: 3px;
 }
 
-.listas>ul>li>p:hover {
+.listas > ul > li > p:hover {
     /*background: linear-gradient(#087462 , #02e0bb) ;*/
     background: #913AF3;
     font-weight: 500;
@@ -582,11 +580,11 @@ h2#bemvindo {
     height: 150px;
     width: 350px;
     padding: 10px;
-    border: 1px groove #e7e7e7;
+    border: 1px solid #0c0c0f;
     border-radius: 10px;
     /*background: linear-gradient(#e9e9e921 , rgb(32, 32, 32));*/
     background: #1B1D20;
-    box-shadow: 2px 2px 2px #0c0c0f;
+    box-shadow: 1px 1px 2px #0c0c0f;
 
     grid-area: c;
 }
@@ -596,9 +594,11 @@ h2#bemvindo {
 }
 
 #oque-esta-porvir>#stickNov {
-    padding: 10px;
-    background: #0c0c0f;
-    color: #02e0bb;
+    padding: 5px 15px;
+    /*background: #0c0c0f;*/
+    background: linear-gradient(#01947B , #02e0bb);
+    /*color: #02e0bb;*/
+    color: #15151b;
     font-family: monospace;
     border: solid 1px #02e0bb;
     border-radius: 5px;
@@ -606,10 +606,10 @@ h2#bemvindo {
 
     position: absolute;
     left: 1230px;
-    top: 410px;
+    top: 420px;
 }
 
-#oque-esta-porvir>p {
+#oque-esta-porvir > p {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 10px 20px 0px 20px;
     line-height: 25px;
@@ -620,20 +620,20 @@ h2#bemvindo {
     text-shadow: 2px 2px 2px black;
 }
 
-#oque-esta-porvir>a>h3 {
+#oque-esta-porvir > a > h3 {
     text-align: center;
-    /*background-image: linear-gradient(#02e0bb , #087462);*/
-    background: #1B1D20;
+    background: #15151b;
+    /*background: linear-gradient(#01947B , #02e0bb); COLORIDO */
     padding: 15px;
-    border: groove 2px #02e0bb;
+    border: groove 1px #02e0bb;
     border-radius: 10px;
     box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.897);
-    /*color: rgb(39, 39, 39);*/
-    color: #ececec;
+    /*color: rgb(39, 39, 39);
+    color: #ececec;*/
+    color: #e7e7e7;
     font-size: 18px;
     font-weight: 500;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-shadow: 2px 2px 2px #1b151596;
     text-decoration: none;
     margin-top: 15px;
     margin-left: 65px;
@@ -641,7 +641,7 @@ h2#bemvindo {
     width: 200px;
 }
 
-#oque-esta-porvir>a {
+#oque-esta-porvir > a {
     text-decoration: none;
 }
 
@@ -651,23 +651,22 @@ h2#bemvindo {
 /*   ESTA É A PARTE DE MUDANDO DE COR !!!!   */
 
 .mudando-cor {
-    /*background: rgba(63, 63, 63, 0.781);*/
+    background: #282A2D;
     padding: 20px;
-    border-top: 1px groove #02e0bb;
+    border-top: 1px groove #0c0c0f;
     margin-bottom: 50px;
     margin-top: 105px;
 }
 
 div#img-relatorios {
-    color: #fff;
-
-    /*background-image: url(imagemSiteCSS/_fundoRelatorioempresas.jpg);
-    background: #181c20b6;*/
-    border: groove 3px #181c208e;
+    color: #e7e7e7;
+    /*background-image: url(imagemSiteCSS/_fundoRelatorioempresas.jpg); */
+    background: #1B1D20;
+    box-shadow: 2px 2px 3px #000000;
+    border: solid 1px #02e0bb;
     border-radius: 15px;
-    box-shadow: -2px -2px 3px rgba(10, 10, 10, 0.5);
     padding: 20px;
-    margin: 0px 0px 10px 60px;
+    margin: 20px 0px 10px 60px;
     width: 600px;
     height: 185px;
 
@@ -675,11 +674,12 @@ div#img-relatorios {
     top: 2000px;
 }
 
-#img-relatorios>h2 {
+#img-relatorios > h2 {
     margin-top: 15px;
     width: 275px;
-    font-size: 1.8rem;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.6rem;
+    font-weight: lighter;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-shadow: 2px 2px 4px rgba(128, 128, 128, 0.644);
 }
 
@@ -713,32 +713,30 @@ div#img-relatorios {
     height: 70px;
     margin-top: 15px;
     margin-left: 50px;
-    font-size: 1.1rem;
-    font-weight: bold;
+    
     text-align: left;
     padding: 30px;
     text-shadow: 2px 2px 2px rgba(48, 48, 48, 0.342);
     /*border: 2px groove #11181E;*/
 }
 
-.centralizar>h2 {
-    font-size: 1.5rem;
+.centralizar > h2 {
+    font-size: 1.8rem;
     margin-bottom: 20px;
-    font-weight: 500;
-    width: 600px;
+    font-weight: 400;
+    width: 700px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #02e0bb;
-    text-shadow: 2px 2px 4px black;
+    color: #f3f3f3;
+    text-shadow: 1px 1px 2px black;
 }
 
-.centralizar>p {
+.centralizar > p {
     /*font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;*/
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: lighter;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 1.1rem;
     width: 660px;
     color: rgb(182, 182, 182);
-    text-shadow: 2px 2px 4px black;
 }
 
 /* AONDE TEM UM BOX E ONDE OS CIRCULOS DE INSTAGRAM E TELEGRAM ESTÃO.*/
@@ -807,9 +805,10 @@ div#img-relatorios {
     background: #02e0bb;
 }
 
-#receitas-relatorios>p {
-    color: #fff;
-    font-family: monospace;
+#receitas-relatorios > p {
+    color: #e7e7e7;
+    font-size: .7rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     margin: 15px;
 }
@@ -820,22 +819,36 @@ div#img-relatorios {
 /* APRESENTANDO O BLOG */
 
 .titulosInicial-blog {
-    font-family: monospace;
-    font-size: 1rem;
-    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.1rem;
+    font-weight: lighter;
     /*color: #00da91;*/
-    color: #02e0bb;
+    color: #e7e7e7;
     text-shadow: 2px 2px 2px black;
-    background: #181C20;
-    box-shadow: 2px 2px 2px black;
+    /*background: #181C20;*/
     padding: 10px;
     position: absolute;
-    left: 5px;
+    left: 40px;
     top: 2260px;
-    border-radius: 10px;
-    border: 2px groove #02e0bb;
+    /*border: 2px groove #02e0bb;*/
     z-index: 1000;
     margin: 20px 0px 30px 40px;
+}
+.titulosInicial-blog > h2 {
+    opacity: 0;
+}
+.titulosInicial-blog > h2.ativo {
+    opacity: 1;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.titulosInicial-blog > h2::before {
+    content: '';
+    height: 8px;
+    background: #913AF3;
+    padding: 2px 2px;
+    margin-right: 20px;
 }
 
 #imagens {
@@ -848,20 +861,13 @@ div#img-relatorios {
     justify-content: flex-start;
     /*background-color: rgba(75, 74, 74, 0.356);*/
     background: transparent;
-
     overflow-x: scroll;
-    border-top: solid 1px #02e0bb;
 }
 
-#not-1,
-#not-2,
-#not-3,
-#not-4 {
-    font-family: Arial, Helvetica, sans-serif;
+#not-1, #not-2, #not-3, #not-4 {
     margin: 70px 0px 15px 20px;
     background-color: rgba(233, 233, 233, 0.192);
     padding: 20px;
-    font-size: 17px;
     width: 200px;
     height: 285px;
     border: groove 2px rgba(0, 0, 0, 0.658);
@@ -871,17 +877,17 @@ div#img-relatorios {
 }
 
 #not-1 {
-    background: url(imagemSiteCSS/Bitcoin.jpg);
+    background: url();
 }
 
 #not-1:hover {
-    background: url(imagemSiteCSS/hover-blogMaterias.jpg);
+    
 }
 
 #not-2 {
-    background: url(imagemSiteCSS/faang-fotoBlog.jpg);
+    background: url();
 }
 
 #not-2:hover {
-    background: url(imagemSiteCSS/hover-blogMaterias.jpg);
+    
 }

@@ -38,7 +38,43 @@ export default function scrollFrase() {
 
      const observandoFrase = new MutationObserver(mutacao);
     
-     observandoFrase.observe(frase , {attributes:true});
+     observandoFrase.observe(frase, {attributes:true});
+
+
+
+     // aqui irei animar o .CTA-BLOG !!!!
+
+     const segFrase = document.querySelector('.cta-blog > h2 ');
+
+     function animandoBlog() {
+        const classTop = segFrase.getBoundingClientRect().top
+        const isClassVisible = (classTop - windowMetade) < 0;
+        if(isClassVisible) 
+        segFrase.classList.add('ativo');
+        //else if(segFrase.classList.contains('ativo')) 
+       // segFrase.classList.remove('ativo');
+    } 
+    
+    window.addEventListener('scroll' , animandoBlog)
+     
+    function writeBlog(element) {
+        const escreverBlog = element.innerHTML.split('');
+        element.innerHTML = '';
+        escreverBlog.forEach((letra , i) => {
+            setTimeout(() => element.innerHTML += letra , 75 * i);
+        });
+     }
+
+     function mutationBlog(mutando) {
+        if(mutando[0].target.classList.contains('ativo')) {
+            observandoBlog.disconnect()
+            writeBlog(segFrase);
+        }
+     }
+
+     const observandoBlog = new MutationObserver(mutationBlog);
+
+     observandoBlog.observe(segFrase , {attributes: true})
 
  }
 

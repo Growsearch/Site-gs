@@ -251,7 +251,7 @@ div.grid-1{
 }
 
 .titulosInicial-i {
-    top: 810px;
+    top: 1310px;
     left: 800;
     font-size: 16px;
     
@@ -323,28 +323,39 @@ div#img-relatorios{
 #receitas-relatorios > p {
     display: none;
 }
-
 /*    TERMINADA A PARTE DE MUDANÇA DE COR */
+
+
+/* COMECANDO A PARTE DO BOX-EBOOK !!! */
+
+.titulos-inicial {
+    font-size: 1rem;
+    margin-top: 15px;
+}
 
 .box-ebook {
     display: flex;
+    max-width: 360px;
+    display: grid;
+    grid-template-columns: 180px 180px;
 }
 
-.apres-blog > h2{
-    font-family: 'Courier New', Courier, monospace;
-    color: rgba(180, 180, 180, 0.747);
-    text-shadow: none;
+#capa-ebook {
+    height: 250px;
 }
 
-.apres-blog > p {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 13px;
-    width: 300px;
-    margin-left: 30px;
-    margin-top: 10px;
-    color: rgb(182, 182, 182);
-    text-shadow: none;
+.info > .text-cta {
+    font-size: 16px;
+    width: 150px;
+
+
 }
+
+
+
+
+
+/* parte do BLOG !!!! */
 
  #not-5 , #not-6 {
     display: none;
@@ -355,8 +366,8 @@ div#img-relatorios{
 .titulosInicial-blog {
     font-size: 10px;
     border-radius: 8px;
-    top: 1290px;
-    left: -10px;
+    top: 1775px;
+    left: -20px;
 }
 
 #imagens {

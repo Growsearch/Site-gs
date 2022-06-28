@@ -251,7 +251,7 @@ div.grid-1{
 }
 
 .titulosInicial-i {
-    top: 1310px;
+    top: 1320px;
     left: 800;
     font-size: 16px;
     
@@ -334,24 +334,73 @@ div#img-relatorios{
 }
 
 .box-ebook {
-    display: flex;
-    max-width: 360px;
     display: grid;
-    grid-template-columns: 180px 180px;
+    height: 420px;
+    max-width: 360px;
+    margin: 0px;
+    grid-template-areas: "a b"
+                         "a c"
+                         "d e";
+    grid-template-columns: 140px 220px;
+    grid-template-rows: 120px 110px 160px;
 }
 
 #capa-ebook {
     height: 250px;
+    grid-area: a;
 }
 
 .info > .text-cta {
+    margin: 0px;
+    text-align: left;
     font-size: 16px;
-    width: 150px;
-
-
+    width: 200px;
+    grid-area: b;
 }
 
+.botoes-ebook {
+    grid-area: c;
+    width: 200px;
+}
 
+#checkout {
+    width: 210px;
+    font-size: 12px;
+    margin-right: 0px;
+}
+
+#previa-ebook {
+    display: none;
+}
+
+#edit-list {
+    grid-area: d;
+}
+
+#titulo-dt {
+    width: 200px;
+    font-size: 13px;
+}
+
+#edit-list>dd.ativo {
+    background: #1a1a1a;
+    border: 1px solid #02e0bb;
+    width: 330px;
+    font-size: 12px;
+}
+
+#diasGarantia {
+    width: 180px;
+    font-size: 14px;
+    grid-area: e;
+    position: absolute;
+    top: -50px;
+    left: 10px;
+}
+
+#pdoemogi {
+    display: none;
+}
 
 
 

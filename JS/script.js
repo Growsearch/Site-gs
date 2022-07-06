@@ -5,6 +5,7 @@ import menuMobile from "./modules/menuMobile.js"
 import dataAnimeScroll from "./modules/dataAnime.js"
 import initAccordion from "./modules/accordion.js"
 import scrollFrase from "./modules/scrollFrase.js"
+import initFuncionamento from "./modules/funcionamento.js"
 
 
 escrevendoTela();
@@ -13,3 +14,4 @@ menuMobile();
 dataAnimeScroll();
 initAccordion();
 scrollFrase();
+initFuncionamento();

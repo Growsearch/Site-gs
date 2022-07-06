@@ -11,9 +11,10 @@ function toggleMenu(event){
         const active = nav.classList.contains('active');      
     event.currentTarget.setAttribute('aria-expanded' , 'true');
 
-    if (active){ event.currentTarget.setAttribute('aria-label' , 'Fechar Menu')
-    } else{
-        event.currentTarget.setAttribute('aria-label' , 'Abrir Menu')
+    if(active) { 
+        event.currentTarget.setAttribute('aria-label' , 'Fechar Menu');
+    } else {
+        event.currentTarget.setAttribute('aria-label' , 'Abrir Menu');
     }
 }
 

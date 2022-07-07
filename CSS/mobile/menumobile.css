@@ -50,10 +50,10 @@
         display: block;
         position: absolute;
         width: 120px;
-        top: 80px;
-        right: 0px;
+        top: 90px;
+        right: -30px;
         height: 0px;
-        background: #1b2024;
+        background: #282A2D;
         transition: 0.3s;
         z-index: 1000;
         visibility: hidden;
@@ -62,12 +62,13 @@
         
     .nav.active .menu{
         /*height: calc(100vh - 70px);*/
+        z-index: 1000;
         visibility: visible;
         overflow-y: hidden;
         height: 210px;
 
-        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.726);
-        border-radius: 0px 0px 10px 10px;
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.726);
+        border-radius: 0px 0px 5px 5px;
         border: groove 1px #e7e7e7;
         border-top: none;
     }

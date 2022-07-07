@@ -165,9 +165,7 @@ section#container {
     align-items: flex-start;
     padding-top: 45px;
     justify-content: space-between;
-    border-top: 2px groove
-        /*#02e0bb*/
-        rgb(224, 224, 224);
+    border-top: 2px groove rgb(224, 224, 224);
     height: 170px;
 }
 

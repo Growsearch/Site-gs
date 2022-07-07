@@ -1,7 +1,7 @@
 
 export default function initFuncionamento() {
 
-    const funcionamento = document.querySelector('[data-semana]');
+const funcionamento = document.querySelector('[data-semana]');
 const diasSemana = funcionamento.dataset.semana.split(',').map(Number);
 const horarioSemana = funcionamento.dataset.horario.split(',').map(Number);
 
@@ -16,12 +16,15 @@ if(semanaAberto && horarioAberto) {
     funcionamento.classList.add('aberto');
 }
 
+const writeOn = document.querySelector('.funcionamento > h3');
+
+function mudancaWrite() {
+    if(funcionamento.classList.contains('aberto')) {
+        writeOn.innerHTML = 'Dev On';
+    } else {
+        writeOn.innerHTML = 'Dev Off';
+    }
 }
+mudancaWrite();
 
-
-
-
-
-
-
-
+}

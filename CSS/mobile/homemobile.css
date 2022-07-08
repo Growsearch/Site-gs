@@ -36,7 +36,7 @@ header {
 }
 
 #boxComImgs {
-    height: 320px;
+    height: 280px;
 }
 
 section#container {
@@ -61,35 +61,21 @@ section#container {
     display: none;
 }
     
-.info > p{
-    margin: auto;
-    margin-left: 0px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    width: 280px;
-    margin-top: 0px ;
-    padding: 15px;
-    text-align: center;
-    grid-row: 1;
-    height: 90px;
-    
-    color: rgb(221, 221, 221);
- }
-    
 button#ativar{
     width: 230px;
     height: 30px;
     grid-row: 2;
     grid-column: 1;
-    /*margin-top: 5px;*/
     margin: auto;
+    margin-top: 30px;
     border-radius: 10px;
     border: solid 1px #1a1a1a;
     box-shadow: 2px 2px 2px black;
-
-    /*background: linear-gradient(#913AF3 , #7d33d3);*/
-    background: linear-gradient(#02967d , #02e0bb);
-    color: #1a1a1a;
-    font-size: .8rem;
+    /*background: linear-gradient(#02967d , #02e0bb);*/
+    background: #1a1a1a60;
+    color: #e7e7e7;
+    border: .5px solid #e7e7e765;
+    font-size: 12px;
 }
 
 button#ativar:hover {
@@ -97,7 +83,7 @@ button#ativar:hover {
     height: 50px;
 }
         
-.frase{
+.frase {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 13px;
     font-weight: 400;
@@ -144,7 +130,7 @@ h2#bemvindo{
 }
     
 div.grid-1{
-    height: 215px;
+    height: 205px;
     padding: 15px;
     display: grid;
     grid-template-areas: "a d b"
@@ -159,18 +145,20 @@ div.grid-1{
 }
 
 #quemsomos > p {
-    font-size: 1rem;
+    font-size: 14px;
     width: 200px;
     padding-top: 0px;
     line-height: 20px;
     margin: 0px;
     font-weight: 300;
+    color: #e7e7e7c5;
 }
  #quemsomos > a > h3 {
    height: 25px;
    font-size: 1rem;
    width: 150px;
    padding: 0px;
+   margin-top: 10px;
 }
 
 #quemsomos > #stickQsomos {
@@ -189,12 +177,13 @@ div.grid-1{
 }
 
 #confira-blog > p {
-    font-size: 1rem;
+    font-size: 14px;
     font-weight: 300;
     width: 200px;
     padding-top: 0px;
     line-height: 20px;
     margin: 0px;
+    color: #e7e7e7c5;
 }
 
 #confira-blog > a > h3 {
@@ -203,6 +192,7 @@ div.grid-1{
     width: 150px;
     padding: 0px;
     margin-left: 35px;
+    margin-top: 30px;
 }
 
 #confira-blog > #stickBlog {
@@ -230,19 +220,20 @@ div.grid-1{
 }
 
 #oque-esta-porvir > p {
-    font-size: 1rem;
+    font-size: 14px;
     font-weight: 300;
     width: 200px;
     padding-top: 0px;
     line-height: 20px;
     margin: 0px;
+    color: #e7e7e7c5;
 } 
 
 #oque-esta-porvir > a > h3 {
     font-size: 1rem;
     height: 25px;
     padding: 0px;
-    margin: 20px 0px 0px 10px;
+    margin: 30px 0px 0px 10px;
 }
 
 #oque-esta-porvir > #stickNov {
@@ -256,15 +247,16 @@ div.grid-1{
 /*             PARTE MUDANDO DE COR     */
 .mudando-cor {
     max-width: 412px;
-    height: 400px;  
-    margin-top: 100px;
+    height: 340px;  
+    margin-top: 120px;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    padding: 15px 0px 0px 0px;
 }
 
 .titulosInicial-i {
-    top: 1180px;
+    top: 1150px;
     left: 800;
     font-size: 16px;
     border: 1px groove #e7e7e7;
@@ -281,6 +273,7 @@ div#img-relatorios{
 .dividindoPag {
     display: flex;
     flex-wrap: wrap;
+    height: 310px;
 }
 
 .centralizar {
@@ -289,9 +282,10 @@ div#img-relatorios{
     height: 150px;
 }
 
-.centralizar > h2 {
+.dividindoPag > .centralizar > h2 {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 22px;
+    font-size: 18px;
+    font-weight: lighter;
     width: 295px;
     color: #fff;
     margin-bottom: 15px;
@@ -300,7 +294,7 @@ div#img-relatorios{
 
 .centralizar > p{
     width: 300px;
-    font-size: 15px;
+    font-size: 12px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: left;
 }
@@ -311,7 +305,7 @@ div#img-relatorios{
     height: 20px;
     margin: auto;
     margin-top: 0px;
-    margin-bottom: 79px;
+    margin-bottom: 9px;
     border: none;
 }
     
@@ -320,8 +314,7 @@ div#img-relatorios{
     height: 50px;
     align-items: center;
     color: #fff;
-    border: solid 1px #02e0bb;
-    background: none;
+    background: #1f1f1f;
 }
 
 #receitas-relatorios > p {
@@ -360,9 +353,9 @@ div#img-relatorios{
     margin: 0px;
     padding: 8px 0px 0px 12px;
     text-align: left;
-    font-size: 15px;
-    width: 190px;
-    height: 100%;
+    font-size: 14px;
+    width: 185px;
+    height: 100px;
     grid-area: b;
 }
 .text-cta::before {
@@ -441,7 +434,7 @@ div#img-relatorios{
 .titulosInicial-blog {
     font-size: 11px;
     border-radius: 8px;
-    top: 1635px;
+    top: 1525px;
     left: -30px;
 }
 
@@ -501,11 +494,11 @@ div#img-relatorios{
     color: #e7e7e7;
     background-color: #1a1919a8;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: .8rem;
 }
 
 #footer > h2 {
     height: 30px;
+    font-size: 18px;
 }
 
 #footer > p {
@@ -514,13 +507,19 @@ div#img-relatorios{
     color: #e7e7e7;
 }
 
-footer > .contatoFooter {
+.contatoFooter {
     display: flex;
     flex-wrap: wrap;
-    background: #02967d;
+    background: #131313;
     border-radius: 10px;
     padding: 10px;
-    color: #1a1a1a;
+    color: #e7e7e7;
+}
+
+.contatoFooter > h2 {
+    color: #02e0bb;
+    font-weight: 500;
+    width: 200px;
 }
 
 }

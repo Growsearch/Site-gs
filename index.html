@@ -4,15 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/homeCss/style.css">
-    <link rel="stylesheet" href="CSS/homeCss/boxEbook.css">
-    <link rel="stylesheet" href="CSS/mobile/menumobile.css">
-    <link rel="stylesheet" href="CSS/mobile/homemobile.css">
-    <link rel="stylesheet" href="CSS/animacoes.css"> 
-    <link rel="stylesheet" href="CSS/footer.css">
-
-    <link rel="stylesheet" href="CSS/mobile/ebookmobile.css">
-    <link rel="stylesheet" href="CSS/mobile/qsomos-mobile.css">
+    <link rel="stylesheet" href="CSS/cssImport.css">
     
     <link rel="shortcut icon" href="imagens-do-site/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -76,17 +68,18 @@
 
 <div class= "grid-1  scroll-mobile">
     
-        <section id="quemsomos">
+        <section id="quemsomos" class="boxesPrincipais">
             <div id="stickQsomos">
                 Sobre
             </div>
             <!--<h1>Quem somos nós?</h1>-->
-            <p>fazemos tudo aqui para facilitar o seu dia a dia no mercado financeiro através de tecnologia. Venha conhecer mais um pouco da nossa história. </p>
+            <p>Fazemos tudo aqui para facilitar os seus dias como investidor através de tecnologia. Venha nos conhecer mais um pouco. </p>
             <a href="qsomos.html">
                 <h3 class="pulse animation  botao-qsomos">Quem somos</h3>
             </a>
         </section>
-        <section id="confira-blog">
+
+        <section id="confira-blog" class="boxesPrincipais">
             <div id="stickBlog">
                 Notícias
             </div>
@@ -96,7 +89,7 @@
                 <h3 class="pulse animation  botao-irPblog">Ir para o Blog GS</h3>
             </a>
         </section>
-        <section id="oque-esta-porvir">
+        <section id="oque-esta-porvir" class="boxesPrincipais">
             <div id="stickNov">
                 Novidades
             </div>
@@ -117,7 +110,7 @@
         </section>
 
     <section class="listas">
-        <h2 data-anime="left">Conheça <br> nossos Conteúdos!</h2>
+        <h2 data-anime="left" class="titulos-inicial">Conheça <br> nossos Conteúdos!</h2>
 
         <div class="introducaoListas">
             <h2>ebooks</h2>
@@ -156,7 +149,8 @@
 </div>         <!--     !!!!   (ACABOU AQUI UMA DIV ".GRID-1")   !!!!!  -->
 
 <main class="box-ebook">
-    <h1 class="titulos-inicial" data-anime="left">Produtos</h1>
+    <h2 data-anime="left" class="titulos-inicial" id="produtoTitulo">Produtos</h2>
+
         <img id='capa-ebook' src="imagens-do-site/capa-ebook-nova.png" alt="ebook-capaNova">
 
         <div class="info">
@@ -184,7 +178,7 @@
 </main>
 
 <section class="mudando-cor">
-    <h1 class="titulosInicial-i  animaTitulos"  data-anime="left">Interaja conosco</h1>
+    <h1 id="titulosInicial-i" class="titulos-inicial" data-anime="left">Interaja conosco</h1>
         
     <section class="dividindoPag">
         <div class="centralizar">

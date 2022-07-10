@@ -1,0 +1,17 @@
+
+/* AQUI E A PARTE DA HOME DESKTOP */
+@import url(homeCss/style.css);
+@import url(homeCss/boxEbook.css);
+
+/*AQUI A PARTE DO MOBILE*/
+@import url(mobile/homemobile.css);
+@import url(mobile/menumobile.css);
+@import url(mobile/qsomos-mobile.css);
+@import url(mobile/ebookmobile.css);
+
+/* RESTANTE DAS COISAS */
+@import url(animacoes.css);
+@import url(footer.css);
+/*@import url(pag2.css);
+@import url(qsomos.css);*/
+

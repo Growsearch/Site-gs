@@ -8,16 +8,17 @@ footer {
     max-width: 100%;
     height: 100px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #161616;
-    background: #087462;
+    color: #e7e7e7c7;
+    background: #020202;
     padding: 20px;
     border-top: groove 2px #020202;
     margin-top: 30px;
 }
 
 footer > section > h2 {
-    color: #020202;
+    color: #e7e7e7;
     font-size: 25px;
+    font-weight: 400;
 }
 
 footer > h2 > a {
@@ -32,15 +33,15 @@ footer > p {
     grid-row: 1;
     
     padding: 5px;
-    color: #161616;
-    font-weight: 400;
+    color: #e7e7e7;
+    font-weight: 300;
     font-size: 1.5rem;
 }
 
 footer > section > #labelEmail , #inputEmail {
     grid-column: 2;
     grid-row: 2;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 #labelEmail {
@@ -49,7 +50,8 @@ footer > section > #labelEmail , #inputEmail {
 
 #inputEmail {
     padding: 3px 5px;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-top: 0px;
-    background: #e7e7e7;
+    background: #e7e7e7c2;
+    border: 1px solid #02e0bb;
 }

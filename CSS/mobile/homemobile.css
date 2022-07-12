@@ -212,10 +212,7 @@ div.grid-1{
 
 .listas {
     display: none;
-    width: 280px;
-    height: 672px;
-    background-color: transparent;
-    grid-area: c;
+    
 }
 
 #oque-esta-porvir {
@@ -250,7 +247,7 @@ div.grid-1{
 /*             PARTE MUDANDO DE COR     */
 .mudando-cor {
     max-width: 412px;
-    height: 340px;  
+    height: 300px;  
     margin-top: 120px;
     display: flex;
     flex-wrap: wrap;
@@ -259,6 +256,7 @@ div.grid-1{
 }
 
 #titulosInicial-i {
+    width: 250px;
     top: 1150px;
     left: 800;
     font-size: 16px; 
@@ -276,13 +274,15 @@ div#img-relatorios{
 .dividindoPag {
     display: flex;
     flex-wrap: wrap;
-    height: 310px;
+    height: 100px;
 }
 
 .centralizar {
     margin: 0px;
     width: 250px;
     height: 150px;
+    padding: 20px 0px 0px 20px;
+    
 }
 
 .dividindoPag > .centralizar > h2 {
@@ -329,6 +329,7 @@ div#img-relatorios{
 /* COMECANDO A PARTE DO BOX-EBOOK !!! */
 
 .titulos-inicial {
+    background: #17191b;
     font-size: 16px;
     border: 1px groove #e7e7e7;
     left: 60px;
@@ -449,7 +450,7 @@ div#img-relatorios{
 .titulosInicial-blog {
     font-size: 11px;
     border-radius: 8px;
-    top: 1555px;
+    top: 1505px;
     left: -30px;
 }
 
@@ -464,7 +465,7 @@ div#img-relatorios{
     justify-content: flex-start;
     border-radius: 0px;
     margin-top: 0px;
-    margin-left: 15px;
+    margin-left: 10px;
 }
 
 #imagens::-webkit-scrollbar {
@@ -502,7 +503,7 @@ div#img-relatorios{
 }*/
 
 
-.noticias > a > .ball {
+.noticias > .ball {
     content: "";
     padding: 25px;
     height: 10px;
@@ -514,17 +515,17 @@ div#img-relatorios{
 }
 
 .noticias > p {
-    width: 115px;
+    width: 110px;
     height: 70px;
-    margin: 0px;
+    margin: 0 auto;
     color: white;
     grid-template-rows: 2;
     padding: 5px;
-    border-radius: 10px;
-    background: #772FC9;
+    /*border-radius: 10px;
+    background: #772FC9;*/
     font-size: 12px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    box-shadow: 1px 3px 2px black;
+    /*box-shadow: 1px 3px 2px black;*/
 }
 
 /*#imagens > div > p {
@@ -573,6 +574,11 @@ div#img-relatorios{
     color: #02e0bb;
     font-weight: 500;
     width: 200px;
+}
+
+#inputEmail {
+    height: 15px;
+    padding: 0px;
 }
 
 }

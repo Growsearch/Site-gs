@@ -49,9 +49,12 @@ footer > section > #labelEmail , #inputEmail {
 }
 
 #inputEmail {
+    width: 220px;
     padding: 3px 5px;
-    border-radius: 10px;
+    border-radius: 8px;
     margin-top: 0px;
-    background: #e7e7e7c2;
+    margin-left: 10px;
+    background: #61616154;
     border: 1px solid #02e0bb;
+    color: #e7e7e7;
 }

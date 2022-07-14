@@ -6,6 +6,7 @@ import dataAnimeScroll from "./modules/dataAnime.js"
 import initAccordion from "./modules/accordion.js"
 import scrollFrase from "./modules/scrollFrase.js"
 import initFuncionamento from "./modules/funcionamento.js"
+import ulAnimate from "./modules/ulAnimate.js"
 
 
 escrevendoTela();
@@ -15,3 +16,4 @@ dataAnimeScroll();
 initAccordion();
 scrollFrase();
 initFuncionamento();
+ulAnimate();

@@ -1,0 +1,87 @@
+
+body {
+    background: linear-gradient(#fafafa , #e7e7e7);
+    /*display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    margin: 0px;*/
+    transition: background 0.2s linear;
+}
+/* AQUI VAI SER TODA PARTE DO DARK (INCLUSIVE BOXES) */
+
+body.dark {
+    background: #1B1D20;
+}
+
+body.dark .info {
+    color: #e7e7e7;
+}
+
+body.dark .grid-1 {
+    color: #1B1D20;
+    background: #282A2D;
+}
+
+body.dark .boxesPrincipais {
+    background: #1B1D20;
+}
+
+body.dark .buttonPrincipais {
+   background: #15151b;
+}
+
+body.dark #confira-blog > a > h3 {
+    background: #15151b;
+}
+
+/* ACABOU A PARTE DE DARK */
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background: #252525;
+    border: 1px solid #e7e7e7;
+    border-radius: 15px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 20px;
+    width: 45px;
+
+    transform: scale(1);
+}
+
+.label .ballChk {
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 4px;
+
+    height: 24px;
+    width: 24px;
+
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ballChk {
+    transform: translateX(24px);
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}

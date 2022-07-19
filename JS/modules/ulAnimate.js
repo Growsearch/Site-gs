@@ -14,5 +14,4 @@ export default function ulAnimate() {
     }
 
     window.addEventListener('scroll', animarBlocos);
-
 }

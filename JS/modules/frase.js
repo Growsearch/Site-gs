@@ -16,8 +16,8 @@ ativar.addEventListener('click' , clicou)
 
 function clicou(){
     ativar.innerText = 'Clique para sair e voltar o slide!'
-    ativar.style.background = 'transparent'
-    ativar.style.color = 'white'
+    ativar.style.background = '#e7e7e7'
+    ativar.style.color = '#3D4343'
     ativar.style.fontSize = '12px'
 }
 

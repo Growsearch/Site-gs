@@ -9,34 +9,6 @@ body {
     margin: 0px;*/
     transition: background 0.2s linear;
 }
-/* AQUI VAI SER TODA PARTE DO DARK (INCLUSIVE BOXES) */
-
-body.dark {
-    background: #1B1D20;
-}
-
-body.dark .info {
-    color: #e7e7e7;
-}
-
-body.dark .grid-1 {
-    color: #1B1D20;
-    background: #282A2D;
-}
-
-body.dark .boxesPrincipais {
-    background: #1B1D20;
-}
-
-body.dark .buttonPrincipais {
-   background: #15151b;
-}
-
-body.dark #confira-blog > a > h3 {
-    background: #15151b;
-}
-
-/* ACABOU A PARTE DE DARK */
 
 .checkbox {
     opacity: 0;
@@ -85,3 +57,69 @@ body.dark #confira-blog > a > h3 {
 .fa-sun {
     color: #f39c12;
 }
+
+
+/* AQUI VAI SER TODA PARTE DO DARK (INCLUSIVE BOXES) */
+
+body.dark {
+    background: #1B1D20;
+}
+
+body.dark .info {
+    color: #e7e7e7;
+}
+
+body.dark .grid-1 {
+    color: #1B1D20;
+    background: #282A2D;
+}
+
+body.dark .boxesPrincipais {
+    background: #1B1D20;
+}
+
+body.dark .buttonPrincipais {
+   background: #15151b;
+}
+
+body.dark #confira-blog > a > h3 {
+    background: #15151b;
+}
+
+/* LISTAS NO MODO DARK */
+
+body.dark .envelope {
+    color: #e7e7e7e7;
+}
+
+body.dark .introducaoListas > div > p {
+    color: #9e9e9e;
+}
+
+body.dark .todasLi.ativo {
+    background: #13161a86;
+}
+
+
+/* parte do interaja conosco */
+body.dark .mudando-cor {
+    background: #282A2D;
+    border-top: 1px groove #0c0c0f;
+}
+
+body.dark .centralizar > p {
+    color: rgb(182, 182, 182);
+}
+
+
+/* PARTE INICIAL DO BLOG */
+
+body.dark .titulosInicial-blog {
+    color: #e7e7e7;
+}
+
+body.dark .titulosInicial-blog > h2.ativo {
+    color: #e7e7e7;
+}
+
+/* ACABOU A PARTE DE DARK */

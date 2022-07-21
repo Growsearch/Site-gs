@@ -1,6 +1,6 @@
 body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: #1B1D20;
+    background: /*#1B1D20*/ #e7e7e7;
 }
 
 ::-webkit-scrollbar {
@@ -41,7 +41,7 @@ main{
     font-family: Arial, Helvetica, sans-serif;
     margin: 10px;
     color: #e7e7e7;
-    background-color: #1B1D20;
+    background-color: /*#1B1D20*/ #1B1D20;
     padding: 20px;
     max-width: 850px;
     border-radius: 8px;
@@ -75,7 +75,7 @@ main{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 40px;
     padding: 20px;
-    background-color: #02e0bb2f;
+    background-color: #03947c;
     color: #e7e7e7;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.507);
     border-radius: 25px 8px;

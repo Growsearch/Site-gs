@@ -65,6 +65,21 @@ body.dark {
     background: #1B1D20;
 }
 
+body.dark #boxComImgs {
+    background: linear-gradient(58deg, #1B1D20 ,#2d3b38, #02e0bbd7, #913AF3 );
+    background-size: 400% 100%;
+    animation: degrade-animado 5s infinite alternate;
+}
+
+@keyframes degrade-animado {
+    0% {
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-x: 100%;
+    }
+}
+
 body.dark .info {
     color: #e7e7e7;
 }
@@ -100,8 +115,18 @@ body.dark .todasLi.ativo {
     background: #13161a86;
 }
 
+/* PARTE DO BOX EBOOK DARK */
+
+body.dark #diasGarantia {
+    color: #e7e7e7;
+}
+
+body.dark #pdoemogi {
+    color: #e7e7e7;
+}
 
 /* parte do interaja conosco */
+
 body.dark .mudando-cor {
     background: #282A2D;
     border-top: 1px groove #0c0c0f;

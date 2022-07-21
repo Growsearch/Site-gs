@@ -21,8 +21,8 @@
 }
 
 body{
-    /*background-image: linear-gradient(rgb(255, 255, 255), rgba(9, 7, 34, 0.795), rgb(255, 255, 255));*/
-    background: #1B1D20;
+    /*background: #1B1D20;*/
+    background: #e7e7e7;
 }
 
 .btn-mobile{
